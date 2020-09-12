@@ -55,6 +55,7 @@
 		036159EF250C2FFC00C8ABC5 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		036159F3250C2FFC00C8ABC5 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		036159F5250C2FFC00C8ABC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03615A0F250C314600C8ABC5 /* DataManagement */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DataManagement; path = ../DataManagement; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +93,7 @@
 		036159C4250C2FFB00C8ABC5 = {
 			isa = PBXGroup;
 			children = (
+				03615A0E250C30FB00C8ABC5 /* Packages */,
 				036159C9250C2FFB00C8ABC5 /* Shared */,
 				036159D6250C2FFC00C8ABC5 /* iOS */,
 				036159DD250C2FFC00C8ABC5 /* macOS */,
@@ -157,6 +159,14 @@
 				036159F5250C2FFC00C8ABC5 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		03615A0E250C30FB00C8ABC5 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				03615A0F250C314600C8ABC5 /* DataManagement */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
