@@ -45,21 +45,19 @@ struct AccountTabView: View {
     }
 
     private var newMovementView: some View {
-        // TODO: Replace categories and stores by real elements
-        print("Documents Directory: ", FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last ?? "Not Found!")
-        var categories = [CategoryStoreModel]()
-        categories.append(CategoryStoreModel(name: "Category 1", id: UUID()))
-        categories.append(CategoryStoreModel(name: "Category 2", id: UUID()))
-        categories.append(CategoryStoreModel(name: "Category 3", id: UUID()))
+        guard let incomeData = try? NewMovementResourcesReeader.shared.readIncomeData() else {
+            fatalError("Can't read income data")
+        }
 
-        var stores = [CategoryStoreModel]()
-        stores.append(CategoryStoreModel(name: "Store 1", id: UUID()))
-        stores.append(CategoryStoreModel(name: "Store 2", id: UUID()))
-        stores.append(CategoryStoreModel(name: "Store 3", id: UUID()))
+        guard let expeditureData = try? NewMovementResourcesReeader.shared.readExpeditureData() else {
+            fatalError("Can't read expediture data")
+        }
 
         let dataSource = CoreDataSourceModify()
-        let dataModel = NewMovementViewDataModel(dataSource: dataSource, stores: stores, categories: categories)
-        return NewMovementView(dataModel: dataModel)
+        let dataModel = NewMovementViewDataModel(dataSource: dataSource,
+                                                 incomeData: incomeData,
+                                                 expeditureData: expeditureData)
+        return NewMovement.ContainerView(dataModel: dataModel)
     }
 
     private var dashboardView: some View {

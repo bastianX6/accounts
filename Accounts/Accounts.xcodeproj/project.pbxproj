@@ -17,6 +17,12 @@
 		0322B0A825157703001EB2BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0AA25157703001EB2BC /* Localizable.strings */; };
 		0322B0BA251578D4001EB2BC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0B9251578D4001EB2BC /* Strings.swift */; };
 		0322B0BB251578D4001EB2BC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0B9251578D4001EB2BC /* Strings.swift */; };
+		0322B0C225157EE3001EB2BC /* ExpeditureData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0C125157EE3001EB2BC /* ExpeditureData.json */; };
+		0322B0C325157EE3001EB2BC /* ExpeditureData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0C125157EE3001EB2BC /* ExpeditureData.json */; };
+		0322B0C9251580B2001EB2BC /* IncomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0C8251580B2001EB2BC /* IncomeData.json */; };
+		0322B0CA251580B2001EB2BC /* IncomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0C8251580B2001EB2BC /* IncomeData.json */; };
+		0322B0D025158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
+		0322B0D125158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
 		03CF3D29250D05430096F71C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D28250D05430096F71C /* Tests_iOS.swift */; };
 		03CF3D34250D05430096F71C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D33250D05430096F71C /* Tests_macOS.swift */; };
 		03CF3D38250D05430096F71C /* AccountsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D0C250D05420096F71C /* AccountsApp.swift */; };
@@ -50,6 +56,9 @@
 		0322B0A925157703001EB2BC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0322B0B325157706001EB2BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0322B0B9251578D4001EB2BC /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		0322B0C125157EE3001EB2BC /* ExpeditureData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ExpeditureData.json; sourceTree = "<group>"; };
+		0322B0C8251580B2001EB2BC /* IncomeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IncomeData.json; sourceTree = "<group>"; };
+		0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMovementResources.swift; sourceTree = "<group>"; };
 		03CF3D0C250D05420096F71C /* AccountsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsApp.swift; sourceTree = "<group>"; };
 		03CF3D0F250D05420096F71C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03CF3D14250D05420096F71C /* Accounts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accounts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +116,7 @@
 		0322B09F251576BA001EB2BC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0322B0C025157EB9001EB2BC /* Json */,
 				0322B0AA25157703001EB2BC /* Localizable.strings */,
 			);
 			path = Resources;
@@ -118,6 +128,16 @@
 				0322B0B9251578D4001EB2BC /* Strings.swift */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		0322B0C025157EB9001EB2BC /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				0322B0C8251580B2001EB2BC /* IncomeData.json */,
+				0322B0C125157EE3001EB2BC /* ExpeditureData.json */,
+				0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */,
+			);
+			path = Json;
 			sourceTree = "<group>";
 		};
 		0398C2FA2513F9070022E279 /* Frameworks */ = {
@@ -334,6 +354,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0322B0C9251580B2001EB2BC /* IncomeData.json in Resources */,
+				0322B0C225157EE3001EB2BC /* ExpeditureData.json in Resources */,
 				03CF3D3E250D05430096F71C /* Assets.xcassets in Resources */,
 				0322B0A725157703001EB2BC /* Localizable.strings in Resources */,
 			);
@@ -343,6 +365,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0322B0CA251580B2001EB2BC /* IncomeData.json in Resources */,
+				0322B0C325157EE3001EB2BC /* ExpeditureData.json in Resources */,
 				03CF3D3F250D05430096F71C /* Assets.xcassets in Resources */,
 				0322B0A825157703001EB2BC /* Localizable.strings in Resources */,
 			);
@@ -370,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0322B08525157467001EB2BC /* AccountTabView.swift in Sources */,
+				0322B0D025158C7B001EB2BC /* NewMovementResources.swift in Sources */,
 				0322B0BA251578D4001EB2BC /* Strings.swift in Sources */,
 				03CF3D38250D05430096F71C /* AccountsApp.swift in Sources */,
 			);
@@ -380,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0322B08625157467001EB2BC /* AccountTabView.swift in Sources */,
+				0322B0D125158C7B001EB2BC /* NewMovementResources.swift in Sources */,
 				0322B0BB251578D4001EB2BC /* Strings.swift in Sources */,
 				03CF3D39250D05430096F71C /* AccountsApp.swift in Sources */,
 			);
