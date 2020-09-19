@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Accounts
+
+  Created by Bastián Véliz Vega on 18-09-20.
+  
+*/
+
+// MARK: - Tab View
+"Overview" = "Resumen";
+"Expenses" = "Gastos";
+"Incomes" = "Ingresos";
+"Add" = "Agregar";

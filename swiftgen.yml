@@ -1,0 +1,6 @@
+strings:
+  inputs: 
+    - Accounts/Shared/Resources/es.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: Accounts/Shared/Localization/Strings.swift
