@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		030BCEEA251444A9001EE47D /* AccountsCoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 030BCEE9251444A9001EE47D /* AccountsCoreDataManagement */; };
 		030BCEEC251444A9001EE47D /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 030BCEEB251444A9001EE47D /* DataManagement */; };
 		030BCEEE251444A9001EE47D /* NewMovement in Frameworks */ = {isa = PBXBuildFile; productRef = 030BCEED251444A9001EE47D /* NewMovement */; };
 		030BCEF825156A6E001EE47D /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 030BCEF725156A6E001EE47D /* AccountsUI */; };
@@ -23,6 +22,18 @@
 		0322B0CA251580B2001EB2BC /* IncomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0C8251580B2001EB2BC /* IncomeData.json */; };
 		0322B0D025158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
 		0322B0D125158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
+		0342742E251689C70019B3F1 /* AccountTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B08425157467001EB2BC /* AccountTabView.swift */; };
+		0342742F251689C70019B3F1 /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
+		03427430251689C70019B3F1 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0B9251578D4001EB2BC /* Strings.swift */; };
+		03427431251689C70019B3F1 /* AccountsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D0C250D05420096F71C /* AccountsApp.swift */; };
+		03427438251689C70019B3F1 /* IncomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0C8251580B2001EB2BC /* IncomeData.json */; };
+		03427439251689C70019B3F1 /* ExpeditureData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0C125157EE3001EB2BC /* ExpeditureData.json */; };
+		0342743A251689C70019B3F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CF3D0F250D05420096F71C /* Assets.xcassets */; };
+		0342743B251689C70019B3F1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0AA25157703001EB2BC /* Localizable.strings */; };
+		0342744D25168A2E0019B3F1 /* AccountsCoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 0342744C25168A2E0019B3F1 /* AccountsCoreDataManagement */; };
+		0342745525168A540019B3F1 /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 0342745425168A540019B3F1 /* DataManagement */; };
+		0342745D25168A6F0019B3F1 /* NewMovement in Frameworks */ = {isa = PBXBuildFile; productRef = 0342745C25168A6F0019B3F1 /* NewMovement */; };
+		0342746525168A8B0019B3F1 /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0342746425168A8B0019B3F1 /* AccountsUI */; };
 		03CF3D29250D05430096F71C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D28250D05430096F71C /* Tests_iOS.swift */; };
 		03CF3D34250D05430096F71C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D33250D05430096F71C /* Tests_macOS.swift */; };
 		03CF3D38250D05430096F71C /* AccountsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D0C250D05420096F71C /* AccountsApp.swift */; };
@@ -59,6 +70,8 @@
 		0322B0C125157EE3001EB2BC /* ExpeditureData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ExpeditureData.json; sourceTree = "<group>"; };
 		0322B0C8251580B2001EB2BC /* IncomeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IncomeData.json; sourceTree = "<group>"; };
 		0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMovementResources.swift; sourceTree = "<group>"; };
+		0342743F251689C80019B3F1 /* Accounts (iOS) - Release.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accounts (iOS) - Release.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03427440251689C80019B3F1 /* Accounts (iOS) copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Accounts (iOS) copy-Info.plist"; path = "/Users/bastian/DEV/Project-Accounts/accounts/Accounts/Accounts (iOS) copy-Info.plist"; sourceTree = "<absolute>"; };
 		03CF3D0C250D05420096F71C /* AccountsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsApp.swift; sourceTree = "<group>"; };
 		03CF3D0F250D05420096F71C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03CF3D14250D05420096F71C /* Accounts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accounts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +88,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		03427432251689C70019B3F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0342746525168A8B0019B3F1 /* AccountsUI in Frameworks */,
+				0342744D25168A2E0019B3F1 /* AccountsCoreDataManagement in Frameworks */,
+				0342745525168A540019B3F1 /* DataManagement in Frameworks */,
+				0342745D25168A6F0019B3F1 /* NewMovement in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03CF3D11250D05420096F71C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,7 +114,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				030BCEEA251444A9001EE47D /* AccountsCoreDataManagement in Frameworks */,
 				030BCEEC251444A9001EE47D /* DataManagement in Frameworks */,
 				030BCEEE251444A9001EE47D /* NewMovement in Frameworks */,
 			);
@@ -157,6 +180,7 @@
 				03CF3D32250D05430096F71C /* Tests macOS */,
 				03CF3D15250D05420096F71C /* Products */,
 				0398C2FA2513F9070022E279 /* Frameworks */,
+				03427440251689C80019B3F1 /* Accounts (iOS) copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,6 +203,7 @@
 				03CF3D1C250D05420096F71C /* Accounts.app */,
 				03CF3D24250D05420096F71C /* Tests iOS.xctest */,
 				03CF3D2F250D05430096F71C /* Tests macOS.xctest */,
+				0342743F251689C80019B3F1 /* Accounts (iOS) - Release.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,6 +246,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		03427428251689C70019B3F1 /* Accounts (iOS) - Release */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0342743C251689C70019B3F1 /* Build configuration list for PBXNativeTarget "Accounts (iOS) - Release" */;
+			buildPhases = (
+				0342742D251689C70019B3F1 /* Sources */,
+				03427432251689C70019B3F1 /* Frameworks */,
+				03427437251689C70019B3F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Accounts (iOS) - Release";
+			packageProductDependencies = (
+				0342744C25168A2E0019B3F1 /* AccountsCoreDataManagement */,
+				0342745425168A540019B3F1 /* DataManagement */,
+				0342745C25168A6F0019B3F1 /* NewMovement */,
+				0342746425168A8B0019B3F1 /* AccountsUI */,
+			);
+			productName = "Accounts (iOS)";
+			productReference = 0342743F251689C80019B3F1 /* Accounts (iOS) - Release.app */;
+			productType = "com.apple.product-type.application";
+		};
 		03CF3D13250D05420096F71C /* Accounts (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03CF3D42250D05430096F71C /* Build configuration list for PBXNativeTarget "Accounts (iOS)" */;
@@ -258,7 +306,6 @@
 			);
 			name = "Accounts (macOS)";
 			packageProductDependencies = (
-				030BCEE9251444A9001EE47D /* AccountsCoreDataManagement */,
 				030BCEEB251444A9001EE47D /* DataManagement */,
 				030BCEED251444A9001EE47D /* NewMovement */,
 			);
@@ -337,6 +384,12 @@
 				es,
 			);
 			mainGroup = 03CF3D04250D05410096F71C;
+			packageReferences = (
+				0342744B25168A2E0019B3F1 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */,
+				0342745325168A540019B3F1 /* XCRemoteSwiftPackageReference "accounts-data-management" */,
+				0342745B25168A6F0019B3F1 /* XCRemoteSwiftPackageReference "accounts-new-movement" */,
+				0342746325168A8B0019B3F1 /* XCRemoteSwiftPackageReference "accounts-ui" */,
+			);
 			productRefGroup = 03CF3D15250D05420096F71C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -345,11 +398,23 @@
 				03CF3D1B250D05420096F71C /* Accounts (macOS) */,
 				03CF3D23250D05420096F71C /* Tests iOS */,
 				03CF3D2E250D05430096F71C /* Tests macOS */,
+				03427428251689C70019B3F1 /* Accounts (iOS) - Release */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		03427437251689C70019B3F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03427438251689C70019B3F1 /* IncomeData.json in Resources */,
+				03427439251689C70019B3F1 /* ExpeditureData.json in Resources */,
+				0342743A251689C70019B3F1 /* Assets.xcassets in Resources */,
+				0342743B251689C70019B3F1 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03CF3D12250D05420096F71C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,6 +454,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0342742D251689C70019B3F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0342742E251689C70019B3F1 /* AccountTabView.swift in Sources */,
+				0342742F251689C70019B3F1 /* NewMovementResources.swift in Sources */,
+				03427430251689C70019B3F1 /* Strings.swift in Sources */,
+				03427431251689C70019B3F1 /* AccountsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03CF3D10250D05420096F71C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -455,6 +531,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0342743D251689C70019B3F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48L72N5ZP6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Accounts (iOS) copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.Accounts.release;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0342743E251689C70019B3F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48L72N5ZP6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Accounts (iOS) copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.Accounts.release;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		03CF3D40250D05430096F71C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -751,6 +872,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0342743C251689C70019B3F1 /* Build configuration list for PBXNativeTarget "Accounts (iOS) - Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0342743D251689C70019B3F1 /* Debug */,
+				0342743E251689C70019B3F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		03CF3D08250D05410096F71C /* Build configuration list for PBXProject "Accounts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -798,11 +928,42 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCSwiftPackageProductDependency section */
-		030BCEE9251444A9001EE47D /* AccountsCoreDataManagement */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = AccountsCoreDataManagement;
+/* Begin XCRemoteSwiftPackageReference section */
+		0342744B25168A2E0019B3F1 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bastianX6/accounts-coredata-management";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
 		};
+		0342745325168A540019B3F1 /* XCRemoteSwiftPackageReference "accounts-data-management" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bastianX6/accounts-data-management";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+		0342745B25168A6F0019B3F1 /* XCRemoteSwiftPackageReference "accounts-new-movement" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bastianX6/accounts-new-movement";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+		0342746325168A8B0019B3F1 /* XCRemoteSwiftPackageReference "accounts-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bastianX6/accounts-ui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
 		030BCEEB251444A9001EE47D /* DataManagement */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DataManagement;
@@ -813,6 +974,26 @@
 		};
 		030BCEF725156A6E001EE47D /* AccountsUI */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = AccountsUI;
+		};
+		0342744C25168A2E0019B3F1 /* AccountsCoreDataManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0342744B25168A2E0019B3F1 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */;
+			productName = AccountsCoreDataManagement;
+		};
+		0342745425168A540019B3F1 /* DataManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0342745325168A540019B3F1 /* XCRemoteSwiftPackageReference "accounts-data-management" */;
+			productName = DataManagement;
+		};
+		0342745C25168A6F0019B3F1 /* NewMovement */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0342745B25168A6F0019B3F1 /* XCRemoteSwiftPackageReference "accounts-new-movement" */;
+			productName = NewMovement;
+		};
+		0342746425168A8B0019B3F1 /* AccountsUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0342746325168A8B0019B3F1 /* XCRemoteSwiftPackageReference "accounts-ui" */;
 			productName = AccountsUI;
 		};
 		03D156E22514357B001E1133 /* AccountsCoreDataManagement */ = {

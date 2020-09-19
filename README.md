@@ -1,2 +1,2 @@
 # accounts
-This is another attempt to build an entire app using SwiftUi across all apple devices
+This is another attempt to build an entire app using SwiftUI across all apple devices
