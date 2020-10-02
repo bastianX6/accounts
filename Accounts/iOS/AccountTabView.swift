@@ -8,7 +8,7 @@
 import AccountsCoreDataManagement
 import AccountsUI
 import MovementListCommon
-import NewMovement
+import NewMovement_iOS
 import SwiftUI
 
 struct AccountTabView: View {
@@ -58,7 +58,7 @@ struct AccountTabView: View {
         let dataModel = NewMovementViewDataModel(dataSource: dataSource,
                                                  incomeData: incomeData,
                                                  expeditureData: expeditureData)
-        return NewMovement.ContainerView(dataModel: dataModel)
+        return NewMovement_iOS.ContainerView(dataModel: dataModel)
     }
 
     private var dashboardView: some View {
