@@ -20,9 +20,9 @@
 		0322B0CA251580B2001EB2BC /* IncomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0C8251580B2001EB2BC /* IncomeData.json */; };
 		0322B0D025158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
 		0322B0D125158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
-		03A7DD0F2527A40800E178F8 /* NewMovement-iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03A7DD0E2527A40800E178F8 /* NewMovement-iOS */; };
 		03A7DD2A2527A66300E178F8 /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03A7DD292527A66300E178F8 /* AccountsUI */; };
-		03A7DD452527B7CC00E178F8 /* MovementList-iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03A7DD442527B7CC00E178F8 /* MovementList-iOS */; };
+		03B6892A2527D451005E23FB /* MovementList_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03B689292527D451005E23FB /* MovementList_iOS */; };
+		03B689322527D762005E23FB /* NewMovement_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03B689312527D762005E23FB /* NewMovement_iOS */; };
 		03CF3D29250D05430096F71C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D28250D05430096F71C /* Tests_iOS.swift */; };
 		03CF3D34250D05430096F71C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D33250D05430096F71C /* Tests_macOS.swift */; };
 		03CF3D38250D05430096F71C /* AccountsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D0C250D05420096F71C /* AccountsApp.swift */; };
@@ -78,9 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A7DD452527B7CC00E178F8 /* MovementList-iOS in Frameworks */,
 				030BCEF825156A6E001EE47D /* AccountsUI in Frameworks */,
-				03A7DD0F2527A40800E178F8 /* NewMovement-iOS in Frameworks */,
+				03B689322527D762005E23FB /* NewMovement_iOS in Frameworks */,
+				03B6892A2527D451005E23FB /* MovementList_iOS in Frameworks */,
 				03D156E72514357B001E1133 /* DataManagement in Frameworks */,
 				03D156E32514357B001E1133 /* AccountsCoreDataManagement in Frameworks */,
 			);
@@ -237,8 +237,8 @@
 				03D156E22514357B001E1133 /* AccountsCoreDataManagement */,
 				03D156E62514357B001E1133 /* DataManagement */,
 				030BCEF725156A6E001EE47D /* AccountsUI */,
-				03A7DD0E2527A40800E178F8 /* NewMovement-iOS */,
-				03A7DD442527B7CC00E178F8 /* MovementList-iOS */,
+				03B689292527D451005E23FB /* MovementList_iOS */,
+				03B689312527D762005E23FB /* NewMovement_iOS */,
 			);
 			productName = "Accounts (iOS)";
 			productReference = 03CF3D14250D05420096F71C /* Accounts.app */;
@@ -809,17 +809,17 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = AccountsUI;
 		};
-		03A7DD0E2527A40800E178F8 /* NewMovement-iOS */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = "NewMovement-iOS";
-		};
 		03A7DD292527A66300E178F8 /* AccountsUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AccountsUI;
 		};
-		03A7DD442527B7CC00E178F8 /* MovementList-iOS */ = {
+		03B689292527D451005E23FB /* MovementList_iOS */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = "MovementList-iOS";
+			productName = MovementList_iOS;
+		};
+		03B689312527D762005E23FB /* NewMovement_iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NewMovement_iOS;
 		};
 		03D156E22514357B001E1133 /* AccountsCoreDataManagement */ = {
 			isa = XCSwiftPackageProductDependency;
