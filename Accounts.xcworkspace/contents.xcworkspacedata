@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../accounts-movement-list">
+   </FileRef>
+   <FileRef
       location = "group:../accounts-new-movement">
    </FileRef>
    <FileRef

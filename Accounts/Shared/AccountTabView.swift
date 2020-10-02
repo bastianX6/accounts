@@ -7,6 +7,7 @@
 
 import AccountsCoreDataManagement
 import AccountsUI
+import MovementListCommon
 import NewMovement
 import SwiftUI
 
@@ -65,7 +66,15 @@ struct AccountTabView: View {
     }
 
     private var expensesView: some View {
-        Text("Expenses view")
+        guard let expeditureData = try? NewMovementResourcesReeader.shared.readExpeditureData() else {
+            fatalError("Can't read expediture data")
+        }
+
+        let dataSource = CoreDataSourceRead()
+
+        let dataModel = MovementListDataModel(dataSource: dataSource, resources: expeditureData)
+
+        return MovementListCommon.ContainerView(dataModel: dataModel)
     }
 
     private var incomesView: some View {
