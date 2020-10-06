@@ -5,6 +5,7 @@
 //  Created by Bastián Véliz Vega on 12-09-20.
 //
 
+import AccountsUI
 import SwiftUI
 
 @main
@@ -17,9 +18,9 @@ struct AccountsApp: App {
 
     private var mainView: some View {
         #if os(iOS)
-            return AnyView(AccountTabView())
+            return MainView_iPhone().eraseToAnyView()
         #else
-            return AnyView(Text("Main view"))
+            return Text("Main view").eraseToAnyView()
         #endif
     }
 }
