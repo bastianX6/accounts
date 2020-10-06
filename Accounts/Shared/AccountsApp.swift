@@ -11,7 +11,15 @@ import SwiftUI
 struct AccountsApp: App {
     var body: some Scene {
         WindowGroup {
-            AccountTabView()
+            self.mainView
         }
+    }
+
+    private var mainView: some View {
+        #if os(iOS)
+            return AnyView(AccountTabView())
+        #else
+            return AnyView(Text("Main view"))
+        #endif
     }
 }

@@ -7,8 +7,8 @@
 
 import AccountsCoreDataManagement
 import AccountsUI
-import MovementListCommon
-import NewMovement
+import MovementList_iOS
+import NewMovement_iOS
 import SwiftUI
 
 struct AccountTabView: View {
@@ -58,7 +58,7 @@ struct AccountTabView: View {
         let dataModel = NewMovementViewDataModel(dataSource: dataSource,
                                                  incomeData: incomeData,
                                                  expeditureData: expeditureData)
-        return NewMovement.ContainerView(dataModel: dataModel)
+        return NewMovement_iOS.ContainerView(dataModel: dataModel)
     }
 
     private var dashboardView: some View {
@@ -72,13 +72,25 @@ struct AccountTabView: View {
 
         let dataSource = CoreDataSourceRead()
 
-        let dataModel = MovementListDataModel(dataSource: dataSource, resources: expeditureData)
+        let dataModel = MovementListDataModel(dataSource: dataSource,
+                                              resources: expeditureData,
+                                              isIncome: false)
 
-        return MovementListCommon.ContainerView(dataModel: dataModel)
+        return MovementList_iOS.ContainerView(dataModel: dataModel)
     }
 
     private var incomesView: some View {
-        Text("Incomes view")
+        guard let incomeData = try? NewMovementResourcesReeader.shared.readIncomeData() else {
+            fatalError("Can't read income data")
+        }
+
+        let dataSource = CoreDataSourceRead()
+
+        let dataModel = MovementListDataModel(dataSource: dataSource,
+                                              resources: incomeData,
+                                              isIncome: true)
+
+        return MovementList_iOS.ContainerView(dataModel: dataModel)
     }
 }
 
