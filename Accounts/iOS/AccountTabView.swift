@@ -43,6 +43,7 @@ struct AccountTabView: View {
                 .tag(3)
         }
         .accentColor(AppAppearance.shared.accentColor)
+        .phoneOnlyStackNavigationView()
     }
 
     private var newMovementView: some View {

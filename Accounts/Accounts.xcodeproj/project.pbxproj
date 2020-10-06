@@ -19,6 +19,8 @@
 		0322B0CA251580B2001EB2BC /* IncomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0C8251580B2001EB2BC /* IncomeData.json */; };
 		0322B0D025158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
 		0322B0D125158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
+		03753A0D252D008C0011A116 /* View+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03753A0C252D008C0011A116 /* View+Custom.swift */; };
+		03753A0E252D008C0011A116 /* View+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03753A0C252D008C0011A116 /* View+Custom.swift */; };
 		03A7DD2A2527A66300E178F8 /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03A7DD292527A66300E178F8 /* AccountsUI */; };
 		03BCA780252CF6F800347921 /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA77F252CF6F800347921 /* AccountsUI */; };
 		03BCA787252CF77900347921 /* NewMovement_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA786252CF77900347921 /* NewMovement_iOS */; };
@@ -71,6 +73,7 @@
 		0322B0C125157EE3001EB2BC /* ExpeditureData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ExpeditureData.json; sourceTree = "<group>"; };
 		0322B0C8251580B2001EB2BC /* IncomeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IncomeData.json; sourceTree = "<group>"; };
 		0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMovementResources.swift; sourceTree = "<group>"; };
+		03753A0C252D008C0011A116 /* View+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Custom.swift"; sourceTree = "<group>"; };
 		03BCA7C3252CF80500347921 /* Accounts (iOS) - DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accounts (iOS) - DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BCA7C4252CF80500347921 /* DEV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DEV-Info.plist"; sourceTree = "<group>"; };
 		03CF3D0C250D05420096F71C /* AccountsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsApp.swift; sourceTree = "<group>"; };
@@ -166,6 +169,14 @@
 			path = Json;
 			sourceTree = "<group>";
 		};
+		03753A0B252D00720011A116 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03753A0C252D008C0011A116 /* View+Custom.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		0398C2FA2513F9070022E279 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +223,7 @@
 		03CF3D16250D05420096F71C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				03753A0B252D00720011A116 /* Extensions */,
 				0322B08425157467001EB2BC /* AccountTabView.swift */,
 				03BCA7C4252CF80500347921 /* DEV-Info.plist */,
 				03CF3D17250D05420096F71C /* Info.plist */,
@@ -465,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03BCA7B1252CF80500347921 /* AccountTabView.swift in Sources */,
+				03753A0E252D008C0011A116 /* View+Custom.swift in Sources */,
 				03BCA7B2252CF80500347921 /* NewMovementResources.swift in Sources */,
 				03BCA7B3252CF80500347921 /* Strings.swift in Sources */,
 				03BCA7B4252CF80500347921 /* AccountsApp.swift in Sources */,
@@ -476,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0322B08525157467001EB2BC /* AccountTabView.swift in Sources */,
+				03753A0D252D008C0011A116 /* View+Custom.swift in Sources */,
 				0322B0D025158C7B001EB2BC /* NewMovementResources.swift in Sources */,
 				0322B0BA251578D4001EB2BC /* Strings.swift in Sources */,
 				03CF3D38250D05430096F71C /* AccountsApp.swift in Sources */,
