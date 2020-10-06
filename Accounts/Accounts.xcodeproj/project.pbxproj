@@ -72,7 +72,7 @@
 		0322B0C8251580B2001EB2BC /* IncomeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IncomeData.json; sourceTree = "<group>"; };
 		0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMovementResources.swift; sourceTree = "<group>"; };
 		03BCA7C3252CF80500347921 /* Accounts (iOS) - DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accounts (iOS) - DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		03BCA7C4252CF80500347921 /* DEV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DEV-Info.plist"; path = "/Users/bastian/DEV/Project-Accounts/accounts/Accounts/DEV-Info.plist"; sourceTree = "<absolute>"; };
+		03BCA7C4252CF80500347921 /* DEV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DEV-Info.plist"; sourceTree = "<group>"; };
 		03CF3D0C250D05420096F71C /* AccountsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsApp.swift; sourceTree = "<group>"; };
 		03CF3D0F250D05420096F71C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03CF3D14250D05420096F71C /* Accounts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accounts.app; sourceTree = BUILT_PRODUCTS_DIR; };

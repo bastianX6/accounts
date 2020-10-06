@@ -2,6 +2,51 @@
   "object": {
     "pins": [
       {
+        "package": "AccountsCoreDataManagement",
+        "repositoryURL": "https://github.com/bastianX6/accounts-coredata-management.git",
+        "state": {
+          "branch": null,
+          "revision": "7808dfbeec3a8fb7aaf87da38733b5ea1542aa79",
+          "version": "1.1.0"
+        }
+      },
+      {
+        "package": "DataManagement",
+        "repositoryURL": "https://github.com/bastianX6/accounts-data-management.git",
+        "state": {
+          "branch": null,
+          "revision": "3d924173df7f38ed6103a1a86523782aa39bd9e5",
+          "version": "1.0.2"
+        }
+      },
+      {
+        "package": "MovementList",
+        "repositoryURL": "https://github.com/bastianX6/accounts-movement-list.git",
+        "state": {
+          "branch": null,
+          "revision": "a3fe6882e3bbc7d63bb483d018694d2670645062",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "NewMovement",
+        "repositoryURL": "https://github.com/bastianX6/accounts-new-movement.git",
+        "state": {
+          "branch": null,
+          "revision": "91f58404edfed8bde38f728550b795d105b757f1",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "AccountsUI",
+        "repositoryURL": "https://github.com/bastianX6/accounts-ui.git",
+        "state": {
+          "branch": null,
+          "revision": "74a10df8da7d64fcfe3dda3a148098ea90b6185f",
+          "version": "1.1.0"
+        }
+      },
+      {
         "package": "CombineCoreData",
         "repositoryURL": "https://github.com/Alexander-Ignition/CombineCoreData",
         "state": {
