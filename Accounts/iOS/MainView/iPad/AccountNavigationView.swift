@@ -17,6 +17,7 @@ struct AccountNavigationView: View {
             self.selectedView
         }
         .accentColor(AppAppearance.shared.accentColor)
+        .environmentObject(AppAppearance.shared)
     }
 
     private var iPadListView: some View {
@@ -28,6 +29,7 @@ struct AccountNavigationView: View {
                     self.selectedMenu = element.section
                 })
         }
+        .navigationTitle(L10n.myAccounts)
     }
 
     private var selectedView: some View {

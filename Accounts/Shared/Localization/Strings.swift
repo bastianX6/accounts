@@ -16,6 +16,8 @@ internal enum L10n {
   internal static let expenses = L10n.tr("Localizable", "Expenses")
   /// Ingresos
   internal static let incomes = L10n.tr("Localizable", "Incomes")
+  /// Mis cuentas
+  internal static let myAccounts = L10n.tr("Localizable", "My accounts")
   /// Resumen
   internal static let overview = L10n.tr("Localizable", "Overview")
 }
