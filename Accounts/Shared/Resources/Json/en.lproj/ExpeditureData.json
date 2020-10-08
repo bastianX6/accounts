@@ -1,0 +1,96 @@
+{
+  "categories": [
+    {
+      "id": "ff7d2c92-a5e7-11e9-a2a3-2a2ae2dbcce4",
+      "name": "Basic services",
+      "color": "yellow",
+      "icon": "bolt.circle.fill"
+    },
+    {
+      "id": "ff7d279c-a5e7-11e9-a2a3-2a2ae2dbcce4",
+      "name": "Supermarket",
+      "color": "green",
+      "icon": "cart.fill"
+    },
+    {
+      "id": "ff7d3070-a5e7-11e9-a2a3-2a2ae2dbcce4",
+      "name": "Transport and trips",
+      "color": "gray",
+      "icon": "car.circle.fill"
+    },
+    {
+      "id": "ff7d21fc-a5e7-11e9-a2a3-2a2ae2dbcce4",
+      "name": "Online Services",
+      "color": "blue",
+      "icon": "car.circle.fill"
+    },
+    {
+      "id": "ff7d28d2-a5e7-11e9-a2a3-2a2ae2dbcce4",
+      "name": "Delivery and parties",
+      "color": "red",
+      "icon": "flame.fill"
+    },
+    {
+      "id": "f69d8288-be1d-4de4-8be4-9aa758754955",
+      "name": "Home",
+      "color": "orange",
+      "icon": "house.fill"
+    },
+    {
+      "id": "f0b21e17-ea43-4ce2-8f6e-dc6b492733a7",
+      "name": "Wardrobe and footwear",
+      "color": "indigo",
+      "icon": "bag.circle.fill"
+    },
+    {
+      "id": "ff7d31e2-a5e7-11e9-a2a3-2a2ae2dbcce4",
+      "name": "Others",
+      "color": "teal",
+      "icon": "questionmark.circle.fill"
+    }
+  ],
+  "stores": [
+    {
+      "id": "ff7d3584-a5e7-11e9-a2a3-2a2ae2dbcce4",
+      "name": "Falabella",
+      "color": "green",
+      "icon": "creditcard.fill"
+    },
+    {
+      "id": "ff7d36a6-a5e7-11e9-a2a3-2a2ae2dbcce4",
+      "name": "Santander",
+      "color": "red",
+      "icon": "creditcard.fill"
+    },
+    {
+      "id": "ff7d37c8-a5e7-11e9-a2a3-2a2ae2dbcce4",
+      "name": "Banco de Chile",
+      "color": "blue",
+      "icon": "creditcard.fill"
+    },
+    {
+      "id": "ff7d3b1a-a5e7-11e9-a2a3-2a2ae2dbcce4",
+      "name": "Scotiabank",
+      "color": "red",
+      "icon": "creditcard.fill"
+    },
+    {
+      "id": "fe0acfac-3870-4c5f-bd4a-fb53ad3c2b68",
+      "name": "Tarjeta Cencosud",
+      "color": "indigo",
+      "icon": "creditcard.fill"
+    },
+    {
+      "id": "cd24633a-b188-47d7-b6c1-567a23a377ee",
+      "name": "Itau",
+      "color": "orange",
+      "icon": "creditcard.fill"
+    },
+    {
+      "id": "ff7d3c64-a5e7-11e9-a2a3-2a2ae2dbcce4",
+      "name": "Other",
+      "color": "teal",
+      "icon": "questionmark.circle.fill"
+    }
+  ]
+}

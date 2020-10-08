@@ -1,0 +1,30 @@
+{
+  "categories": [
+    {
+      "id": "41467810-8b54-49fe-ba73-7187e57e3bd8",
+      "name": "Salary",
+      "color": "blue",
+      "icon": "dollarsign.square.fill"
+    },
+    {
+      "id": "961fbc85-bed8-40a1-a679-2c984be9abfb",
+      "name": "Transfers",
+      "color": "green",
+      "icon": "dollarsign.square.fill"
+    },
+    {
+      "id": "59868f5c-4e4b-4d4e-b291-306998f3a443",
+      "name": "Others",
+      "color": "green",
+      "icon": "dollarsign.square.fill"
+    }
+  ],
+  "stores": [
+    {
+      "id": "2a574bba-5c27-43b4-b6bd-42de1e030d26",
+      "name": "Incomes",
+      "color": "green",
+      "icon": "dollarsign.circle.fill"
+    }
+  ]
+}
