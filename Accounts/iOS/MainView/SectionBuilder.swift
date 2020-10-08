@@ -48,7 +48,8 @@ class SectionBuilder {
     }
 
     var expensesView: some View {
-        let dataModel = MovementListDataModel(dataSource: self.dataSourceRead,
+        let dataModel = MovementListDataModel(dataSourceRead: self.dataSourceRead,
+                                              dataSourceModify: self.dataSourceModify,
                                               resources: self.expeditureData,
                                               isIncome: false)
 
@@ -56,7 +57,8 @@ class SectionBuilder {
     }
 
     var incomesView: some View {
-        let dataModel = MovementListDataModel(dataSource: self.dataSourceRead,
+        let dataModel = MovementListDataModel(dataSourceRead: self.dataSourceRead,
+                                              dataSourceModify: self.dataSourceModify,
                                               resources: self.incomeData,
                                               isIncome: true)
 
