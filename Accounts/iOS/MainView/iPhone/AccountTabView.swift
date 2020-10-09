@@ -50,7 +50,6 @@ struct AccountTabView: View {
         }
         .accentColor(AppAppearance.shared.accentColor)
         .phoneOnlyStackNavigationView()
-        .environmentObject(AppAppearance.shared)
     }
 }
 

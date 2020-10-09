@@ -17,8 +17,6 @@ struct AccountNavigationView: View {
             self.selectedView
         }
         .accentColor(AppAppearance.shared.accentColor)
-        .environmentObject(AppAppearance.shared)
-        .environmentObject(AccountsDependencyResolver.shared)
     }
 
     private var iPadListView: some View {

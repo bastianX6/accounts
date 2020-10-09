@@ -18,7 +18,9 @@ struct AccountsApp: App {
 
     private var mainView: some View {
         #if os(iOS)
-            return MainView_iPhone().eraseToAnyView()
+            return MainView_iPhone()
+                .environmentObject(AccountsDependencyResolver.shared)
+                .eraseToAnyView()
         #else
             return Text("Main view").eraseToAnyView()
         #endif
