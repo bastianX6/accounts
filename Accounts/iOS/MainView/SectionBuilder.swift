@@ -40,7 +40,7 @@ class SectionBuilder {
         let dataModel = NewMovementViewDataModel(dataSource: self.dataSourceModify,
                                                  incomeData: self.incomeData,
                                                  expeditureData: self.expeditureData)
-        return NewMovement_iOS.ContainerView(dataModel: dataModel)
+        return NewMovement_iOS.MovementTypeSelectorView(dataModel: dataModel)
     }
 
     var dashboardView: some View {
