@@ -39,7 +39,7 @@ class SectionBuilder {
     var newMovementView: some View {
         let dataModel = NewMovementViewDataModel(dataSource: self.dataSourceModify,
                                                  incomeData: self.incomeData,
-                                                 expeditureData: self.expeditureData)
+                                                 expenditureData: self.expeditureData)
         return NewMovement_iOS.MovementTypeSelectorView(dataModel: dataModel)
     }
 
