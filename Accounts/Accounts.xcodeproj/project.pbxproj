@@ -54,6 +54,7 @@
 		03BCA7D4252CF9DA00347921 /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA7D3252CF9DA00347921 /* DataManagement */; };
 		03BCA7D6252CF9DA00347921 /* MovementList_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA7D5252CF9DA00347921 /* MovementList_iOS */; };
 		03BCA7D8252CF9DA00347921 /* NewMovement_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA7D7252CF9DA00347921 /* NewMovement_iOS */; };
+		03BD351B253CF07600608E33 /* DependencyResolver in Frameworks */ = {isa = PBXBuildFile; productRef = 03BD351A253CF07600608E33 /* DependencyResolver */; };
 		03CF3D29250D05430096F71C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D28250D05430096F71C /* Tests_iOS.swift */; };
 		03CF3D34250D05430096F71C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D33250D05430096F71C /* Tests_macOS.swift */; };
 		03CF3D38250D05430096F71C /* AccountsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D0C250D05420096F71C /* AccountsApp.swift */; };
@@ -138,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03BCA787252CF77900347921 /* NewMovement_iOS in Frameworks */,
+				03BD351B253CF07600608E33 /* DependencyResolver in Frameworks */,
 				03BCA79C252CF7C200347921 /* AccountsCoreDataManagement in Frameworks */,
 				03BCA795252CF7B000347921 /* DataManagement in Frameworks */,
 				03DB5141252D217F008A2F1E /* CloudKit.framework in Frameworks */,
@@ -376,6 +378,7 @@
 				03BCA78D252CF79000347921 /* MovementList_iOS */,
 				03BCA794252CF7B000347921 /* DataManagement */,
 				03BCA79B252CF7C200347921 /* AccountsCoreDataManagement */,
+				03BD351A253CF07600608E33 /* DependencyResolver */,
 			);
 			productName = "Accounts (iOS)";
 			productReference = 03CF3D14250D05420096F71C /* Accounts.app */;
@@ -479,6 +482,7 @@
 				03BCA78C252CF79000347921 /* XCRemoteSwiftPackageReference "accounts-movement-list" */,
 				03BCA793252CF7B000347921 /* XCRemoteSwiftPackageReference "accounts-data-management" */,
 				03BCA79A252CF7C200347921 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */,
+				03BD3519253CF07600608E33 /* XCRemoteSwiftPackageReference "accounts-dependency-resolver" */,
 			);
 			productRefGroup = 03CF3D15250D05420096F71C /* Products */;
 			projectDirPath = "";
@@ -1105,6 +1109,14 @@
 				minimumVersion = 1.1.0;
 			};
 		};
+		03BD3519253CF07600608E33 /* XCRemoteSwiftPackageReference "accounts-dependency-resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bastianX6/accounts-dependency-resolver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1164,6 +1176,11 @@
 		03BCA7D7252CF9DA00347921 /* NewMovement_iOS */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NewMovement_iOS;
+		};
+		03BD351A253CF07600608E33 /* DependencyResolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03BD3519253CF07600608E33 /* XCRemoteSwiftPackageReference "accounts-dependency-resolver" */;
+			productName = DependencyResolver;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

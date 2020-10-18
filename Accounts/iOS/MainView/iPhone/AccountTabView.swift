@@ -20,13 +20,6 @@ struct AccountTabView: View {
 
     var body: some View {
         TabView {
-            SectionBuilder.shared.dashboardView
-                .tabItem {
-                    Image(systemName: self.dashboardMenu.systemIcon)
-                    Text(self.dashboardMenu.name)
-                }
-                .tag(0)
-
             SectionBuilder.shared.expensesView
                 .tabItem {
                     Image(systemName: self.expensesMenu.systemIcon)
