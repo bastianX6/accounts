@@ -7,30 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0307C701252D112400C60327 /* SectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0307C700252D112400C60327 /* SectionBuilder.swift */; };
+		0307C702252D112400C60327 /* SectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0307C700252D112400C60327 /* SectionBuilder.swift */; };
+		0307C709252D11E200C60327 /* AccountNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0307C708252D11E200C60327 /* AccountNavigationView.swift */; };
+		0307C70A252D11E200C60327 /* AccountNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0307C708252D11E200C60327 /* AccountNavigationView.swift */; };
+		0307C711252D156F00C60327 /* MainView_iPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0307C710252D156F00C60327 /* MainView_iPhone.swift */; };
+		0307C712252D156F00C60327 /* MainView_iPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0307C710252D156F00C60327 /* MainView_iPhone.swift */; };
+		03082FED252F569D00954D98 /* IncomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 03082FF1252F569D00954D98 /* IncomeData.json */; };
+		03082FEE252F569D00954D98 /* IncomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 03082FF1252F569D00954D98 /* IncomeData.json */; };
+		03082FEF252F569D00954D98 /* IncomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 03082FF1252F569D00954D98 /* IncomeData.json */; };
+		03082FF9252F56C100954D98 /* ExpeditureData.json in Resources */ = {isa = PBXBuildFile; fileRef = 03082FFD252F56C100954D98 /* ExpeditureData.json */; };
+		03082FFA252F56C100954D98 /* ExpeditureData.json in Resources */ = {isa = PBXBuildFile; fileRef = 03082FFD252F56C100954D98 /* ExpeditureData.json */; };
+		03082FFB252F56C100954D98 /* ExpeditureData.json in Resources */ = {isa = PBXBuildFile; fileRef = 03082FFD252F56C100954D98 /* ExpeditureData.json */; };
 		030BCEEC251444A9001EE47D /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 030BCEEB251444A9001EE47D /* DataManagement */; };
 		0322B08525157467001EB2BC /* AccountTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B08425157467001EB2BC /* AccountTabView.swift */; };
 		0322B0A725157703001EB2BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0AA25157703001EB2BC /* Localizable.strings */; };
 		0322B0A825157703001EB2BC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0AA25157703001EB2BC /* Localizable.strings */; };
 		0322B0BA251578D4001EB2BC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0B9251578D4001EB2BC /* Strings.swift */; };
 		0322B0BB251578D4001EB2BC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0B9251578D4001EB2BC /* Strings.swift */; };
-		0322B0C225157EE3001EB2BC /* ExpeditureData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0C125157EE3001EB2BC /* ExpeditureData.json */; };
-		0322B0C325157EE3001EB2BC /* ExpeditureData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0C125157EE3001EB2BC /* ExpeditureData.json */; };
-		0322B0C9251580B2001EB2BC /* IncomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0C8251580B2001EB2BC /* IncomeData.json */; };
-		0322B0CA251580B2001EB2BC /* IncomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0C8251580B2001EB2BC /* IncomeData.json */; };
 		0322B0D025158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
 		0322B0D125158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
+		03753A0D252D008C0011A116 /* View+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03753A0C252D008C0011A116 /* View+Custom.swift */; };
+		03753A0E252D008C0011A116 /* View+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03753A0C252D008C0011A116 /* View+Custom.swift */; };
+		03753A1E252D0F300011A116 /* MainViewMenuElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03753A1D252D0F300011A116 /* MainViewMenuElement.swift */; };
+		03753A1F252D0F300011A116 /* MainViewMenuElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03753A1D252D0F300011A116 /* MainViewMenuElement.swift */; };
+		03753A2B252D0F690011A116 /* MenuSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03753A2A252D0F690011A116 /* MenuSections.swift */; };
+		03753A2C252D0F690011A116 /* MenuSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03753A2A252D0F690011A116 /* MenuSections.swift */; };
 		03A7DD2A2527A66300E178F8 /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03A7DD292527A66300E178F8 /* AccountsUI */; };
-		03BCA780252CF6F800347921 /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA77F252CF6F800347921 /* AccountsUI */; };
-		03BCA787252CF77900347921 /* NewMovement_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA786252CF77900347921 /* NewMovement_iOS */; };
-		03BCA78E252CF79000347921 /* MovementList_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA78D252CF79000347921 /* MovementList_iOS */; };
-		03BCA795252CF7B000347921 /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA794252CF7B000347921 /* DataManagement */; };
-		03BCA79C252CF7C200347921 /* AccountsCoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA79B252CF7C200347921 /* AccountsCoreDataManagement */; };
+		03BBB0AB2530E9E0009C91E0 /* DependencyResolver in Frameworks */ = {isa = PBXBuildFile; productRef = 03BBB0AA2530E9E0009C91E0 /* DependencyResolver */; };
+		03BBB0B32530F5B0009C91E0 /* AccountsDependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBB0B22530F5B0009C91E0 /* AccountsDependencyResolver.swift */; };
+		03BBB0B42530F5B0009C91E0 /* AccountsDependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBB0B22530F5B0009C91E0 /* AccountsDependencyResolver.swift */; };
+		03BBB0B52530F5B0009C91E0 /* AccountsDependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBB0B22530F5B0009C91E0 /* AccountsDependencyResolver.swift */; };
 		03BCA7B1252CF80500347921 /* AccountTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B08425157467001EB2BC /* AccountTabView.swift */; };
 		03BCA7B2252CF80500347921 /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
 		03BCA7B3252CF80500347921 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0B9251578D4001EB2BC /* Strings.swift */; };
 		03BCA7B4252CF80500347921 /* AccountsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D0C250D05420096F71C /* AccountsApp.swift */; };
-		03BCA7BC252CF80500347921 /* IncomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0C8251580B2001EB2BC /* IncomeData.json */; };
-		03BCA7BD252CF80500347921 /* ExpeditureData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0C125157EE3001EB2BC /* ExpeditureData.json */; };
 		03BCA7BE252CF80500347921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CF3D0F250D05420096F71C /* Assets.xcassets */; };
 		03BCA7BF252CF80500347921 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0AA25157703001EB2BC /* Localizable.strings */; };
 		03BCA7D0252CF9DA00347921 /* AccountsCoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA7CF252CF9DA00347921 /* AccountsCoreDataManagement */; };
@@ -44,6 +55,14 @@
 		03CF3D39250D05430096F71C /* AccountsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D0C250D05420096F71C /* AccountsApp.swift */; };
 		03CF3D3E250D05430096F71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CF3D0F250D05420096F71C /* Assets.xcassets */; };
 		03CF3D3F250D05430096F71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CF3D0F250D05420096F71C /* Assets.xcassets */; };
+		03DB5135252D1F8A008A2F1E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB5134252D1F8A008A2F1E /* CloudKit.framework */; };
+		03DB5141252D217F008A2F1E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB5134252D1F8A008A2F1E /* CloudKit.framework */; };
+		03F2B8DD253CF8BD00E44186 /* MovementList_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B8DC253CF8BD00E44186 /* MovementList_iOS */; };
+		03F2B8EA253CF8F600E44186 /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B8E9253CF8F600E44186 /* AccountsUI */; };
+		03F2B8F7253CF92300E44186 /* NewMovement_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B8F6253CF92300E44186 /* NewMovement_iOS */; };
+		03F2B90E253CF9B500E44186 /* DependencyResolver in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B90D253CF9B500E44186 /* DependencyResolver */; };
+		03F2B91B253CF9F300E44186 /* AccountsCoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B91A253CF9F300E44186 /* AccountsCoreDataManagement */; };
+		03F2B92D253CFA5D00E44186 /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B92C253CFA5D00E44186 /* DataManagement */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,13 +83,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0307C700252D112400C60327 /* SectionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBuilder.swift; sourceTree = "<group>"; };
+		0307C708252D11E200C60327 /* AccountNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountNavigationView.swift; sourceTree = "<group>"; };
+		0307C710252D156F00C60327 /* MainView_iPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView_iPhone.swift; sourceTree = "<group>"; };
+		03082FF0252F569D00954D98 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/IncomeData.json; sourceTree = "<group>"; };
+		03082FF8252F56B900954D98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/IncomeData.json; sourceTree = "<group>"; };
+		03082FFC252F56C100954D98 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = es; path = es.lproj/ExpeditureData.json; sourceTree = "<group>"; };
+		03083003252F56C400954D98 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/ExpeditureData.json; sourceTree = "<group>"; };
 		0322B08425157467001EB2BC /* AccountTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTabView.swift; sourceTree = "<group>"; };
 		0322B0A925157703001EB2BC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0322B0B325157706001EB2BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0322B0B9251578D4001EB2BC /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		0322B0C125157EE3001EB2BC /* ExpeditureData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ExpeditureData.json; sourceTree = "<group>"; };
-		0322B0C8251580B2001EB2BC /* IncomeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = IncomeData.json; sourceTree = "<group>"; };
 		0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMovementResources.swift; sourceTree = "<group>"; };
+		03753A0C252D008C0011A116 /* View+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Custom.swift"; sourceTree = "<group>"; };
+		03753A1D252D0F300011A116 /* MainViewMenuElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewMenuElement.swift; sourceTree = "<group>"; };
+		03753A2A252D0F690011A116 /* MenuSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSections.swift; sourceTree = "<group>"; };
+		03BBB0B22530F5B0009C91E0 /* AccountsDependencyResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsDependencyResolver.swift; sourceTree = "<group>"; };
 		03BCA7C3252CF80500347921 /* Accounts (iOS) - DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accounts (iOS) - DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03BCA7C4252CF80500347921 /* DEV-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DEV-Info.plist"; sourceTree = "<group>"; };
 		03CF3D0C250D05420096F71C /* AccountsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsApp.swift; sourceTree = "<group>"; };
@@ -86,6 +114,9 @@
 		03CF3D2F250D05430096F71C /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CF3D33250D05430096F71C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		03CF3D35250D05430096F71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03DB5133252D1F63008A2F1E /* Accounts (iOS) - DEV.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Accounts (iOS) - DEV.entitlements"; sourceTree = "<group>"; };
+		03DB5134252D1F8A008A2F1E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		03DB5140252D2179008A2F1E /* Accounts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Accounts.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +125,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				03BCA7D4252CF9DA00347921 /* DataManagement in Frameworks */,
+				03BBB0AB2530E9E0009C91E0 /* DependencyResolver in Frameworks */,
 				03BCA7D8252CF9DA00347921 /* NewMovement_iOS in Frameworks */,
 				03BCA7D6252CF9DA00347921 /* MovementList_iOS in Frameworks */,
+				03DB5135252D1F8A008A2F1E /* CloudKit.framework in Frameworks */,
 				03BCA7D2252CF9DA00347921 /* AccountsUI in Frameworks */,
 				03BCA7D0252CF9DA00347921 /* AccountsCoreDataManagement in Frameworks */,
 			);
@@ -105,11 +138,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03BCA787252CF77900347921 /* NewMovement_iOS in Frameworks */,
-				03BCA79C252CF7C200347921 /* AccountsCoreDataManagement in Frameworks */,
-				03BCA795252CF7B000347921 /* DataManagement in Frameworks */,
-				03BCA780252CF6F800347921 /* AccountsUI in Frameworks */,
-				03BCA78E252CF79000347921 /* MovementList_iOS in Frameworks */,
+				03F2B8F7253CF92300E44186 /* NewMovement_iOS in Frameworks */,
+				03F2B90E253CF9B500E44186 /* DependencyResolver in Frameworks */,
+				03F2B8DD253CF8BD00E44186 /* MovementList_iOS in Frameworks */,
+				03F2B8EA253CF8F600E44186 /* AccountsUI in Frameworks */,
+				03F2B92D253CFA5D00E44186 /* DataManagement in Frameworks */,
+				03F2B91B253CF9F300E44186 /* AccountsCoreDataManagement in Frameworks */,
+				03DB5141252D217F008A2F1E /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,23 +194,71 @@
 		0322B0C025157EB9001EB2BC /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				0322B0C8251580B2001EB2BC /* IncomeData.json */,
-				0322B0C125157EE3001EB2BC /* ExpeditureData.json */,
+				03082FF1252F569D00954D98 /* IncomeData.json */,
+				03082FFD252F56C100954D98 /* ExpeditureData.json */,
 				0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */,
 			);
 			path = Json;
 			sourceTree = "<group>";
 		};
+		03753A0B252D00720011A116 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03753A0C252D008C0011A116 /* View+Custom.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		03753A19252D0EEC0011A116 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				0322B08425157467001EB2BC /* AccountTabView.swift */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		03753A1A252D0EF40011A116 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				0307C708252D11E200C60327 /* AccountNavigationView.swift */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		03753A1C252D0F1A0011A116 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				03753A1A252D0EF40011A116 /* iPad */,
+				03753A19252D0EEC0011A116 /* iPhone */,
+				03753A1D252D0F300011A116 /* MainViewMenuElement.swift */,
+				03753A2A252D0F690011A116 /* MenuSections.swift */,
+				0307C700252D112400C60327 /* SectionBuilder.swift */,
+				0307C710252D156F00C60327 /* MainView_iPhone.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		0398C2FA2513F9070022E279 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				03DB5134252D1F8A008A2F1E /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03BBB0B12530F589009C91E0 /* DependencyResolver */ = {
+			isa = PBXGroup;
+			children = (
+				03BBB0B22530F5B0009C91E0 /* AccountsDependencyResolver.swift */,
+			);
+			path = DependencyResolver;
 			sourceTree = "<group>";
 		};
 		03CF3D04250D05410096F71C = {
 			isa = PBXGroup;
 			children = (
+				03DB5140252D2179008A2F1E /* Accounts.entitlements */,
+				03DB5133252D1F63008A2F1E /* Accounts (iOS) - DEV.entitlements */,
 				03CF3D09250D05410096F71C /* Shared */,
 				03CF3D16250D05420096F71C /* iOS */,
 				03CF3D1D250D05420096F71C /* macOS */,
@@ -189,6 +272,7 @@
 		03CF3D09250D05410096F71C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				03BBB0B12530F589009C91E0 /* DependencyResolver */,
 				0322B0B825157838001EB2BC /* Localization */,
 				0322B09F251576BA001EB2BC /* Resources */,
 				03CF3D0C250D05420096F71C /* AccountsApp.swift */,
@@ -212,7 +296,8 @@
 		03CF3D16250D05420096F71C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				0322B08425157467001EB2BC /* AccountTabView.swift */,
+				03753A1C252D0F1A0011A116 /* MainView */,
+				03753A0B252D00720011A116 /* Extensions */,
 				03BCA7C4252CF80500347921 /* DEV-Info.plist */,
 				03CF3D17250D05420096F71C /* Info.plist */,
 			);
@@ -268,6 +353,7 @@
 				03BCA7D3252CF9DA00347921 /* DataManagement */,
 				03BCA7D5252CF9DA00347921 /* MovementList_iOS */,
 				03BCA7D7252CF9DA00347921 /* NewMovement_iOS */,
+				03BBB0AA2530E9E0009C91E0 /* DependencyResolver */,
 			);
 			productName = "Accounts (iOS)";
 			productReference = 03BCA7C3252CF80500347921 /* Accounts (iOS) - DEV.app */;
@@ -287,11 +373,12 @@
 			);
 			name = "Accounts (iOS)";
 			packageProductDependencies = (
-				03BCA77F252CF6F800347921 /* AccountsUI */,
-				03BCA786252CF77900347921 /* NewMovement_iOS */,
-				03BCA78D252CF79000347921 /* MovementList_iOS */,
-				03BCA794252CF7B000347921 /* DataManagement */,
-				03BCA79B252CF7C200347921 /* AccountsCoreDataManagement */,
+				03F2B8DC253CF8BD00E44186 /* MovementList_iOS */,
+				03F2B8E9253CF8F600E44186 /* AccountsUI */,
+				03F2B8F6253CF92300E44186 /* NewMovement_iOS */,
+				03F2B90D253CF9B500E44186 /* DependencyResolver */,
+				03F2B91A253CF9F300E44186 /* AccountsCoreDataManagement */,
+				03F2B92C253CFA5D00E44186 /* DataManagement */,
 			);
 			productName = "Accounts (iOS)";
 			productReference = 03CF3D14250D05420096F71C /* Accounts.app */;
@@ -390,11 +477,12 @@
 			);
 			mainGroup = 03CF3D04250D05410096F71C;
 			packageReferences = (
-				03BCA77E252CF6F800347921 /* XCRemoteSwiftPackageReference "accounts-ui" */,
-				03BCA785252CF77900347921 /* XCRemoteSwiftPackageReference "accounts-new-movement" */,
-				03BCA78C252CF79000347921 /* XCRemoteSwiftPackageReference "accounts-movement-list" */,
-				03BCA793252CF7B000347921 /* XCRemoteSwiftPackageReference "accounts-data-management" */,
-				03BCA79A252CF7C200347921 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */,
+				03F2B8DB253CF8BD00E44186 /* XCRemoteSwiftPackageReference "accounts-movement-list" */,
+				03F2B8E8253CF8F600E44186 /* XCRemoteSwiftPackageReference "accounts-ui" */,
+				03F2B8F5253CF92300E44186 /* XCRemoteSwiftPackageReference "accounts-new-movement" */,
+				03F2B90C253CF9B500E44186 /* XCRemoteSwiftPackageReference "accounts-dependency-resolver" */,
+				03F2B919253CF9F300E44186 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */,
+				03F2B92B253CFA5D00E44186 /* XCRemoteSwiftPackageReference "accounts-data-management" */,
 			);
 			productRefGroup = 03CF3D15250D05420096F71C /* Products */;
 			projectDirPath = "";
@@ -414,8 +502,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03BCA7BC252CF80500347921 /* IncomeData.json in Resources */,
-				03BCA7BD252CF80500347921 /* ExpeditureData.json in Resources */,
+				03082FEE252F569D00954D98 /* IncomeData.json in Resources */,
+				03082FFA252F56C100954D98 /* ExpeditureData.json in Resources */,
 				03BCA7BE252CF80500347921 /* Assets.xcassets in Resources */,
 				03BCA7BF252CF80500347921 /* Localizable.strings in Resources */,
 			);
@@ -425,8 +513,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0322B0C9251580B2001EB2BC /* IncomeData.json in Resources */,
-				0322B0C225157EE3001EB2BC /* ExpeditureData.json in Resources */,
+				03082FED252F569D00954D98 /* IncomeData.json in Resources */,
+				03082FF9252F56C100954D98 /* ExpeditureData.json in Resources */,
 				03CF3D3E250D05430096F71C /* Assets.xcassets in Resources */,
 				0322B0A725157703001EB2BC /* Localizable.strings in Resources */,
 			);
@@ -436,8 +524,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0322B0CA251580B2001EB2BC /* IncomeData.json in Resources */,
-				0322B0C325157EE3001EB2BC /* ExpeditureData.json in Resources */,
+				03082FEF252F569D00954D98 /* IncomeData.json in Resources */,
+				03082FFB252F56C100954D98 /* ExpeditureData.json in Resources */,
 				03CF3D3F250D05430096F71C /* Assets.xcassets in Resources */,
 				0322B0A825157703001EB2BC /* Localizable.strings in Resources */,
 			);
@@ -465,9 +553,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				03BCA7B1252CF80500347921 /* AccountTabView.swift in Sources */,
+				03753A1F252D0F300011A116 /* MainViewMenuElement.swift in Sources */,
+				03753A0E252D008C0011A116 /* View+Custom.swift in Sources */,
+				0307C702252D112400C60327 /* SectionBuilder.swift in Sources */,
 				03BCA7B2252CF80500347921 /* NewMovementResources.swift in Sources */,
 				03BCA7B3252CF80500347921 /* Strings.swift in Sources */,
+				0307C712252D156F00C60327 /* MainView_iPhone.swift in Sources */,
+				03BBB0B42530F5B0009C91E0 /* AccountsDependencyResolver.swift in Sources */,
+				0307C70A252D11E200C60327 /* AccountNavigationView.swift in Sources */,
 				03BCA7B4252CF80500347921 /* AccountsApp.swift in Sources */,
+				03753A2C252D0F690011A116 /* MenuSections.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,9 +571,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0322B08525157467001EB2BC /* AccountTabView.swift in Sources */,
+				03753A1E252D0F300011A116 /* MainViewMenuElement.swift in Sources */,
+				03753A0D252D008C0011A116 /* View+Custom.swift in Sources */,
+				0307C701252D112400C60327 /* SectionBuilder.swift in Sources */,
 				0322B0D025158C7B001EB2BC /* NewMovementResources.swift in Sources */,
 				0322B0BA251578D4001EB2BC /* Strings.swift in Sources */,
+				0307C711252D156F00C60327 /* MainView_iPhone.swift in Sources */,
+				03BBB0B32530F5B0009C91E0 /* AccountsDependencyResolver.swift in Sources */,
+				0307C709252D11E200C60327 /* AccountNavigationView.swift in Sources */,
 				03CF3D38250D05430096F71C /* AccountsApp.swift in Sources */,
+				03753A2B252D0F690011A116 /* MenuSections.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +588,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03BBB0B52530F5B0009C91E0 /* AccountsDependencyResolver.swift in Sources */,
 				0322B0D125158C7B001EB2BC /* NewMovementResources.swift in Sources */,
 				0322B0BB251578D4001EB2BC /* Strings.swift in Sources */,
 				03CF3D39250D05430096F71C /* AccountsApp.swift in Sources */,
@@ -524,6 +627,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		03082FF1252F569D00954D98 /* IncomeData.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03082FF0252F569D00954D98 /* es */,
+				03082FF8252F56B900954D98 /* en */,
+			);
+			name = IncomeData.json;
+			sourceTree = "<group>";
+		};
+		03082FFD252F56C100954D98 /* ExpeditureData.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03082FFC252F56C100954D98 /* es */,
+				03083003252F56C400954D98 /* en */,
+			);
+			name = ExpeditureData.json;
+			sourceTree = "<group>";
+		};
 		0322B0AA25157703001EB2BC /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -541,6 +662,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Accounts (iOS) - DEV.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
@@ -565,6 +687,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Accounts (iOS) - DEV.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
@@ -589,6 +712,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -649,6 +773,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -703,6 +828,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Accounts.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
 				ENABLE_PREVIEWS = YES;
@@ -725,6 +851,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Accounts.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
 				ENABLE_PREVIEWS = YES;
@@ -749,6 +876,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
@@ -773,6 +901,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
@@ -940,44 +1069,52 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		03BCA77E252CF6F800347921 /* XCRemoteSwiftPackageReference "accounts-ui" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bastianX6/accounts-ui.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.0;
-			};
-		};
-		03BCA785252CF77900347921 /* XCRemoteSwiftPackageReference "accounts-new-movement" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bastianX6/accounts-new-movement.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-		03BCA78C252CF79000347921 /* XCRemoteSwiftPackageReference "accounts-movement-list" */ = {
+		03F2B8DB253CF8BD00E44186 /* XCRemoteSwiftPackageReference "accounts-movement-list" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bastianX6/accounts-movement-list.git";
 			requirement = {
-				kind = upToNextMajorVersion;
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		03F2B8E8253CF8F600E44186 /* XCRemoteSwiftPackageReference "accounts-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bastianX6/accounts-ui.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		03F2B8F5253CF92300E44186 /* XCRemoteSwiftPackageReference "accounts-new-movement" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bastianX6/accounts-new-movement.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		03F2B90C253CF9B500E44186 /* XCRemoteSwiftPackageReference "accounts-dependency-resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bastianX6/accounts-dependency-resolver.git";
+			requirement = {
+				kind = upToNextMinorVersion;
 				minimumVersion = 1.0.0;
 			};
 		};
-		03BCA793252CF7B000347921 /* XCRemoteSwiftPackageReference "accounts-data-management" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bastianX6/accounts-data-management.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.2;
-			};
-		};
-		03BCA79A252CF7C200347921 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */ = {
+		03F2B919253CF9F300E44186 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bastianX6/accounts-coredata-management.git";
 			requirement = {
-				kind = upToNextMajorVersion;
+				kind = upToNextMinorVersion;
 				minimumVersion = 1.1.0;
+			};
+		};
+		03F2B92B253CFA5D00E44186 /* XCRemoteSwiftPackageReference "accounts-data-management" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bastianX6/accounts-data-management.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -991,30 +1128,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = AccountsUI;
 		};
-		03BCA77F252CF6F800347921 /* AccountsUI */ = {
+		03BBB0AA2530E9E0009C91E0 /* DependencyResolver */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 03BCA77E252CF6F800347921 /* XCRemoteSwiftPackageReference "accounts-ui" */;
-			productName = AccountsUI;
-		};
-		03BCA786252CF77900347921 /* NewMovement_iOS */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03BCA785252CF77900347921 /* XCRemoteSwiftPackageReference "accounts-new-movement" */;
-			productName = NewMovement_iOS;
-		};
-		03BCA78D252CF79000347921 /* MovementList_iOS */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03BCA78C252CF79000347921 /* XCRemoteSwiftPackageReference "accounts-movement-list" */;
-			productName = MovementList_iOS;
-		};
-		03BCA794252CF7B000347921 /* DataManagement */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03BCA793252CF7B000347921 /* XCRemoteSwiftPackageReference "accounts-data-management" */;
-			productName = DataManagement;
-		};
-		03BCA79B252CF7C200347921 /* AccountsCoreDataManagement */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03BCA79A252CF7C200347921 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */;
-			productName = AccountsCoreDataManagement;
+			productName = DependencyResolver;
 		};
 		03BCA7CF252CF9DA00347921 /* AccountsCoreDataManagement */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1035,6 +1151,36 @@
 		03BCA7D7252CF9DA00347921 /* NewMovement_iOS */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NewMovement_iOS;
+		};
+		03F2B8DC253CF8BD00E44186 /* MovementList_iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03F2B8DB253CF8BD00E44186 /* XCRemoteSwiftPackageReference "accounts-movement-list" */;
+			productName = MovementList_iOS;
+		};
+		03F2B8E9253CF8F600E44186 /* AccountsUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03F2B8E8253CF8F600E44186 /* XCRemoteSwiftPackageReference "accounts-ui" */;
+			productName = AccountsUI;
+		};
+		03F2B8F6253CF92300E44186 /* NewMovement_iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03F2B8F5253CF92300E44186 /* XCRemoteSwiftPackageReference "accounts-new-movement" */;
+			productName = NewMovement_iOS;
+		};
+		03F2B90D253CF9B500E44186 /* DependencyResolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03F2B90C253CF9B500E44186 /* XCRemoteSwiftPackageReference "accounts-dependency-resolver" */;
+			productName = DependencyResolver;
+		};
+		03F2B91A253CF9F300E44186 /* AccountsCoreDataManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03F2B919253CF9F300E44186 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */;
+			productName = AccountsCoreDataManagement;
+		};
+		03F2B92C253CFA5D00E44186 /* DataManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03F2B92B253CFA5D00E44186 /* XCRemoteSwiftPackageReference "accounts-data-management" */;
+			productName = DataManagement;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
