@@ -38,11 +38,6 @@
 		03BBB0B32530F5B0009C91E0 /* AccountsDependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBB0B22530F5B0009C91E0 /* AccountsDependencyResolver.swift */; };
 		03BBB0B42530F5B0009C91E0 /* AccountsDependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBB0B22530F5B0009C91E0 /* AccountsDependencyResolver.swift */; };
 		03BBB0B52530F5B0009C91E0 /* AccountsDependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBB0B22530F5B0009C91E0 /* AccountsDependencyResolver.swift */; };
-		03BCA780252CF6F800347921 /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA77F252CF6F800347921 /* AccountsUI */; };
-		03BCA787252CF77900347921 /* NewMovement_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA786252CF77900347921 /* NewMovement_iOS */; };
-		03BCA78E252CF79000347921 /* MovementList_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA78D252CF79000347921 /* MovementList_iOS */; };
-		03BCA795252CF7B000347921 /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA794252CF7B000347921 /* DataManagement */; };
-		03BCA79C252CF7C200347921 /* AccountsCoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA79B252CF7C200347921 /* AccountsCoreDataManagement */; };
 		03BCA7B1252CF80500347921 /* AccountTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B08425157467001EB2BC /* AccountTabView.swift */; };
 		03BCA7B2252CF80500347921 /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
 		03BCA7B3252CF80500347921 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0B9251578D4001EB2BC /* Strings.swift */; };
@@ -54,7 +49,6 @@
 		03BCA7D4252CF9DA00347921 /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA7D3252CF9DA00347921 /* DataManagement */; };
 		03BCA7D6252CF9DA00347921 /* MovementList_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA7D5252CF9DA00347921 /* MovementList_iOS */; };
 		03BCA7D8252CF9DA00347921 /* NewMovement_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA7D7252CF9DA00347921 /* NewMovement_iOS */; };
-		03BD351B253CF07600608E33 /* DependencyResolver in Frameworks */ = {isa = PBXBuildFile; productRef = 03BD351A253CF07600608E33 /* DependencyResolver */; };
 		03CF3D29250D05430096F71C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D28250D05430096F71C /* Tests_iOS.swift */; };
 		03CF3D34250D05430096F71C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D33250D05430096F71C /* Tests_macOS.swift */; };
 		03CF3D38250D05430096F71C /* AccountsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D0C250D05420096F71C /* AccountsApp.swift */; };
@@ -63,6 +57,12 @@
 		03CF3D3F250D05430096F71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CF3D0F250D05420096F71C /* Assets.xcassets */; };
 		03DB5135252D1F8A008A2F1E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB5134252D1F8A008A2F1E /* CloudKit.framework */; };
 		03DB5141252D217F008A2F1E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB5134252D1F8A008A2F1E /* CloudKit.framework */; };
+		03F2B8DD253CF8BD00E44186 /* MovementList_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B8DC253CF8BD00E44186 /* MovementList_iOS */; };
+		03F2B8EA253CF8F600E44186 /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B8E9253CF8F600E44186 /* AccountsUI */; };
+		03F2B8F7253CF92300E44186 /* NewMovement_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B8F6253CF92300E44186 /* NewMovement_iOS */; };
+		03F2B90E253CF9B500E44186 /* DependencyResolver in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B90D253CF9B500E44186 /* DependencyResolver */; };
+		03F2B91B253CF9F300E44186 /* AccountsCoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B91A253CF9F300E44186 /* AccountsCoreDataManagement */; };
+		03F2B92D253CFA5D00E44186 /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B92C253CFA5D00E44186 /* DataManagement */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,13 +138,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03BCA787252CF77900347921 /* NewMovement_iOS in Frameworks */,
-				03BD351B253CF07600608E33 /* DependencyResolver in Frameworks */,
-				03BCA79C252CF7C200347921 /* AccountsCoreDataManagement in Frameworks */,
-				03BCA795252CF7B000347921 /* DataManagement in Frameworks */,
+				03F2B8F7253CF92300E44186 /* NewMovement_iOS in Frameworks */,
+				03F2B90E253CF9B500E44186 /* DependencyResolver in Frameworks */,
+				03F2B8DD253CF8BD00E44186 /* MovementList_iOS in Frameworks */,
+				03F2B8EA253CF8F600E44186 /* AccountsUI in Frameworks */,
+				03F2B92D253CFA5D00E44186 /* DataManagement in Frameworks */,
+				03F2B91B253CF9F300E44186 /* AccountsCoreDataManagement in Frameworks */,
 				03DB5141252D217F008A2F1E /* CloudKit.framework in Frameworks */,
-				03BCA780252CF6F800347921 /* AccountsUI in Frameworks */,
-				03BCA78E252CF79000347921 /* MovementList_iOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,12 +373,12 @@
 			);
 			name = "Accounts (iOS)";
 			packageProductDependencies = (
-				03BCA77F252CF6F800347921 /* AccountsUI */,
-				03BCA786252CF77900347921 /* NewMovement_iOS */,
-				03BCA78D252CF79000347921 /* MovementList_iOS */,
-				03BCA794252CF7B000347921 /* DataManagement */,
-				03BCA79B252CF7C200347921 /* AccountsCoreDataManagement */,
-				03BD351A253CF07600608E33 /* DependencyResolver */,
+				03F2B8DC253CF8BD00E44186 /* MovementList_iOS */,
+				03F2B8E9253CF8F600E44186 /* AccountsUI */,
+				03F2B8F6253CF92300E44186 /* NewMovement_iOS */,
+				03F2B90D253CF9B500E44186 /* DependencyResolver */,
+				03F2B91A253CF9F300E44186 /* AccountsCoreDataManagement */,
+				03F2B92C253CFA5D00E44186 /* DataManagement */,
 			);
 			productName = "Accounts (iOS)";
 			productReference = 03CF3D14250D05420096F71C /* Accounts.app */;
@@ -477,12 +477,12 @@
 			);
 			mainGroup = 03CF3D04250D05410096F71C;
 			packageReferences = (
-				03BCA77E252CF6F800347921 /* XCRemoteSwiftPackageReference "accounts-ui" */,
-				03BCA785252CF77900347921 /* XCRemoteSwiftPackageReference "accounts-new-movement" */,
-				03BCA78C252CF79000347921 /* XCRemoteSwiftPackageReference "accounts-movement-list" */,
-				03BCA793252CF7B000347921 /* XCRemoteSwiftPackageReference "accounts-data-management" */,
-				03BCA79A252CF7C200347921 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */,
-				03BD3519253CF07600608E33 /* XCRemoteSwiftPackageReference "accounts-dependency-resolver" */,
+				03F2B8DB253CF8BD00E44186 /* XCRemoteSwiftPackageReference "accounts-movement-list" */,
+				03F2B8E8253CF8F600E44186 /* XCRemoteSwiftPackageReference "accounts-ui" */,
+				03F2B8F5253CF92300E44186 /* XCRemoteSwiftPackageReference "accounts-new-movement" */,
+				03F2B90C253CF9B500E44186 /* XCRemoteSwiftPackageReference "accounts-dependency-resolver" */,
+				03F2B919253CF9F300E44186 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */,
+				03F2B92B253CFA5D00E44186 /* XCRemoteSwiftPackageReference "accounts-data-management" */,
 			);
 			productRefGroup = 03CF3D15250D05420096F71C /* Products */;
 			projectDirPath = "";
@@ -1069,52 +1069,52 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		03BCA77E252CF6F800347921 /* XCRemoteSwiftPackageReference "accounts-ui" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bastianX6/accounts-ui.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.0;
-			};
-		};
-		03BCA785252CF77900347921 /* XCRemoteSwiftPackageReference "accounts-new-movement" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bastianX6/accounts-new-movement.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-		03BCA78C252CF79000347921 /* XCRemoteSwiftPackageReference "accounts-movement-list" */ = {
+		03F2B8DB253CF8BD00E44186 /* XCRemoteSwiftPackageReference "accounts-movement-list" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bastianX6/accounts-movement-list.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-		03BCA793252CF7B000347921 /* XCRemoteSwiftPackageReference "accounts-data-management" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bastianX6/accounts-data-management.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.2;
-			};
-		};
-		03BCA79A252CF7C200347921 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bastianX6/accounts-coredata-management.git";
-			requirement = {
-				kind = upToNextMajorVersion;
+				kind = upToNextMinorVersion;
 				minimumVersion = 1.1.0;
 			};
 		};
-		03BD3519253CF07600608E33 /* XCRemoteSwiftPackageReference "accounts-dependency-resolver" */ = {
+		03F2B8E8253CF8F600E44186 /* XCRemoteSwiftPackageReference "accounts-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bastianX6/accounts-ui.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		03F2B8F5253CF92300E44186 /* XCRemoteSwiftPackageReference "accounts-new-movement" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bastianX6/accounts-new-movement.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		03F2B90C253CF9B500E44186 /* XCRemoteSwiftPackageReference "accounts-dependency-resolver" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bastianX6/accounts-dependency-resolver.git";
 			requirement = {
-				kind = upToNextMajorVersion;
+				kind = upToNextMinorVersion;
 				minimumVersion = 1.0.0;
+			};
+		};
+		03F2B919253CF9F300E44186 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bastianX6/accounts-coredata-management.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		03F2B92B253CFA5D00E44186 /* XCRemoteSwiftPackageReference "accounts-data-management" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bastianX6/accounts-data-management.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -1131,31 +1131,6 @@
 		03BBB0AA2530E9E0009C91E0 /* DependencyResolver */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DependencyResolver;
-		};
-		03BCA77F252CF6F800347921 /* AccountsUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03BCA77E252CF6F800347921 /* XCRemoteSwiftPackageReference "accounts-ui" */;
-			productName = AccountsUI;
-		};
-		03BCA786252CF77900347921 /* NewMovement_iOS */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03BCA785252CF77900347921 /* XCRemoteSwiftPackageReference "accounts-new-movement" */;
-			productName = NewMovement_iOS;
-		};
-		03BCA78D252CF79000347921 /* MovementList_iOS */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03BCA78C252CF79000347921 /* XCRemoteSwiftPackageReference "accounts-movement-list" */;
-			productName = MovementList_iOS;
-		};
-		03BCA794252CF7B000347921 /* DataManagement */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03BCA793252CF7B000347921 /* XCRemoteSwiftPackageReference "accounts-data-management" */;
-			productName = DataManagement;
-		};
-		03BCA79B252CF7C200347921 /* AccountsCoreDataManagement */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03BCA79A252CF7C200347921 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */;
-			productName = AccountsCoreDataManagement;
 		};
 		03BCA7CF252CF9DA00347921 /* AccountsCoreDataManagement */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1177,10 +1152,35 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = NewMovement_iOS;
 		};
-		03BD351A253CF07600608E33 /* DependencyResolver */ = {
+		03F2B8DC253CF8BD00E44186 /* MovementList_iOS */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 03BD3519253CF07600608E33 /* XCRemoteSwiftPackageReference "accounts-dependency-resolver" */;
+			package = 03F2B8DB253CF8BD00E44186 /* XCRemoteSwiftPackageReference "accounts-movement-list" */;
+			productName = MovementList_iOS;
+		};
+		03F2B8E9253CF8F600E44186 /* AccountsUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03F2B8E8253CF8F600E44186 /* XCRemoteSwiftPackageReference "accounts-ui" */;
+			productName = AccountsUI;
+		};
+		03F2B8F6253CF92300E44186 /* NewMovement_iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03F2B8F5253CF92300E44186 /* XCRemoteSwiftPackageReference "accounts-new-movement" */;
+			productName = NewMovement_iOS;
+		};
+		03F2B90D253CF9B500E44186 /* DependencyResolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03F2B90C253CF9B500E44186 /* XCRemoteSwiftPackageReference "accounts-dependency-resolver" */;
 			productName = DependencyResolver;
+		};
+		03F2B91A253CF9F300E44186 /* AccountsCoreDataManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03F2B919253CF9F300E44186 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */;
+			productName = AccountsCoreDataManagement;
+		};
+		03F2B92C253CFA5D00E44186 /* DataManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03F2B92B253CFA5D00E44186 /* XCRemoteSwiftPackageReference "accounts-data-management" */;
+			productName = DataManagement;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

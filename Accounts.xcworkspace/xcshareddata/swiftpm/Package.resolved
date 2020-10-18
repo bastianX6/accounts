@@ -20,12 +20,21 @@
         }
       },
       {
+        "package": "DependencyResolver",
+        "repositoryURL": "https://github.com/bastianX6/accounts-dependency-resolver.git",
+        "state": {
+          "branch": null,
+          "revision": "eace48ec8e89a4dcca888b15229cc93fbe221910",
+          "version": "1.0.0"
+        }
+      },
+      {
         "package": "MovementList",
         "repositoryURL": "https://github.com/bastianX6/accounts-movement-list.git",
         "state": {
           "branch": null,
-          "revision": "a3fe6882e3bbc7d63bb483d018694d2670645062",
-          "version": "1.0.0"
+          "revision": "c17cf73bdfb02cc411dc369bded3a2450fb4f628",
+          "version": "1.1.0"
         }
       },
       {
@@ -33,8 +42,8 @@
         "repositoryURL": "https://github.com/bastianX6/accounts-new-movement.git",
         "state": {
           "branch": null,
-          "revision": "91f58404edfed8bde38f728550b795d105b757f1",
-          "version": "1.0.0"
+          "revision": "812dfa1c7f9c823bfd63060be68d838dc8e50e73",
+          "version": "1.1.0"
         }
       },
       {
@@ -42,8 +51,8 @@
         "repositoryURL": "https://github.com/bastianX6/accounts-ui.git",
         "state": {
           "branch": null,
-          "revision": "74a10df8da7d64fcfe3dda3a148098ea90b6185f",
-          "version": "1.1.0"
+          "revision": "de4a2cfbe72d4f72b3f5cbf9586349efeeaba3e9",
+          "version": "1.2.0"
         }
       },
       {
