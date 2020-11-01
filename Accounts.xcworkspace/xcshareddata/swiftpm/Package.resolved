@@ -2,57 +2,21 @@
   "object": {
     "pins": [
       {
-        "package": "AccountsCoreDataManagement",
-        "repositoryURL": "https://github.com/bastianX6/accounts-coredata-management.git",
+        "package": "abseil",
+        "repositoryURL": "https://github.com/firebase/abseil-cpp-SwiftPM.git",
         "state": {
           "branch": null,
-          "revision": "7808dfbeec3a8fb7aaf87da38733b5ea1542aa79",
-          "version": "1.1.0"
+          "revision": "05d8107f2971a37e6c77245b7c4c6b0a7e97bc99",
+          "version": "0.20200225.0"
         }
       },
       {
-        "package": "DataManagement",
-        "repositoryURL": "https://github.com/bastianX6/accounts-data-management.git",
+        "package": "BoringSSL-GRPC",
+        "repositoryURL": "https://github.com/firebase/boringssl-SwiftPM.git",
         "state": {
           "branch": null,
-          "revision": "3d924173df7f38ed6103a1a86523782aa39bd9e5",
-          "version": "1.0.2"
-        }
-      },
-      {
-        "package": "DependencyResolver",
-        "repositoryURL": "https://github.com/bastianX6/accounts-dependency-resolver.git",
-        "state": {
-          "branch": null,
-          "revision": "eace48ec8e89a4dcca888b15229cc93fbe221910",
-          "version": "1.0.0"
-        }
-      },
-      {
-        "package": "MovementList",
-        "repositoryURL": "https://github.com/bastianX6/accounts-movement-list.git",
-        "state": {
-          "branch": null,
-          "revision": "c17cf73bdfb02cc411dc369bded3a2450fb4f628",
-          "version": "1.1.0"
-        }
-      },
-      {
-        "package": "NewMovement",
-        "repositoryURL": "https://github.com/bastianX6/accounts-new-movement.git",
-        "state": {
-          "branch": null,
-          "revision": "812dfa1c7f9c823bfd63060be68d838dc8e50e73",
-          "version": "1.1.0"
-        }
-      },
-      {
-        "package": "AccountsUI",
-        "repositoryURL": "https://github.com/bastianX6/accounts-ui.git",
-        "state": {
-          "branch": null,
-          "revision": "de4a2cfbe72d4f72b3f5cbf9586349efeeaba3e9",
-          "version": "1.2.0"
+          "revision": "7bcafa2660bc58715c39637494550d1ed7cd7229",
+          "version": "0.0.7"
         }
       },
       {
@@ -62,6 +26,60 @@
           "branch": null,
           "revision": "167f59af89c24ac925a0f5161e6e704ad4f2774a",
           "version": "0.0.3"
+        }
+      },
+      {
+        "package": "Firebase",
+        "repositoryURL": "https://github.com/firebase/firebase-ios-sdk.git",
+        "state": {
+          "branch": null,
+          "revision": "d1870fd01d72bef52bd6596f8cbbcda4a4bb9d5d",
+          "version": "7.0.0"
+        }
+      },
+      {
+        "package": "gRPC",
+        "repositoryURL": "https://github.com/firebase/grpc-SwiftPM.git",
+        "state": {
+          "branch": null,
+          "revision": "91b62619e6c83bc5f1b99d9d60fe46b2862d3a5a",
+          "version": "1.28.2"
+        }
+      },
+      {
+        "package": "GTMSessionFetcher",
+        "repositoryURL": "https://github.com/google/gtm-session-fetcher.git",
+        "state": {
+          "branch": null,
+          "revision": "91ed3d188eb95705fef3c249453b81f32dc557d1",
+          "version": "1.5.0"
+        }
+      },
+      {
+        "package": "leveldb",
+        "repositoryURL": "https://github.com/firebase/leveldb.git",
+        "state": {
+          "branch": null,
+          "revision": "fa1f25f296a766e5a789c4dacd4798dea798b2c2",
+          "version": "1.22.1"
+        }
+      },
+      {
+        "package": "nanopb",
+        "repositoryURL": "https://github.com/firebase/nanopb.git",
+        "state": {
+          "branch": null,
+          "revision": "8119dfe5631f2616d11e50ead95448d12e816062",
+          "version": "2.30906.0"
+        }
+      },
+      {
+        "package": "Promises",
+        "repositoryURL": "https://github.com/google/promises.git",
+        "state": {
+          "branch": null,
+          "revision": "d8accebc8fa32f57196df191e733f946e955c549",
+          "version": "1.2.11"
         }
       },
       {

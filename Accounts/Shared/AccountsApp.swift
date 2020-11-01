@@ -10,6 +10,10 @@ import SwiftUI
 
 @main
 struct AccountsApp: App {
+    #if !os(macOS)
+        @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    #endif
+
     var body: some Scene {
         WindowGroup {
             self.mainView
