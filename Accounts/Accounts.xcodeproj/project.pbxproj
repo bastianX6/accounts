@@ -93,6 +93,8 @@
 		03CF3D3F250D05430096F71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CF3D0F250D05420096F71C /* Assets.xcassets */; };
 		03DB5135252D1F8A008A2F1E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB5134252D1F8A008A2F1E /* CloudKit.framework */; };
 		03DB5141252D217F008A2F1E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB5134252D1F8A008A2F1E /* CloudKit.framework */; };
+		03E0702825855F1B00960485 /* NewMovementMacOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03E0702725855F1B00960485 /* NewMovementMacOS */; };
+		03E0702A25855F2200960485 /* NewMovementMacOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03E0702925855F2200960485 /* NewMovementMacOS */; };
 		03F2B8DD253CF8BD00E44186 /* MovementList_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B8DC253CF8BD00E44186 /* MovementList_iOS */; };
 		03F2B8EA253CF8F600E44186 /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B8E9253CF8F600E44186 /* AccountsUI */; };
 		03F2B8F7253CF92300E44186 /* NewMovement_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B8F6253CF92300E44186 /* NewMovement_iOS */; };
@@ -173,6 +175,7 @@
 				03A518022585244200EE401D /* AccountsUI in Frameworks */,
 				03A518032585244200EE401D /* AccountsCoreDataManagement in Frameworks */,
 				03A518042585244200EE401D /* DependencyResolver in Frameworks */,
+				03E0702A25855F2200960485 /* NewMovementMacOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +223,7 @@
 				03A517F12585241E00EE401D /* AccountsUI in Frameworks */,
 				03A517EF2585241E00EE401D /* AccountsCoreDataManagement in Frameworks */,
 				03A517F52585241E00EE401D /* DependencyResolver in Frameworks */,
+				03E0702825855F1B00960485 /* NewMovementMacOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +591,7 @@
 				03A517F82585244200EE401D /* AccountsUI */,
 				03A517F92585244200EE401D /* DataManagement */,
 				03A517FA2585244200EE401D /* DependencyResolver */,
+				03E0702925855F2200960485 /* NewMovementMacOS */,
 			);
 			productName = "Accounts (macOS)";
 			productReference = 03A5180D2585244200EE401D /* Accounts (macOS) Dev.app */;
@@ -668,6 +673,7 @@
 				03A517F02585241E00EE401D /* AccountsUI */,
 				03A517F22585241E00EE401D /* DataManagement */,
 				03A517F42585241E00EE401D /* DependencyResolver */,
+				03E0702725855F1B00960485 /* NewMovementMacOS */,
 			);
 			productName = "Accounts (macOS)";
 			productReference = 03CF3D1C250D05420096F71C /* Accounts.app */;
@@ -969,7 +975,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "macOS/Entitlements/Dev/DEV-macOS.entitlements";
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
@@ -994,7 +1000,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "macOS/Entitlements/Dev/DEV-macOS.entitlements";
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
@@ -1018,7 +1024,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "iOS/Entitlements/Prod/Accounts (iOS) - DEV.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "iOS/Entitlements/Dev/Accounts (iOS) - DEV.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
@@ -1045,7 +1051,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "iOS/Entitlements/Prod/Accounts (iOS) - DEV.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "iOS/Entitlements/Dev/Accounts (iOS) - DEV.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
@@ -1238,7 +1244,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/Entitlements/Prod/macOS.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
@@ -1263,7 +1269,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/Entitlements/Prod/macOS.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
@@ -1594,6 +1600,14 @@
 		03BCA7D7252CF9DA00347921 /* NewMovement_iOS */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NewMovement_iOS;
+		};
+		03E0702725855F1B00960485 /* NewMovementMacOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NewMovementMacOS;
+		};
+		03E0702925855F2200960485 /* NewMovementMacOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NewMovementMacOS;
 		};
 		03F2B8DC253CF8BD00E44186 /* MovementList_iOS */ = {
 			isa = XCSwiftPackageProductDependency;

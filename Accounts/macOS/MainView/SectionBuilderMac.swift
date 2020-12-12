@@ -13,6 +13,8 @@ import DataManagement
 import Foundation
 import SwiftUI
 
+import NewMovementMacOS
+
 class SectionBuilderMac {
     private let incomeData: MovementResources
     private let expeditureData: MovementResources
@@ -37,7 +39,10 @@ class SectionBuilderMac {
     }
 
     var newMovementView: some View {
-        Text("New movement view")
+        let dataModel = NewMovementViewDataModel(dataSource: self.dataSourceModify,
+                                                 incomeData: self.incomeData,
+                                                 expenditureData: self.expeditureData)
+        return NewMovementMacOS.MovementTypeSelectorView(dataModel: dataModel)
     }
 
     var dashboardView: some View {

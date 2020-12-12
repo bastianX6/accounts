@@ -26,7 +26,9 @@ struct AccountsApp: App {
                 .environmentObject(AccountsDependencyResolver.shared)
                 .eraseToAnyView()
         #else
-            return MainViewMac().eraseToAnyView()
+            return MainViewMac()
+                .environmentObject(AccountsDependencyResolver.shared)
+                .eraseToAnyView()
         #endif
     }
 }
