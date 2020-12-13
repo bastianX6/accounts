@@ -13,6 +13,7 @@ import DataManagement
 import Foundation
 import SwiftUI
 
+import MovementListMacOS
 import NewMovementMacOS
 
 class SectionBuilderMac {
@@ -50,10 +51,18 @@ class SectionBuilderMac {
     }
 
     var expensesView: some View {
-        Text("Expenses view")
+        let dataModel = MovementListDataModel(dataSourceRead: self.dataSourceRead,
+                                              resources: self.expeditureData,
+                                              isIncome: false)
+
+        return MovementListMacOS.ContainerView(dataModel: dataModel)
     }
 
     var incomesView: some View {
-        Text("Incomes view")
+        let dataModel = MovementListDataModel(dataSourceRead: self.dataSourceRead,
+                                              resources: self.incomeData,
+                                              isIncome: true)
+
+        return MovementListMacOS.ContainerView(dataModel: dataModel)
     }
 }

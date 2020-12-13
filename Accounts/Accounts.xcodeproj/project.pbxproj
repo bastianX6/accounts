@@ -95,6 +95,12 @@
 		03DB5141252D217F008A2F1E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB5134252D1F8A008A2F1E /* CloudKit.framework */; };
 		03E0702825855F1B00960485 /* NewMovementMacOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03E0702725855F1B00960485 /* NewMovementMacOS */; };
 		03E0702A25855F2200960485 /* NewMovementMacOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03E0702925855F2200960485 /* NewMovementMacOS */; };
+		03E0704A25858EB400960485 /* MovementDetailsMacOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03E0704925858EB400960485 /* MovementDetailsMacOS */; };
+		03E0704C25858EB400960485 /* MovementListMacOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03E0704B25858EB400960485 /* MovementListMacOS */; };
+		03E0704E25858EC200960485 /* MovementDetailsMacOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03E0704D25858EC200960485 /* MovementDetailsMacOS */; };
+		03E0705025858EC200960485 /* MovementListMacOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03E0704F25858EC200960485 /* MovementListMacOS */; };
+		03E0707225869D1000960485 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E0707125869D1000960485 /* CloudKit.framework */; };
+		03E0707325869D2300960485 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E0707125869D1000960485 /* CloudKit.framework */; };
 		03F2B8DD253CF8BD00E44186 /* MovementList_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B8DC253CF8BD00E44186 /* MovementList_iOS */; };
 		03F2B8EA253CF8F600E44186 /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B8E9253CF8F600E44186 /* AccountsUI */; };
 		03F2B8F7253CF92300E44186 /* NewMovement_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B8F6253CF92300E44186 /* NewMovement_iOS */; };
@@ -164,6 +170,7 @@
 		03DB5133252D1F63008A2F1E /* Accounts (iOS) - DEV.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Accounts (iOS) - DEV.entitlements"; sourceTree = "<group>"; };
 		03DB5134252D1F8A008A2F1E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		03DB5140252D2179008A2F1E /* Accounts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Accounts.entitlements; sourceTree = "<group>"; };
+		03E0707125869D1000960485 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +180,10 @@
 			files = (
 				03A518012585244200EE401D /* DataManagement in Frameworks */,
 				03A518022585244200EE401D /* AccountsUI in Frameworks */,
+				03E0704E25858EC200960485 /* MovementDetailsMacOS in Frameworks */,
+				03E0705025858EC200960485 /* MovementListMacOS in Frameworks */,
 				03A518032585244200EE401D /* AccountsCoreDataManagement in Frameworks */,
+				03E0707325869D2300960485 /* CloudKit.framework in Frameworks */,
 				03A518042585244200EE401D /* DependencyResolver in Frameworks */,
 				03E0702A25855F2200960485 /* NewMovementMacOS in Frameworks */,
 			);
@@ -221,7 +231,10 @@
 			files = (
 				03A517F32585241E00EE401D /* DataManagement in Frameworks */,
 				03A517F12585241E00EE401D /* AccountsUI in Frameworks */,
+				03E0704A25858EB400960485 /* MovementDetailsMacOS in Frameworks */,
+				03E0704C25858EB400960485 /* MovementListMacOS in Frameworks */,
 				03A517EF2585241E00EE401D /* AccountsCoreDataManagement in Frameworks */,
+				03E0707225869D1000960485 /* CloudKit.framework in Frameworks */,
 				03A517F52585241E00EE401D /* DependencyResolver in Frameworks */,
 				03E0702825855F1B00960485 /* NewMovementMacOS in Frameworks */,
 			);
@@ -401,6 +414,7 @@
 		0398C2FA2513F9070022E279 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				03E0707125869D1000960485 /* CloudKit.framework */,
 				03DB5134252D1F8A008A2F1E /* CloudKit.framework */,
 			);
 			name = Frameworks;
@@ -592,6 +606,8 @@
 				03A517F92585244200EE401D /* DataManagement */,
 				03A517FA2585244200EE401D /* DependencyResolver */,
 				03E0702925855F2200960485 /* NewMovementMacOS */,
+				03E0704D25858EC200960485 /* MovementDetailsMacOS */,
+				03E0704F25858EC200960485 /* MovementListMacOS */,
 			);
 			productName = "Accounts (macOS)";
 			productReference = 03A5180D2585244200EE401D /* Accounts (macOS) Dev.app */;
@@ -674,6 +690,8 @@
 				03A517F22585241E00EE401D /* DataManagement */,
 				03A517F42585241E00EE401D /* DependencyResolver */,
 				03E0702725855F1B00960485 /* NewMovementMacOS */,
+				03E0704925858EB400960485 /* MovementDetailsMacOS */,
+				03E0704B25858EB400960485 /* MovementListMacOS */,
 			);
 			productName = "Accounts (macOS)";
 			productReference = 03CF3D1C250D05420096F71C /* Accounts.app */;
@@ -1608,6 +1626,22 @@
 		03E0702925855F2200960485 /* NewMovementMacOS */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NewMovementMacOS;
+		};
+		03E0704925858EB400960485 /* MovementDetailsMacOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MovementDetailsMacOS;
+		};
+		03E0704B25858EB400960485 /* MovementListMacOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MovementListMacOS;
+		};
+		03E0704D25858EC200960485 /* MovementDetailsMacOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MovementDetailsMacOS;
+		};
+		03E0704F25858EC200960485 /* MovementListMacOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MovementListMacOS;
 		};
 		03F2B8DC253CF8BD00E44186 /* MovementList_iOS */ = {
 			isa = XCSwiftPackageProductDependency;
