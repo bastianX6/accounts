@@ -1,15 +1,16 @@
 //
-//  AccountNavigationView.swift
+//  MainViewMac.swift
 //  Accounts
 //
-//  Created by Bastián Véliz Vega on 06-10-20.
+//  Created by Bastián Véliz Vega on 12-12-20.
 //
 
+import Foundation
 import AccountsUI
 import SwiftUI
 
-struct AccountNavigationView: View {
-    @State var selectedMenu = MenuSections.expenses
+struct MainViewMac: View {
+    @State var selectedMenu: MenuSections = MenuSections.expenses
 
     var body: some View {
         NavigationView {
@@ -34,19 +35,19 @@ struct AccountNavigationView: View {
     private var selectedView: some View {
         switch self.selectedMenu {
         case .dashboard:
-            return SectionBuilder.shared.dashboardView.eraseToAnyView()
+            return SectionBuilderMac.shared.dashboardView.eraseToAnyView()
         case .expenses:
-            return SectionBuilder.shared.expensesView.eraseToAnyView()
+            return SectionBuilderMac.shared.expensesView.eraseToAnyView()
         case .incomes:
-            return SectionBuilder.shared.incomesView.eraseToAnyView()
+            return SectionBuilderMac.shared.incomesView.eraseToAnyView()
         case .newMovement:
-            return SectionBuilder.shared.newMovementView.eraseToAnyView()
+            return SectionBuilderMac.shared.newMovementView.eraseToAnyView()
         }
     }
 }
 
-struct AccountNavigationView_Previews: PreviewProvider {
+struct MainViewMac_Previews: PreviewProvider {
     static var previews: some View {
-        AccountNavigationView()
+        MainViewMac()
     }
 }
