@@ -37,6 +37,7 @@ extension MenuSections {
     }
 
     static var allMenus: [MainViewMenuElement] {
-        return MenuSections.allCases.map { $0.menuElement }
+        let cases = MenuSections.allCases.filter { $0 != .dashboard }
+        return cases.map { $0.menuElement }
     }
 }

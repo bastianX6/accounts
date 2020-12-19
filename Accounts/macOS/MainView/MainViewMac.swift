@@ -10,7 +10,7 @@ import AccountsUI
 import SwiftUI
 
 struct MainViewMac: View {
-    @State var selectedMenu: MenuSections = MenuSections.dashboard
+    @State var selectedMenu: MenuSections = MenuSections.expenses
 
     var body: some View {
         NavigationView {
