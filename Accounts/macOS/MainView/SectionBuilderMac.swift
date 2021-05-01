@@ -11,10 +11,10 @@ import AccountsCoreDataManagement
 import AccountsUI
 import DataManagement
 import Foundation
-import SwiftUI
-
 import MovementListMacOS
+import NewMovementCommon
 import NewMovementMacOS
+import SwiftUI
 
 class SectionBuilderMac {
     private let incomeData: MovementResources

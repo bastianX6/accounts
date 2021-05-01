@@ -11,6 +11,7 @@ import DataManagement
 import Foundation
 import MovementList_iOS
 import NewMovement_iOS
+import NewMovementCommon
 import SwiftUI
 
 class SectionBuilder {

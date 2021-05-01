@@ -1268,7 +1268,7 @@
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "macOS/Plist/Prod/DEV-Info.plist";
+				INFOPLIST_FILE = macOS/Plist/Prod/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1293,7 +1293,7 @@
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "macOS/Plist/Prod/DEV-Info.plist";
+				INFOPLIST_FILE = macOS/Plist/Prod/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
