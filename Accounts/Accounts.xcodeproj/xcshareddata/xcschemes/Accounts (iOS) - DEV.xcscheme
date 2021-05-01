@@ -44,8 +44,89 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "03CF3D23250D05420096F71C"
+               BuildableName = "Tests iOS.xctest"
+               BlueprintName = "Tests iOS"
+               ReferencedContainer = "container:Accounts.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CoreDataManagementTests"
+               BuildableName = "CoreDataManagementTests"
+               BlueprintName = "CoreDataManagementTests"
+               ReferencedContainer = "container:../CoreDataManagement">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DependencyResolverTests"
+               BuildableName = "DependencyResolverTests"
+               BlueprintName = "DependencyResolverTests"
+               ReferencedContainer = "container:../DependencyResolver">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "MovementDetails.iOS.Tests"
+               BuildableName = "MovementDetails.iOS.Tests"
+               BlueprintName = "MovementDetails.iOS.Tests"
+               ReferencedContainer = "container:../MovementList">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "MovementList.iOS.Tests"
+               BuildableName = "MovementList.iOS.Tests"
+               BlueprintName = "MovementList.iOS.Tests"
+               ReferencedContainer = "container:../MovementList">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "MovementListCommonTests"
+               BuildableName = "MovementListCommonTests"
+               BlueprintName = "MovementListCommonTests"
+               ReferencedContainer = "container:../MovementList">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "NewMovement.iOS.Tests"
+               BuildableName = "NewMovement.iOS.Tests"
+               BlueprintName = "NewMovement.iOS.Tests"
+               ReferencedContainer = "container:../NewMovement">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "NewMovementCommonTests.iOS"
+               BuildableName = "NewMovementCommonTests.iOS"
+               BlueprintName = "NewMovementCommonTests.iOS"
+               ReferencedContainer = "container:../NewMovement">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

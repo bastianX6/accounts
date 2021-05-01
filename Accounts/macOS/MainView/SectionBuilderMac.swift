@@ -7,7 +7,7 @@
 
 import Foundation
 
-import AccountsCoreDataManagement
+import CoreDataManagement
 import AccountsUI
 import DataManagement
 import Foundation
