@@ -5,7 +5,7 @@
 //  Created by Bastián Véliz Vega on 06-10-20.
 //
 
-import AccountsCoreDataManagement
+import CoreDataManagement
 import AccountsUI
 import DataManagement
 import Foundation

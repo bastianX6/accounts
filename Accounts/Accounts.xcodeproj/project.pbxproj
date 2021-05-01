@@ -26,6 +26,8 @@
 		0322B0BB251578D4001EB2BC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0B9251578D4001EB2BC /* Strings.swift */; };
 		0322B0D025158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
 		0322B0D125158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
+		033B3496263E0D8D008908E6 /* CoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 033B3495263E0D8D008908E6 /* CoreDataManagement */; };
+		033B3498263E0D96008908E6 /* CoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 033B3497263E0D96008908E6 /* CoreDataManagement */; };
 		03753A0D252D008C0011A116 /* View+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03753A0C252D008C0011A116 /* View+Custom.swift */; };
 		03753A0E252D008C0011A116 /* View+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03753A0C252D008C0011A116 /* View+Custom.swift */; };
 		03753A1E252D0F300011A116 /* MainViewMenuElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03753A1D252D0F300011A116 /* MainViewMenuElement.swift */; };
@@ -46,7 +48,6 @@
 		0380899C254F30AE006B7AD5 /* FirebaseTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0380899B254F30AE006B7AD5 /* FirebaseTask.swift */; };
 		0380899D254F30AE006B7AD5 /* FirebaseTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0380899B254F30AE006B7AD5 /* FirebaseTask.swift */; };
 		038089D2254F358C006B7AD5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 038089D1254F358C006B7AD5 /* GoogleService-Info.plist */; };
-		03A517EF2585241E00EE401D /* AccountsCoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03A517EE2585241E00EE401D /* AccountsCoreDataManagement */; };
 		03A517F12585241E00EE401D /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03A517F02585241E00EE401D /* AccountsUI */; };
 		03A517F32585241E00EE401D /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03A517F22585241E00EE401D /* DataManagement */; };
 		03A517F52585241E00EE401D /* DependencyResolver in Frameworks */ = {isa = PBXBuildFile; productRef = 03A517F42585241E00EE401D /* DependencyResolver */; };
@@ -56,7 +57,6 @@
 		03A517FF2585244200EE401D /* AccountsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D0C250D05420096F71C /* AccountsApp.swift */; };
 		03A518012585244200EE401D /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03A517F92585244200EE401D /* DataManagement */; };
 		03A518022585244200EE401D /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03A517F82585244200EE401D /* AccountsUI */; };
-		03A518032585244200EE401D /* AccountsCoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03A517F72585244200EE401D /* AccountsCoreDataManagement */; };
 		03A518042585244200EE401D /* DependencyResolver in Frameworks */ = {isa = PBXBuildFile; productRef = 03A517FA2585244200EE401D /* DependencyResolver */; };
 		03A518062585244200EE401D /* IncomeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 03082FF1252F569D00954D98 /* IncomeData.json */; };
 		03A518072585244200EE401D /* ExpeditureData.json in Resources */ = {isa = PBXBuildFile; fileRef = 03082FFD252F56C100954D98 /* ExpeditureData.json */; };
@@ -80,7 +80,6 @@
 		03BCA7B4252CF80500347921 /* AccountsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D0C250D05420096F71C /* AccountsApp.swift */; };
 		03BCA7BE252CF80500347921 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CF3D0F250D05420096F71C /* Assets.xcassets */; };
 		03BCA7BF252CF80500347921 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0322B0AA25157703001EB2BC /* Localizable.strings */; };
-		03BCA7D0252CF9DA00347921 /* AccountsCoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA7CF252CF9DA00347921 /* AccountsCoreDataManagement */; };
 		03BCA7D2252CF9DA00347921 /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA7D1252CF9DA00347921 /* AccountsUI */; };
 		03BCA7D4252CF9DA00347921 /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA7D3252CF9DA00347921 /* DataManagement */; };
 		03BCA7D6252CF9DA00347921 /* MovementList_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03BCA7D5252CF9DA00347921 /* MovementList_iOS */; };
@@ -91,6 +90,16 @@
 		03CF3D39250D05430096F71C /* AccountsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CF3D0C250D05420096F71C /* AccountsApp.swift */; };
 		03CF3D3E250D05430096F71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CF3D0F250D05420096F71C /* Assets.xcassets */; };
 		03CF3D3F250D05430096F71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CF3D0F250D05420096F71C /* Assets.xcassets */; };
+		03D7E806263DF9EF00F488BF /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03D7E805263DF9EF00F488BF /* AccountsUI */; };
+		03D7E808263DF9EF00F488BF /* CoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03D7E807263DF9EF00F488BF /* CoreDataManagement */; };
+		03D7E80A263DF9EF00F488BF /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03D7E809263DF9EF00F488BF /* DataManagement */; };
+		03D7E80C263DF9EF00F488BF /* DependencyResolver in Frameworks */ = {isa = PBXBuildFile; productRef = 03D7E80B263DF9EF00F488BF /* DependencyResolver */; };
+		03D7E80E263DF9EF00F488BF /* MovementDetails_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03D7E80D263DF9EF00F488BF /* MovementDetails_iOS */; };
+		03D7E810263DF9EF00F488BF /* MovementList_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03D7E80F263DF9EF00F488BF /* MovementList_iOS */; };
+		03D7E812263DF9EF00F488BF /* MovementListCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 03D7E811263DF9EF00F488BF /* MovementListCommon */; };
+		03D7E814263DF9EF00F488BF /* NewMovement_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03D7E813263DF9EF00F488BF /* NewMovement_iOS */; };
+		03D7E816263DF9EF00F488BF /* NewMovementCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 03D7E815263DF9EF00F488BF /* NewMovementCommon */; };
+		03D7E824263DFC1A00F488BF /* CoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03D7E823263DFC1A00F488BF /* CoreDataManagement */; };
 		03DB5135252D1F8A008A2F1E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB5134252D1F8A008A2F1E /* CloudKit.framework */; };
 		03DB5141252D217F008A2F1E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DB5134252D1F8A008A2F1E /* CloudKit.framework */; };
 		03E0702825855F1B00960485 /* NewMovementMacOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03E0702725855F1B00960485 /* NewMovementMacOS */; };
@@ -101,12 +110,6 @@
 		03E0705025858EC200960485 /* MovementListMacOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03E0704F25858EC200960485 /* MovementListMacOS */; };
 		03E0707225869D1000960485 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E0707125869D1000960485 /* CloudKit.framework */; };
 		03E0707325869D2300960485 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E0707125869D1000960485 /* CloudKit.framework */; };
-		03F2B8DD253CF8BD00E44186 /* MovementList_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B8DC253CF8BD00E44186 /* MovementList_iOS */; };
-		03F2B8EA253CF8F600E44186 /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B8E9253CF8F600E44186 /* AccountsUI */; };
-		03F2B8F7253CF92300E44186 /* NewMovement_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B8F6253CF92300E44186 /* NewMovement_iOS */; };
-		03F2B90E253CF9B500E44186 /* DependencyResolver in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B90D253CF9B500E44186 /* DependencyResolver */; };
-		03F2B91B253CF9F300E44186 /* AccountsCoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B91A253CF9F300E44186 /* AccountsCoreDataManagement */; };
-		03F2B92D253CFA5D00E44186 /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03F2B92C253CFA5D00E44186 /* DataManagement */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +170,12 @@
 		03CF3D2F250D05430096F71C /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03CF3D33250D05430096F71C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		03CF3D35250D05430096F71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03D7E7F9263DF91A00F488BF /* MovementList */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MovementList; path = ../MovementList; sourceTree = "<group>"; };
+		03D7E7FA263DF91A00F488BF /* DataManagement */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DataManagement; path = ../DataManagement; sourceTree = "<group>"; };
+		03D7E7FB263DF91A00F488BF /* DependencyResolver */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DependencyResolver; path = ../DependencyResolver; sourceTree = "<group>"; };
+		03D7E7FC263DF91A00F488BF /* AccountsUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AccountsUI; path = ../AccountsUI; sourceTree = "<group>"; };
+		03D7E7FD263DF91A00F488BF /* NewMovement */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NewMovement; path = ../NewMovement; sourceTree = "<group>"; };
+		03D7E7FE263DF91A00F488BF /* CoreDataManagement */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CoreDataManagement; path = ../CoreDataManagement; sourceTree = "<group>"; };
 		03DB5133252D1F63008A2F1E /* Accounts (iOS) - DEV.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Accounts (iOS) - DEV.entitlements"; sourceTree = "<group>"; };
 		03DB5134252D1F8A008A2F1E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		03DB5140252D2179008A2F1E /* Accounts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Accounts.entitlements; sourceTree = "<group>"; };
@@ -180,9 +189,9 @@
 			files = (
 				03A518012585244200EE401D /* DataManagement in Frameworks */,
 				03A518022585244200EE401D /* AccountsUI in Frameworks */,
+				033B3498263E0D96008908E6 /* CoreDataManagement in Frameworks */,
 				03E0704E25858EC200960485 /* MovementDetailsMacOS in Frameworks */,
 				03E0705025858EC200960485 /* MovementListMacOS in Frameworks */,
-				03A518032585244200EE401D /* AccountsCoreDataManagement in Frameworks */,
 				03E0707325869D2300960485 /* CloudKit.framework in Frameworks */,
 				03A518042585244200EE401D /* DependencyResolver in Frameworks */,
 				03E0702A25855F2200960485 /* NewMovementMacOS in Frameworks */,
@@ -198,12 +207,12 @@
 				03BBB0AB2530E9E0009C91E0 /* DependencyResolver in Frameworks */,
 				0380896B254F2CEA006B7AD5 /* FirebaseMessaging in Frameworks */,
 				03808967254F2CEA006B7AD5 /* FirebaseAnalytics in Frameworks */,
+				03D7E824263DFC1A00F488BF /* CoreDataManagement in Frameworks */,
 				03BCA7D8252CF9DA00347921 /* NewMovement_iOS in Frameworks */,
 				03BCA7D6252CF9DA00347921 /* MovementList_iOS in Frameworks */,
 				03DB5135252D1F8A008A2F1E /* CloudKit.framework in Frameworks */,
 				03808969254F2CEA006B7AD5 /* FirebaseCrashlytics in Frameworks */,
 				03BCA7D2252CF9DA00347921 /* AccountsUI in Frameworks */,
-				03BCA7D0252CF9DA00347921 /* AccountsCoreDataManagement in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,16 +220,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D7E808263DF9EF00F488BF /* CoreDataManagement in Frameworks */,
 				0380895C254F2C8B006B7AD5 /* FirebaseRemoteConfig in Frameworks */,
-				03F2B8F7253CF92300E44186 /* NewMovement_iOS in Frameworks */,
-				03F2B90E253CF9B500E44186 /* DependencyResolver in Frameworks */,
 				0380895A254F2C8B006B7AD5 /* FirebaseAnalytics in Frameworks */,
-				03F2B8DD253CF8BD00E44186 /* MovementList_iOS in Frameworks */,
-				03F2B8EA253CF8F600E44186 /* AccountsUI in Frameworks */,
-				03F2B92D253CFA5D00E44186 /* DataManagement in Frameworks */,
+				03D7E810263DF9EF00F488BF /* MovementList_iOS in Frameworks */,
+				03D7E814263DF9EF00F488BF /* NewMovement_iOS in Frameworks */,
+				03D7E806263DF9EF00F488BF /* AccountsUI in Frameworks */,
+				03D7E80E263DF9EF00F488BF /* MovementDetails_iOS in Frameworks */,
+				03D7E80C263DF9EF00F488BF /* DependencyResolver in Frameworks */,
 				0380895E254F2C8B006B7AD5 /* FirebaseCrashlytics in Frameworks */,
-				03F2B91B253CF9F300E44186 /* AccountsCoreDataManagement in Frameworks */,
+				03D7E816263DF9EF00F488BF /* NewMovementCommon in Frameworks */,
+				03D7E80A263DF9EF00F488BF /* DataManagement in Frameworks */,
 				03808960254F2C8B006B7AD5 /* FirebaseMessaging in Frameworks */,
+				03D7E812263DF9EF00F488BF /* MovementListCommon in Frameworks */,
 				03DB5141252D217F008A2F1E /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,9 +243,9 @@
 			files = (
 				03A517F32585241E00EE401D /* DataManagement in Frameworks */,
 				03A517F12585241E00EE401D /* AccountsUI in Frameworks */,
+				033B3496263E0D8D008908E6 /* CoreDataManagement in Frameworks */,
 				03E0704A25858EB400960485 /* MovementDetailsMacOS in Frameworks */,
 				03E0704C25858EB400960485 /* MovementListMacOS in Frameworks */,
-				03A517EF2585241E00EE401D /* AccountsCoreDataManagement in Frameworks */,
 				03E0707225869D1000960485 /* CloudKit.framework in Frameworks */,
 				03A517F52585241E00EE401D /* DependencyResolver in Frameworks */,
 				03E0702825855F1B00960485 /* NewMovementMacOS in Frameworks */,
@@ -507,6 +519,12 @@
 		03CF3D04250D05410096F71C = {
 			isa = PBXGroup;
 			children = (
+				03D7E7FC263DF91A00F488BF /* AccountsUI */,
+				03D7E7FE263DF91A00F488BF /* CoreDataManagement */,
+				03D7E7FA263DF91A00F488BF /* DataManagement */,
+				03D7E7FB263DF91A00F488BF /* DependencyResolver */,
+				03D7E7F9263DF91A00F488BF /* MovementList */,
+				03D7E7FD263DF91A00F488BF /* NewMovement */,
 				03CF3D09250D05410096F71C /* Shared */,
 				03CF3D16250D05420096F71C /* iOS */,
 				03CF3D1D250D05420096F71C /* macOS */,
@@ -601,13 +619,13 @@
 			);
 			name = "Accounts (macOS) Dev";
 			packageProductDependencies = (
-				03A517F72585244200EE401D /* AccountsCoreDataManagement */,
 				03A517F82585244200EE401D /* AccountsUI */,
 				03A517F92585244200EE401D /* DataManagement */,
 				03A517FA2585244200EE401D /* DependencyResolver */,
 				03E0702925855F2200960485 /* NewMovementMacOS */,
 				03E0704D25858EC200960485 /* MovementDetailsMacOS */,
 				03E0704F25858EC200960485 /* MovementListMacOS */,
+				033B3497263E0D96008908E6 /* CoreDataManagement */,
 			);
 			productName = "Accounts (macOS)";
 			productReference = 03A5180D2585244200EE401D /* Accounts (macOS) Dev.app */;
@@ -627,7 +645,6 @@
 			);
 			name = "Accounts (iOS) - DEV";
 			packageProductDependencies = (
-				03BCA7CF252CF9DA00347921 /* AccountsCoreDataManagement */,
 				03BCA7D1252CF9DA00347921 /* AccountsUI */,
 				03BCA7D3252CF9DA00347921 /* DataManagement */,
 				03BCA7D5252CF9DA00347921 /* MovementList_iOS */,
@@ -637,6 +654,7 @@
 				03808968254F2CEA006B7AD5 /* FirebaseCrashlytics */,
 				0380896A254F2CEA006B7AD5 /* FirebaseMessaging */,
 				0380896C254F2CEA006B7AD5 /* FirebaseRemoteConfig */,
+				03D7E823263DFC1A00F488BF /* CoreDataManagement */,
 			);
 			productName = "Accounts (iOS)";
 			productReference = 03BCA7C3252CF80500347921 /* Accounts (iOS) - DEV.app */;
@@ -656,16 +674,19 @@
 			);
 			name = "Accounts (iOS)";
 			packageProductDependencies = (
-				03F2B8DC253CF8BD00E44186 /* MovementList_iOS */,
-				03F2B8E9253CF8F600E44186 /* AccountsUI */,
-				03F2B8F6253CF92300E44186 /* NewMovement_iOS */,
-				03F2B90D253CF9B500E44186 /* DependencyResolver */,
-				03F2B91A253CF9F300E44186 /* AccountsCoreDataManagement */,
-				03F2B92C253CFA5D00E44186 /* DataManagement */,
 				03808959254F2C8B006B7AD5 /* FirebaseAnalytics */,
 				0380895B254F2C8B006B7AD5 /* FirebaseRemoteConfig */,
 				0380895D254F2C8B006B7AD5 /* FirebaseCrashlytics */,
 				0380895F254F2C8B006B7AD5 /* FirebaseMessaging */,
+				03D7E805263DF9EF00F488BF /* AccountsUI */,
+				03D7E807263DF9EF00F488BF /* CoreDataManagement */,
+				03D7E809263DF9EF00F488BF /* DataManagement */,
+				03D7E80B263DF9EF00F488BF /* DependencyResolver */,
+				03D7E80D263DF9EF00F488BF /* MovementDetails_iOS */,
+				03D7E80F263DF9EF00F488BF /* MovementList_iOS */,
+				03D7E811263DF9EF00F488BF /* MovementListCommon */,
+				03D7E813263DF9EF00F488BF /* NewMovement_iOS */,
+				03D7E815263DF9EF00F488BF /* NewMovementCommon */,
 			);
 			productName = "Accounts (iOS)";
 			productReference = 03CF3D14250D05420096F71C /* Accounts.app */;
@@ -685,13 +706,13 @@
 			);
 			name = "Accounts (macOS)";
 			packageProductDependencies = (
-				03A517EE2585241E00EE401D /* AccountsCoreDataManagement */,
 				03A517F02585241E00EE401D /* AccountsUI */,
 				03A517F22585241E00EE401D /* DataManagement */,
 				03A517F42585241E00EE401D /* DependencyResolver */,
 				03E0702725855F1B00960485 /* NewMovementMacOS */,
 				03E0704925858EB400960485 /* MovementDetailsMacOS */,
 				03E0704B25858EB400960485 /* MovementListMacOS */,
+				033B3495263E0D8D008908E6 /* CoreDataManagement */,
 			);
 			productName = "Accounts (macOS)";
 			productReference = 03CF3D1C250D05420096F71C /* Accounts.app */;
@@ -769,12 +790,6 @@
 			);
 			mainGroup = 03CF3D04250D05410096F71C;
 			packageReferences = (
-				03F2B8DB253CF8BD00E44186 /* XCRemoteSwiftPackageReference "accounts-movement-list" */,
-				03F2B8E8253CF8F600E44186 /* XCRemoteSwiftPackageReference "accounts-ui" */,
-				03F2B8F5253CF92300E44186 /* XCRemoteSwiftPackageReference "accounts-new-movement" */,
-				03F2B90C253CF9B500E44186 /* XCRemoteSwiftPackageReference "accounts-dependency-resolver" */,
-				03F2B919253CF9F300E44186 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */,
-				03F2B92B253CFA5D00E44186 /* XCRemoteSwiftPackageReference "accounts-data-management" */,
 				03808958254F2C8B006B7AD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 03CF3D15250D05420096F71C /* Products */;
@@ -1472,57 +1487,17 @@
 				minimumVersion = 7.0.0;
 			};
 		};
-		03F2B8DB253CF8BD00E44186 /* XCRemoteSwiftPackageReference "accounts-movement-list" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bastianX6/accounts-movement-list.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 1.1.0;
-			};
-		};
-		03F2B8E8253CF8F600E44186 /* XCRemoteSwiftPackageReference "accounts-ui" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bastianX6/accounts-ui.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 1.2.0;
-			};
-		};
-		03F2B8F5253CF92300E44186 /* XCRemoteSwiftPackageReference "accounts-new-movement" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bastianX6/accounts-new-movement.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 1.1.0;
-			};
-		};
-		03F2B90C253CF9B500E44186 /* XCRemoteSwiftPackageReference "accounts-dependency-resolver" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bastianX6/accounts-dependency-resolver.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-		03F2B919253CF9F300E44186 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bastianX6/accounts-coredata-management.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 1.1.0;
-			};
-		};
-		03F2B92B253CFA5D00E44186 /* XCRemoteSwiftPackageReference "accounts-data-management" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/bastianX6/accounts-data-management.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 1.0.2;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		033B3495263E0D8D008908E6 /* CoreDataManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreDataManagement;
+		};
+		033B3497263E0D96008908E6 /* CoreDataManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreDataManagement;
+		};
 		03808959254F2C8B006B7AD5 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 03808958254F2C8B006B7AD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -1563,10 +1538,6 @@
 			package = 03808958254F2C8B006B7AD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseRemoteConfig;
 		};
-		03A517EE2585241E00EE401D /* AccountsCoreDataManagement */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = AccountsCoreDataManagement;
-		};
 		03A517F02585241E00EE401D /* AccountsUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AccountsUI;
@@ -1578,10 +1549,6 @@
 		03A517F42585241E00EE401D /* DependencyResolver */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DependencyResolver;
-		};
-		03A517F72585244200EE401D /* AccountsCoreDataManagement */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = AccountsCoreDataManagement;
 		};
 		03A517F82585244200EE401D /* AccountsUI */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1599,10 +1566,6 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = DependencyResolver;
 		};
-		03BCA7CF252CF9DA00347921 /* AccountsCoreDataManagement */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = AccountsCoreDataManagement;
-		};
 		03BCA7D1252CF9DA00347921 /* AccountsUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AccountsUI;
@@ -1618,6 +1581,46 @@
 		03BCA7D7252CF9DA00347921 /* NewMovement_iOS */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NewMovement_iOS;
+		};
+		03D7E805263DF9EF00F488BF /* AccountsUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AccountsUI;
+		};
+		03D7E807263DF9EF00F488BF /* CoreDataManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreDataManagement;
+		};
+		03D7E809263DF9EF00F488BF /* DataManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DataManagement;
+		};
+		03D7E80B263DF9EF00F488BF /* DependencyResolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DependencyResolver;
+		};
+		03D7E80D263DF9EF00F488BF /* MovementDetails_iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MovementDetails_iOS;
+		};
+		03D7E80F263DF9EF00F488BF /* MovementList_iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MovementList_iOS;
+		};
+		03D7E811263DF9EF00F488BF /* MovementListCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MovementListCommon;
+		};
+		03D7E813263DF9EF00F488BF /* NewMovement_iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NewMovement_iOS;
+		};
+		03D7E815263DF9EF00F488BF /* NewMovementCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NewMovementCommon;
+		};
+		03D7E823263DFC1A00F488BF /* CoreDataManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreDataManagement;
 		};
 		03E0702725855F1B00960485 /* NewMovementMacOS */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1642,36 +1645,6 @@
 		03E0704F25858EC200960485 /* MovementListMacOS */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MovementListMacOS;
-		};
-		03F2B8DC253CF8BD00E44186 /* MovementList_iOS */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03F2B8DB253CF8BD00E44186 /* XCRemoteSwiftPackageReference "accounts-movement-list" */;
-			productName = MovementList_iOS;
-		};
-		03F2B8E9253CF8F600E44186 /* AccountsUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03F2B8E8253CF8F600E44186 /* XCRemoteSwiftPackageReference "accounts-ui" */;
-			productName = AccountsUI;
-		};
-		03F2B8F6253CF92300E44186 /* NewMovement_iOS */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03F2B8F5253CF92300E44186 /* XCRemoteSwiftPackageReference "accounts-new-movement" */;
-			productName = NewMovement_iOS;
-		};
-		03F2B90D253CF9B500E44186 /* DependencyResolver */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03F2B90C253CF9B500E44186 /* XCRemoteSwiftPackageReference "accounts-dependency-resolver" */;
-			productName = DependencyResolver;
-		};
-		03F2B91A253CF9F300E44186 /* AccountsCoreDataManagement */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03F2B919253CF9F300E44186 /* XCRemoteSwiftPackageReference "accounts-coredata-management" */;
-			productName = AccountsCoreDataManagement;
-		};
-		03F2B92C253CFA5D00E44186 /* DataManagement */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03F2B92B253CFA5D00E44186 /* XCRemoteSwiftPackageReference "accounts-data-management" */;
-			productName = DataManagement;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

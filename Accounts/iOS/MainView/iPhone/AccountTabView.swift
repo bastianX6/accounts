@@ -5,7 +5,7 @@
 //  Created by Bastián Véliz Vega on 18-09-20.
 //
 
-import AccountsCoreDataManagement
+import CoreDataManagement
 import AccountsUI
 import Foundation
 import MovementList_iOS
