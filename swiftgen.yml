@@ -1,6 +1,26 @@
 strings:
-  inputs: 
-    - Accounts/Shared/Resources/es.lproj
-  outputs:
+  - inputs: 
+    - Shared/Resources/es.lproj
+    outputs:
     - templateName: structured-swift5
-      output: Accounts/Shared/Localization/Strings.swift
+      output: Shared/Localization/Strings.swift
+  - inputs: Modules/MovementList/Sources/MovementList_iOS/Resources/es.lproj
+    outputs:
+    - templateName: structured-swift5
+      output: Modules/MovementList/Sources/MovementList_iOS/Localization/Strings.swift
+  - inputs: Modules/MovementList/Sources/MovementDetails_iOS/Resources/es.lproj
+    outputs:
+    - templateName: structured-swift5
+      output: Modules/MovementList/Sources/MovementDetails_iOS/Localization/Strings.swift
+  - inputs: Modules/NewMovement/Sources/NewMovement_iOS/Resources/es.lproj
+    outputs:
+      templateName: structured-swift5
+      output: Modules/NewMovement/Sources/NewMovement_iOS/Localization/Strings.swift
+  - inputs: Modules/NewMovement/Sources/NewMovementMacOS/Resources/es.lproj
+    outputs:
+      templateName: structured-swift5
+      output: Modules/NewMovement/Sources/NewMovementMacOS/Localization/Strings.swift
+  - inputs: Modules/NewMovement/Sources/NewMovementCommon/Resources/es.lproj
+    outputs:
+      templateName: structured-swift5
+      output: Modules/NewMovement/Sources/NewMovementCommon/Localization/Strings.swift
