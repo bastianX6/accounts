@@ -1,7 +1,7 @@
 import XCTest
 @testable import accounts_ui
 
-final class accounts_uiTests: XCTestCase {
+final class AccountsUITests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct

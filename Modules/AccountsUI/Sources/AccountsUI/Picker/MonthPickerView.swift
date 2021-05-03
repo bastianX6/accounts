@@ -18,8 +18,8 @@ public struct MonthPickerView: View {
 
     var elements: [PickerElement<Int, String>] {
         var array = [PickerElement<Int, String>]()
-        for i in 0 ..< self.months.count {
-            array.append(PickerElement<Int, String>(id: i + 1, element: self.months[i]))
+        for index in 0 ..< self.months.count {
+            array.append(PickerElement<Int, String>(id: index + 1, element: self.months[index]))
         }
 
         return array

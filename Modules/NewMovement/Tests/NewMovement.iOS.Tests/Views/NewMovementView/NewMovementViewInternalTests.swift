@@ -21,6 +21,7 @@ class NewMovementViewInternalTests: QuickSpec {
     private let referenceSize = ViewImageConfig.iPhoneX.size!
     @ObservedObject var viewModel: NewMovementViewModel = DataPreview.viewModel
 
+    // swiftlint:disable function_body_length
     override func spec() {
         var sut: AnyView!
         var resolver: DependencyResolver!
@@ -165,4 +166,5 @@ class NewMovementViewInternalTests: QuickSpec {
             }
         }
     }
+    // swiftlint:enable function_body_length
 }
