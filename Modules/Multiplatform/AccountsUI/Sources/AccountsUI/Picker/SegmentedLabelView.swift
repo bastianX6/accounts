@@ -29,7 +29,8 @@ public struct SegmentedLabelView<IdType: Hashable>: View {
     ///   - selection: Binding to picker selected index
     public init(title: String,
                 elements: [PickerElement<IdType, String>],
-                selection: Binding<IdType>) {
+                selection: Binding<IdType>)
+    {
         self.title = title
         self.elements = elements
         self._selection = selection
@@ -65,7 +66,9 @@ struct SegmentedLabelView_Previews: PreviewProvider {
         Group {
             SegmentedLabelView(title: "Title", elements: self.elements, selection: self.$viewModel.selection)
             Form {
-                SegmentedLabelView(title: "Title", elements: self.elements, selection: self.$viewModel.selection)
+                SegmentedLabelView(title: "Title",
+                                   elements: self.elements,
+                                   selection: self.$viewModel.selection)
             }
         }
     }

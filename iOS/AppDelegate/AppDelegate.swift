@@ -18,10 +18,14 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         ]
     }
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool
+    {
         let initial: Bool? = nil
         let result = self.tasks.reduce(initial) { result, task in
-            guard let taskResult = task.application?(application, didFinishLaunchingWithOptions: launchOptions), result != nil else { return nil }
+            guard let taskResult = task.application?(application,
+                                                     didFinishLaunchingWithOptions: launchOptions), result != nil
+            else { return nil }
             return taskResult
         } ?? true
 

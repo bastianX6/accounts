@@ -12,7 +12,7 @@ class MovementPreview: DataSourceModify {
     private var movements: [Movement] = []
 
     func save(movement: Movement) -> AnyPublisher<Void, Error> {
-        let future = Future<Void, Error>() { [weak self] promise in
+        let future = Future<Void, Error> { [weak self] promise in
             guard let strongSelf = self else {
                 return promise(.failure(MovementPreviewError.other))
             }
@@ -23,7 +23,7 @@ class MovementPreview: DataSourceModify {
     }
 
     func delete(movement: Movement) -> AnyPublisher<Void, Error> {
-        let future = Future<Void, Error>() { [weak self] promise in
+        let future = Future<Void, Error> { [weak self] promise in
             guard let strongSelf = self else {
                 return promise(.failure(MovementPreviewError.other))
             }
@@ -34,7 +34,7 @@ class MovementPreview: DataSourceModify {
     }
 
     func update(movement: Movement) -> AnyPublisher<Void, Error> {
-        let future = Future<Void, Error>() { [weak self] promise in
+        let future = Future<Void, Error> { [weak self] promise in
             guard let strongSelf = self else {
                 return promise(.failure(MovementPreviewError.other))
             }

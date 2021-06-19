@@ -7,9 +7,9 @@
 
 import AccountsUI
 import DependencyResolver
+import NewMovement
 import NewMovementMac
 import SwiftUI
-import NewMovement
 
 struct ContainerViewInternal: View {
     @ObservedObject var viewModel: MovementDetailsViewModel
@@ -75,14 +75,21 @@ struct ContainerViewInternal: View {
         .sheet(isPresented: self.$viewModel.state.showEditMovementView,
                content: {
                    self.editView
-        })
+               })
     }
 
     var editView: some View {
         guard let movement = self.viewModel.state.selectedMovement,
-            let dataSourceModify = try? self.resolver.getDataSourceModify(forType: MovementDetailsAvailability.self),
-            let incomeData = try? self.resolver.getIncomeResources(forType: MovementDetailsAvailability.self),
-            let expenditureData = try? self.resolver.getExpenditureResources(forType: MovementDetailsAvailability.self) else {
+              let dataSourceModify = try? self
+              .resolver
+              .getDataSourceModify(forType: MovementDetailsAvailability.self),
+              let incomeData = try? self
+              .resolver
+              .getIncomeResources(forType: MovementDetailsAvailability.self),
+              let expenditureData = try? self
+              .resolver
+              .getExpenditureResources(forType: MovementDetailsAvailability.self)
+        else {
             return Text("").eraseToAnyView()
         }
 
@@ -91,8 +98,8 @@ struct ContainerViewInternal: View {
                                                  expenditureData: expenditureData)
 
         return NewMovementMac.NewMovementView(dataModel: dataModel,
-                                               movement: movement,
-                                               isIncome: self.viewModel.dataModel.isIncome) {
+                                              movement: movement,
+                                              isIncome: self.viewModel.dataModel.isIncome) {
             self.viewModel.setState(.loading)
         }.eraseToAnyView()
     }

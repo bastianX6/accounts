@@ -9,6 +9,7 @@
 import DataManagement
 import XCTest
 
+// swiftlint:disable type_body_length file_length
 final class CoreDataSourceReadTests: XCTestCase {
     static var allTests = [
         ("testReadElement", testReadElement),
@@ -310,6 +311,7 @@ final class CoreDataSourceReadTests: XCTestCase {
         XCTAssertEqual(lastElement.sum, mockMovement3.amount + mockMovement4.amount)
     }
 
+    // swiftlint:disable function_body_length
     func testGetMovementSumByCategoryTimeInterval() throws {
         guard let dataSource = self.sut else {
             XCTFail("Data source is not initialized")
@@ -372,6 +374,7 @@ final class CoreDataSourceReadTests: XCTestCase {
         XCTAssertEqual(lastElement.id, categoryId2)
         XCTAssertEqual(lastElement.sum, mockMovement4.amount)
     }
+    // swiftlint:enable function_body_length
 
     func testGetMovementSumByStore() throws {
         guard let dataSource = self.sut else {
@@ -475,6 +478,7 @@ final class CoreDataSourceReadTests: XCTestCase {
         XCTAssertEqual(lastElement.sum, mockMovement3.amount + mockMovement4.amount)
     }
 
+    // swiftlint:disable function_body_length
     func testGetMovementSumByStoreTimeInterval() throws {
         guard let dataSource = self.sut else {
             XCTFail("Data source is not initialized")
@@ -537,6 +541,7 @@ final class CoreDataSourceReadTests: XCTestCase {
         XCTAssertEqual(lastElement.id, storeId2)
         XCTAssertEqual(lastElement.sum, mockMovement4.amount)
     }
+    // swiftlint:enable function_body_length
 
     // MARK: - Private functions
 

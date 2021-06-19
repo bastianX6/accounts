@@ -14,6 +14,7 @@ import Quick
 @testable import NewMovement
 
 class NewMovementViewModelTests: QuickSpec {
+    // swiftlint:disable function_body_length
     override func spec() {
         var sut: NewMovementViewModel!
         var mockDataSource: MovementPreview!
@@ -106,7 +107,8 @@ class NewMovementViewModelTests: QuickSpec {
 
                 context("and a movement is edited") {
                     beforeEach {
-                        let model = NewMovementViewInternalDataModel(date: Date(), currentStore: expenditureData.stores.first?.id ?? UUID(),
+                        let model = NewMovementViewInternalDataModel(date: Date(),
+                                                                     currentStore: expenditureData.stores.first?.id ?? UUID(),
                                                                      currentCategory: expenditureData.categories.first?.id ?? UUID(),
                                                                      isNew: false)
 

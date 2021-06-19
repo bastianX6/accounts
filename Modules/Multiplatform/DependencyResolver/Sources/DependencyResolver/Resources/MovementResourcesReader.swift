@@ -5,8 +5,6 @@
 //  Created by Bastián Véliz Vega on 08-10-20.
 //
 
-import Foundation
-
 import AccountsUI
 import Foundation
 
@@ -31,7 +29,8 @@ class MovementResourcesReeader {
 
     private func readData(fileName: String) throws -> MovementResources {
         guard let url = self.bundle.url(forResource: fileName,
-                                        withExtension: self.fileExtension) else {
+                                        withExtension: self.fileExtension)
+        else {
             fatalError("Can't data url for file: \(fileName)")
         }
         let data = try Data(contentsOf: url)

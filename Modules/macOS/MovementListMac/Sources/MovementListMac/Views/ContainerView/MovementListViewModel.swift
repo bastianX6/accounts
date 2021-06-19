@@ -92,7 +92,8 @@ class MovementListViewModel: ObservableObject {
 
     private func updateDate() {
         let calendar = Calendar.current
-        var component = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: self.filterDate)
+        var component = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second],
+                                                from: self.filterDate)
         component.month = self.selectedMonth
         component.year = self.selectedYear
         guard let date = calendar.date(from: component) else {

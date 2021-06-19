@@ -47,6 +47,7 @@ extension CategoryStoreModel: Decodable {
         case icon
     }
 
+    // swiftlint:disable cyclomatic_complexity
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         self.name = try values.decode(String.self, forKey: .name)

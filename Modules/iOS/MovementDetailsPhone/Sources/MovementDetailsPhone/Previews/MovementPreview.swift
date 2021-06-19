@@ -20,7 +20,7 @@ class MovementPreview {
 
 extension MovementPreview: DataSourceRead {
     func readMovements(query _: ReadMovementsQuery) -> AnyPublisher<[Movement], Error> {
-        let future = Future<[Movement], Error>() { promise in
+        let future = Future<[Movement], Error> { promise in
             promise(.success(DataPreview.movements))
         }
         return future.eraseToAnyPublisher()
@@ -31,14 +31,14 @@ extension MovementPreview: DataSourceRead {
     }
 
     func getMovementSumByCategory(query _: ReadMovementsQuery) -> AnyPublisher<[MovementsSum], Error> {
-        let future = Future<[MovementsSum], Error>() { promise in
+        let future = Future<[MovementsSum], Error> { promise in
             promise(.success([]))
         }
         return future.eraseToAnyPublisher()
     }
 
     func getMovementSumByStore(query _: ReadMovementsQuery) -> AnyPublisher<[MovementsSum], Error> {
-        let future = Future<[MovementsSum], Error>() { [unowned self] promise in
+        let future = Future<[MovementsSum], Error> { [unowned self] promise in
             promise(.success(self.isEmpty ? [] : DataPreview.movementSumArray))
         }
         return future.eraseToAnyPublisher()
@@ -47,7 +47,7 @@ extension MovementPreview: DataSourceRead {
 
 extension MovementPreview: DataSourceModify {
     func save(movement: Movement) -> AnyPublisher<Void, Error> {
-        let future = Future<Void, Error>() { [weak self] promise in
+        let future = Future<Void, Error> { [weak self] promise in
             guard let strongSelf = self else {
                 return promise(.failure(MovementPreviewError.other))
             }
@@ -58,7 +58,7 @@ extension MovementPreview: DataSourceModify {
     }
 
     func delete(movement: Movement) -> AnyPublisher<Void, Error> {
-        let future = Future<Void, Error>() { [weak self] promise in
+        let future = Future<Void, Error> { [weak self] promise in
             guard let strongSelf = self else {
                 return promise(.failure(MovementPreviewError.other))
             }
@@ -69,7 +69,7 @@ extension MovementPreview: DataSourceModify {
     }
 
     func update(movement: Movement) -> AnyPublisher<Void, Error> {
-        let future = Future<Void, Error>() { [weak self] promise in
+        let future = Future<Void, Error> { [weak self] promise in
             guard let strongSelf = self else {
                 return promise(.failure(MovementPreviewError.other))
             }

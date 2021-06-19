@@ -54,9 +54,15 @@ struct CurrencyTextField_Previews: PreviewProvider {
 
     static var previews: some View {
         Group {
-            CurrencyTextField(title: "title", placeholder: "placeholder", value: self.$viewModel.amount, formatter: self.numberFormatter)
+            CurrencyTextField(title: "title",
+                              placeholder: "placeholder",
+                              value: self.$viewModel.amount,
+                              formatter: self.numberFormatter)
             Form {
-                CurrencyTextField(title: "title", placeholder: "placeholder", value: self.$viewModel.amount, formatter: self.numberFormatter)
+                CurrencyTextField(title: "title",
+                                  placeholder: "placeholder",
+                                  value: self.$viewModel.amount,
+                                  formatter: self.numberFormatter)
             }
         }
     }

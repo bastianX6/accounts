@@ -2,6 +2,7 @@
 import XCTest
 
 final class MovementDetailsMapperTests: XCTestCase {
+    // swiftlint:disable function_body_length
     func testGetModel() {
         let date1 = Date()
 

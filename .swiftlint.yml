@@ -1,14 +1,18 @@
 excluded:
   - DerivedData
 
+disabled_rules:
+- trailing_comma
+- opening_brace
+
 analyzer_rules:
   - explicit_self
 
-force_cast: warning
+force_cast: error
 force_try:
   severity: warning
 
-line_length: 110
+line_length: 150
 type_body_length:
   - 300
   - 400

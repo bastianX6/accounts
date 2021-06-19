@@ -6,11 +6,9 @@
 //
 
 import Foundation
-
 import CoreDataManagement
 import AccountsUI
 import DataManagement
-import Foundation
 import MovementListMac
 import NewMovement
 import NewMovementMac

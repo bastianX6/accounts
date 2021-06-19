@@ -27,7 +27,8 @@ class MockPersistantContainer {
     }()
 
     lazy var container: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "CoreDataUnitTesting", managedObjectModel: self.managedObjectModel)
+        let container = NSPersistentContainer(name: "CoreDataUnitTesting",
+                                              managedObjectModel: self.managedObjectModel)
         let description = NSPersistentStoreDescription()
         description.type = NSSQLiteStoreType
         description.configuration = "Default"

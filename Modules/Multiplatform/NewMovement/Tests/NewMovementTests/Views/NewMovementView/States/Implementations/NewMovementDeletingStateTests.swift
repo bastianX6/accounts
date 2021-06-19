@@ -12,6 +12,7 @@ import Quick
 @testable import NewMovement
 
 class NewMovementDeletingStateTests: QuickSpec {
+    // swiftlint:disable function_body_length
     override func spec() {
         var sut: NewMovementDeletingState!
 
@@ -78,7 +79,8 @@ class NewMovementDeletingStateTests: QuickSpec {
 
                     sut.deleteAction()
 
-                    expect(mockViewModel.currentStateEnum.representation).toEventually(be(NewMovementViewStateEnum.end.representation))
+                    expect(mockViewModel.currentStateEnum.representation)
+                        .toEventually(be(NewMovementViewStateEnum.end.representation))
                 }
 
                 it("should set error state in view model if deletion fails") {
@@ -93,7 +95,8 @@ class NewMovementDeletingStateTests: QuickSpec {
 
                     sut.deleteAction()
 
-                    expect(mockViewModel.currentStateEnum.representation).toEventually(be(NewMovementViewStateEnum.error(error: nil).representation))
+                    expect(mockViewModel.currentStateEnum.representation)
+                        .toEventually(be(NewMovementViewStateEnum.error(error: nil).representation))
                 }
             }
         }

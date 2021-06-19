@@ -12,6 +12,7 @@ import Quick
 @testable import NewMovement
 
 class NewMovementErrorStateTests: QuickSpec {
+    // swiftlint:disable function_body_length
     override func spec() {
         var sut: NewMovementErrorState!
 

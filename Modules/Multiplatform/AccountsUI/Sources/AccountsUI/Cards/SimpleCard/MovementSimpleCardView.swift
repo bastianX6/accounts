@@ -115,10 +115,25 @@ public struct MovementSimpleCardView: View {
 
 struct MovementSimpleCardView_Previews: PreviewProvider {
     static var elements: [MovementSimpleCardModel] = [
-        MovementSimpleCardModel(id: UUID(), name: "Alimentos", amount: "$ 9.999.999", systemImageName: "cart.fill", imageTintColor: .green),
-        MovementSimpleCardModel(id: UUID(), name: "Servicios básicos blah blah blah blah blah blah blah blah blah blah", amount: "$ 999", systemImageName: "bolt.fill", imageTintColor: .yellow),
-        MovementSimpleCardModel(id: UUID(), name: "Servicios online", amount: "$ 9.999.999", systemImageName: "tv.fill", imageTintColor: .blue),
-        MovementSimpleCardModel(id: UUID(), name: "Otras compras", amount: "$ 9", systemImageName: "creditcard.fill", imageTintColor: .red),
+        MovementSimpleCardModel(id: UUID(),
+                                name: "Alimentos",
+                                amount: "$ 9.999.999",
+                                systemImageName: "cart.fill",
+                                imageTintColor: .green),
+        MovementSimpleCardModel(id: UUID(),
+                                name: "Servicios básicos blah blah blah blah blah blah blah blah blah blah", amount: "$ 999",
+                                systemImageName: "bolt.fill",
+                                imageTintColor: .yellow),
+        MovementSimpleCardModel(id: UUID(),
+                                name: "Servicios online",
+                                amount: "$ 9.999.999",
+                                systemImageName: "tv.fill",
+                                imageTintColor: .blue),
+        MovementSimpleCardModel(id: UUID(),
+                                name: "Otras compras",
+                                amount: "$ 9",
+                                systemImageName: "creditcard.fill",
+                                imageTintColor: .red),
     ]
 
     static var previews: some View {

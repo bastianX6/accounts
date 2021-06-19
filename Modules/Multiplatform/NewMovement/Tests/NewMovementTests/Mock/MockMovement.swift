@@ -18,5 +18,5 @@ struct MockMovement: Movement {
     var isPermanent: Bool = false
     var storeId = UUID()
     var categoryId = UUID()
-    var paymentId: UUID? = nil
+    var paymentId: UUID?
 }

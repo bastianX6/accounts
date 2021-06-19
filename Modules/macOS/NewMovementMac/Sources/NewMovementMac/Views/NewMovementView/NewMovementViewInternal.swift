@@ -6,9 +6,8 @@
 //
 
 import AccountsUI
-import SwiftUI
 import NewMovement
-
+import SwiftUI
 
 struct NewMovementViewInternal: View {
     @Binding var model: NewMovementViewInternalDataModel
@@ -17,7 +16,8 @@ struct NewMovementViewInternal: View {
 
     init(model: Binding<NewMovementViewInternalDataModel>,
          dataResources: NewMovementViewInternalDataResources,
-         deleteAction: (() -> Void)? = nil) {
+         deleteAction: (() -> Void)? = nil)
+    {
         self._model = model
         self.dataResources = dataResources
         self.deleteAction = deleteAction
@@ -42,7 +42,7 @@ struct NewMovementViewInternal: View {
             VStack(alignment: .leading) {
                 Text(L10n.basicInformation.uppercased())
                     .font(.caption)
-        }) {
+            }) {
             TextField(L10n.description,
                       text: self.$model.title)
             DateSelector(title: L10n.date, date: self.$model.date)
@@ -59,7 +59,7 @@ struct NewMovementViewInternal: View {
             VStack(alignment: .leading) {
                 Text(self.dataResources.customDataSectionTitle.uppercased())
                     .font(.caption)
-        }) {
+            }) {
             Picker(selection: self.$model.currentCategory,
                    label: Text(L10n.category)) {
                 ForEach(self.dataResources.categories, id: \.id) { item in

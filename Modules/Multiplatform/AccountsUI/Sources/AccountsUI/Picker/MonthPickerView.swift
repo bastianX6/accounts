@@ -76,7 +76,9 @@ struct MonthPickerView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             MonthPickerView(title: "Meses", selection: self.$viewModel.selection)
-            MonthPickerView(title: "Meses", selection: self.$viewModel.selection, locale: Locale(identifier: "en_US"))
+            MonthPickerView(title: "Meses",
+                            selection: self.$viewModel.selection,
+                            locale: Locale(identifier: "en_US"))
         }
     }
 

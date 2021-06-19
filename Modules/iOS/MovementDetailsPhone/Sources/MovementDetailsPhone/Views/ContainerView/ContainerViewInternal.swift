@@ -7,8 +7,8 @@
 
 import AccountsUI
 import DependencyResolver
-import NewMovementPhone
 import NewMovement
+import NewMovementPhone
 import SwiftUI
 
 struct ContainerViewInternal: View {
@@ -80,9 +80,15 @@ struct ContainerViewInternal: View {
 
     var editView: some View {
         guard let movement = self.viewModel.state.selectedMovement,
-              let dataSourceModify = try? self.resolver.getDataSourceModify(forType: MovementDetailsAvailability.self),
-              let incomeData = try? self.resolver.getIncomeResources(forType: MovementDetailsAvailability.self),
-              let expenditureData = try? self.resolver.getExpenditureResources(forType: MovementDetailsAvailability.self)
+              let dataSourceModify = try? self
+              .resolver
+              .getDataSourceModify(forType: MovementDetailsAvailability.self),
+              let incomeData = try? self
+              .resolver
+              .getIncomeResources(forType: MovementDetailsAvailability.self),
+              let expenditureData = try? self
+              .resolver
+              .getExpenditureResources(forType: MovementDetailsAvailability.self)
         else {
             return Text("").eraseToAnyView()
         }
@@ -92,8 +98,8 @@ struct ContainerViewInternal: View {
                                                  expenditureData: expenditureData)
 
         return NewMovementPhone.NewMovementView(dataModel: dataModel,
-                                               movement: movement,
-                                               isIncome: self.viewModel.dataModel.isIncome) {
+                                                movement: movement,
+                                                isIncome: self.viewModel.dataModel.isIncome) {
             self.viewModel.setState(.loading)
         }.eraseToAnyView()
     }

@@ -20,6 +20,7 @@ import SwiftUI
 class NewMovementViewTests: QuickSpec {
     private let referenceSize = ViewImageConfig.iPhoneX.size!
 
+    // swiftlint:disable function_body_length
     override func spec() {
         var sut: AnyView!
         var resolver: DependencyResolver!

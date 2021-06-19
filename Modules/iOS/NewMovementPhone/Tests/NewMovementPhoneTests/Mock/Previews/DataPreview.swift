@@ -16,17 +16,35 @@ enum DataPreview {
 
     static var categories: [CategoryStoreModel] {
         var array = [CategoryStoreModel]()
-        array.append(CategoryStoreModel(name: "Category 1", id: self.categoryId, color: .indigo, icon: "creditcard.fill"))
-        array.append(CategoryStoreModel(name: "Category 2", id: UUID(), color: .indigo, icon: "creditcard.fill"))
-        array.append(CategoryStoreModel(name: "Category 3", id: UUID(), color: .indigo, icon: "creditcard.fill"))
+        array.append(CategoryStoreModel(name: "Category 1",
+                                        id: self.categoryId,
+                                        color: .indigo,
+                                        icon: "creditcard.fill"))
+        array.append(CategoryStoreModel(name: "Category 2",
+                                        id: UUID(),
+                                        color: .indigo,
+                                        icon: "creditcard.fill"))
+        array.append(CategoryStoreModel(name: "Category 3",
+                                        id: UUID(),
+                                        color: .indigo,
+                                        icon: "creditcard.fill"))
         return array
     }
 
     static var stores: [CategoryStoreModel] {
         var array = [CategoryStoreModel]()
-        array.append(CategoryStoreModel(name: "Store 1", id: self.storeId, color: .indigo, icon: "creditcard.fill"))
-        array.append(CategoryStoreModel(name: "Store 2", id: UUID(), color: .indigo, icon: "creditcard.fill"))
-        array.append(CategoryStoreModel(name: "Store 3", id: UUID(), color: .indigo, icon: "creditcard.fill"))
+        array.append(CategoryStoreModel(name: "Store 1",
+                                        id: self.storeId,
+                                        color: .indigo,
+                                        icon: "creditcard.fill"))
+        array.append(CategoryStoreModel(name: "Store 2",
+                                        id: UUID(),
+                                        color: .indigo,
+                                        icon: "creditcard.fill"))
+        array.append(CategoryStoreModel(name: "Store 3",
+                                        id: UUID(),
+                                        color: .indigo,
+                                        icon: "creditcard.fill"))
         return array
     }
 

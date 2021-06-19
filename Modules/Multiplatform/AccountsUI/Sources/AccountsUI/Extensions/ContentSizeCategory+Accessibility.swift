@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// swiftlint:disable line_length
 public extension ContentSizeCategory {
     /**
      Check if an Accessibility category is used

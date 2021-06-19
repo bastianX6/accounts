@@ -11,7 +11,9 @@ import Quick
 
 @testable import NewMovement
 
+// swiftlint:disable type_name
 class NewMovementViewInternalDataResourcesTests: QuickSpec {
+// swiftlint:enable type_name
     override func spec() {
         var sut: NewMovementViewInternalDataResources!
 
