@@ -1,0 +1,8 @@
+app_identifier("bastianx6.Accounts") # The bundle identifier of your app
+apple_id("bastianx6@icloud.com") # Your Apple email address
+
+itc_team_id("119971796") # App Store Connect Team ID
+team_id("48L72N5ZP6") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
