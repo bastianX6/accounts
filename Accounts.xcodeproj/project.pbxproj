@@ -21,6 +21,8 @@
 		0322B0BB251578D4001EB2BC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0B9251578D4001EB2BC /* Strings.swift */; };
 		0322B0D025158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
 		0322B0D125158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
+		0323BE77266EFE00000410D8 /* CoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 0323BE76266EFE00000410D8 /* CoreDataManagement */; };
+		0323BE7A266EFE67000410D8 /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 0323BE79266EFE67000410D8 /* DataManagement */; };
 		03753A0D252D008C0011A116 /* View+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03753A0C252D008C0011A116 /* View+Custom.swift */; };
 		03753A1E252D0F300011A116 /* MainViewMenuElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03753A1D252D0F300011A116 /* MainViewMenuElement.swift */; };
 		03753A2B252D0F690011A116 /* MenuSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03753A2A252D0F690011A116 /* MenuSections.swift */; };
@@ -42,8 +44,6 @@
 		03CF3D3E250D05430096F71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CF3D0F250D05420096F71C /* Assets.xcassets */; };
 		03CF3D3F250D05430096F71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03CF3D0F250D05420096F71C /* Assets.xcassets */; };
 		03D18A30263F6A44001B615A /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03D18A2F263F6A44001B615A /* AccountsUI */; };
-		03D18A32263F6A44001B615A /* CoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03D18A31263F6A44001B615A /* CoreDataManagement */; };
-		03D18A34263F6A44001B615A /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03D18A33263F6A44001B615A /* DataManagement */; };
 		03D18A36263F6A44001B615A /* DependencyResolver in Frameworks */ = {isa = PBXBuildFile; productRef = 03D18A35263F6A44001B615A /* DependencyResolver */; };
 		03D18A38263F6A44001B615A /* MovementDetails_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03D18A37263F6A44001B615A /* MovementDetails_iOS */; };
 		03D18A3A263F6A44001B615A /* MovementList_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 03D18A39263F6A44001B615A /* MovementList_iOS */; };
@@ -76,6 +76,8 @@
 		0322B0B325157706001EB2BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0322B0B9251578D4001EB2BC /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMovementResources.swift; sourceTree = "<group>"; };
+		0323BE78266EFE4E000410D8 /* DataManagement */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DataManagement; path = Modules/DataManagement; sourceTree = "<group>"; };
+		0323BE7B266EFE7A000410D8 /* AccountsUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AccountsUI; path = Modules/AccountsUI; sourceTree = "<group>"; };
 		03753A0C252D008C0011A116 /* View+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Custom.swift"; sourceTree = "<group>"; };
 		03753A1D252D0F300011A116 /* MainViewMenuElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewMenuElement.swift; sourceTree = "<group>"; };
 		03753A2A252D0F690011A116 /* MenuSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSections.swift; sourceTree = "<group>"; };
@@ -96,8 +98,6 @@
 		03CF3D1F250D05420096F71C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		03D18A29263F68D0001B615A /* NewMovement */ = {isa = PBXFileReference; lastKnownFileType = folder; name = NewMovement; path = Modules/NewMovement; sourceTree = "<group>"; };
 		03D18A2A263F68D0001B615A /* DependencyResolver */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DependencyResolver; path = Modules/DependencyResolver; sourceTree = "<group>"; };
-		03D18A2B263F68D0001B615A /* DataManagement */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DataManagement; path = Modules/DataManagement; sourceTree = "<group>"; };
-		03D18A2C263F68D1001B615A /* AccountsUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AccountsUI; path = Modules/AccountsUI; sourceTree = "<group>"; };
 		03D18A2D263F68D1001B615A /* CoreDataManagement */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CoreDataManagement; path = Modules/CoreDataManagement; sourceTree = "<group>"; };
 		03D18A2E263F68D1001B615A /* MovementList */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MovementList; path = Modules/MovementList; sourceTree = "<group>"; };
 		03DB5133252D1F63008A2F1E /* Accounts-DEV.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Accounts-DEV.entitlements"; sourceTree = "<group>"; };
@@ -111,18 +111,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03D18A32263F6A44001B615A /* CoreDataManagement in Frameworks */,
 				0380895C254F2C8B006B7AD5 /* FirebaseRemoteConfig in Frameworks */,
 				0380895A254F2C8B006B7AD5 /* FirebaseAnalytics in Frameworks */,
 				03D18A3A263F6A44001B615A /* MovementList_iOS in Frameworks */,
 				03D18A3E263F6A44001B615A /* NewMovement_iOS in Frameworks */,
 				03D18A30263F6A44001B615A /* AccountsUI in Frameworks */,
 				03D18A38263F6A44001B615A /* MovementDetails_iOS in Frameworks */,
+				0323BE77266EFE00000410D8 /* CoreDataManagement in Frameworks */,
 				03D18A36263F6A44001B615A /* DependencyResolver in Frameworks */,
 				0380895E254F2C8B006B7AD5 /* FirebaseCrashlytics in Frameworks */,
 				03D18A40263F6A44001B615A /* NewMovementCommon in Frameworks */,
-				03D18A34263F6A44001B615A /* DataManagement in Frameworks */,
 				03808960254F2C8B006B7AD5 /* FirebaseMessaging in Frameworks */,
+				0323BE7A266EFE67000410D8 /* DataManagement in Frameworks */,
 				03D18A3C263F6A44001B615A /* MovementListCommon in Frameworks */,
 				03DB5141252D217F008A2F1E /* CloudKit.framework in Frameworks */,
 			);
@@ -364,9 +364,9 @@
 		03CF3D04250D05410096F71C = {
 			isa = PBXGroup;
 			children = (
-				03D18A2C263F68D1001B615A /* AccountsUI */,
+				0323BE7B266EFE7A000410D8 /* AccountsUI */,
+				0323BE78266EFE4E000410D8 /* DataManagement */,
 				03D18A2D263F68D1001B615A /* CoreDataManagement */,
-				03D18A2B263F68D0001B615A /* DataManagement */,
 				03D18A2A263F68D0001B615A /* DependencyResolver */,
 				03D18A2E263F68D1001B615A /* MovementList */,
 				03D18A29263F68D0001B615A /* NewMovement */,
@@ -448,14 +448,14 @@
 				0380895D254F2C8B006B7AD5 /* FirebaseCrashlytics */,
 				0380895F254F2C8B006B7AD5 /* FirebaseMessaging */,
 				03D18A2F263F6A44001B615A /* AccountsUI */,
-				03D18A31263F6A44001B615A /* CoreDataManagement */,
-				03D18A33263F6A44001B615A /* DataManagement */,
 				03D18A35263F6A44001B615A /* DependencyResolver */,
 				03D18A37263F6A44001B615A /* MovementDetails_iOS */,
 				03D18A39263F6A44001B615A /* MovementList_iOS */,
 				03D18A3B263F6A44001B615A /* MovementListCommon */,
 				03D18A3D263F6A44001B615A /* NewMovement_iOS */,
 				03D18A3F263F6A44001B615A /* NewMovementCommon */,
+				0323BE76266EFE00000410D8 /* CoreDataManagement */,
+				0323BE79266EFE67000410D8 /* DataManagement */,
 			);
 			productName = "Accounts (iOS)";
 			productReference = 03CF3D14250D05420096F71C /* Accounts-Dev.app */;
@@ -939,12 +939,20 @@
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
+				minimumVersion = 8.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0323BE76266EFE00000410D8 /* CoreDataManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreDataManagement;
+		};
+		0323BE79266EFE67000410D8 /* DataManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DataManagement;
+		};
 		03808959254F2C8B006B7AD5 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 03808958254F2C8B006B7AD5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -968,14 +976,6 @@
 		03D18A2F263F6A44001B615A /* AccountsUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AccountsUI;
-		};
-		03D18A31263F6A44001B615A /* CoreDataManagement */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = CoreDataManagement;
-		};
-		03D18A33263F6A44001B615A /* DataManagement */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = DataManagement;
 		};
 		03D18A35263F6A44001B615A /* DependencyResolver */ = {
 			isa = XCSwiftPackageProductDependency;
