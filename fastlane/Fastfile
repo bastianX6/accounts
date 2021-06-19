@@ -56,7 +56,7 @@ platform :ios do
   desc "Lint all files"
   lane :lint do
     swiftlint(
-      output_file: "sonar-reports/iOS/Accounts-swiftlint.txt",
+      output_file: "sonar-reports/Accounts-macOS-swiftlint.txt",
       ignore_exit_status: true
     )
   end
@@ -109,7 +109,7 @@ platform :mac do
   desc "Lint all files"
   lane :lint do
     swiftlint(
-      output_file: "sonar-reports/macOS/NewMovement-swiftlint.txt",
+      output_file: "sonar-reports/Accounts-macOS-swiftlint.txt",
       ignore_exit_status: true
     )
   end
