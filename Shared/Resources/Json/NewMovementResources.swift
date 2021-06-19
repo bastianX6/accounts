@@ -8,12 +8,12 @@
 import AccountsUI
 import Foundation
 
-class NewMovementResourcesReeader {
+class NewMovementResourcesReader {
     private let incomeDataFileName = "IncomeData"
-    private let expeditureDataFileName = "ExpeditureData"
+    private let expenditureDataFileName = "ExpeditureData"
     private let fileExtension = "json"
 
-    static let shared = NewMovementResourcesReeader()
+    static let shared = NewMovementResourcesReader()
 
     private init() {}
 
@@ -21,12 +21,12 @@ class NewMovementResourcesReeader {
         return try self.readData(fileName: self.incomeDataFileName)
     }
 
-    func readExpeditureData() throws -> MovementResources {
-        return try self.readData(fileName: self.expeditureDataFileName)
+    func readExpenditureData() throws -> MovementResources {
+        return try self.readData(fileName: self.expenditureDataFileName)
     }
 
     private func readData(fileName: String) throws -> MovementResources {
-        guard let url = Bundle(for: NewMovementResourcesReeader.self)
+        guard let url = Bundle(for: NewMovementResourcesReader.self)
             .url(forResource: fileName, withExtension: self.fileExtension) else {
             fatalError("Can't data url for file: \(fileName)")
         }

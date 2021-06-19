@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CombineCoreData",
+        "repositoryURL": "https://github.com/Alexander-Ignition/CombineCoreData",
+        "state": {
+          "branch": null,
+          "revision": "167f59af89c24ac925a0f5161e6e704ad4f2774a",
+          "version": "0.0.3"
+        }
+      },
+      {
+        "package": "swift-log",
+        "repositoryURL": "https://github.com/apple/swift-log.git",
+        "state": {
+          "branch": null,
+          "revision": "5d66f7ba25daf4f94100e7022febf3c75e37a6c7",
+          "version": "1.4.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

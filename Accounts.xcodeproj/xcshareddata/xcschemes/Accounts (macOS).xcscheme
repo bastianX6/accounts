@@ -32,10 +32,80 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "03CF3D2E250D05430096F71C"
-               BuildableName = "Tests macOS.xctest"
-               BlueprintName = "Tests macOS"
-               ReferencedContainer = "container:Accounts.xcodeproj">
+               BlueprintIdentifier = "CoreDataManagementTests"
+               BuildableName = "CoreDataManagementTests"
+               BlueprintName = "CoreDataManagementTests"
+               ReferencedContainer = "container:Modules/Multiplatform/CoreDataManagement">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DependencyResolverTests"
+               BuildableName = "DependencyResolverTests"
+               BlueprintName = "DependencyResolverTests"
+               ReferencedContainer = "container:Modules/Multiplatform/DependencyResolver">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "MovementDetailsMacTests"
+               BuildableName = "MovementDetailsMacTests"
+               BlueprintName = "MovementDetailsMacTests"
+               ReferencedContainer = "container:Modules/macOS/MovementDetailsMac">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "MovementListTests"
+               BuildableName = "MovementListTests"
+               BlueprintName = "MovementListTests"
+               ReferencedContainer = "container:Modules/Multiplatform/MovementList">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "MovementListMacTests"
+               BuildableName = "MovementListMacTests"
+               BlueprintName = "MovementListMacTests"
+               ReferencedContainer = "container:Modules/macOS/MovementListMac">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "NewMovementTests"
+               BuildableName = "NewMovementTests"
+               BlueprintName = "NewMovementTests"
+               ReferencedContainer = "container:Modules/Multiplatform/NewMovement">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "NewMovementCommonMacTests"
+               BuildableName = "NewMovementCommonMacTests"
+               BlueprintName = "NewMovementCommonMacTests"
+               ReferencedContainer = "container:Modules/macOS/NewMovementMac">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "NewMovementMacTests"
+               BuildableName = "NewMovementMacTests"
+               BlueprintName = "NewMovementMacTests"
+               ReferencedContainer = "container:Modules/macOS/NewMovementMac">
             </BuildableReference>
          </TestableReference>
       </Testables>

@@ -44,16 +44,87 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "03CF3D23250D05420096F71C"
-               BuildableName = "Tests iOS.xctest"
-               BlueprintName = "Tests iOS"
-               ReferencedContainer = "container:Accounts.xcodeproj">
+               BlueprintIdentifier = "CoreDataManagementTests"
+               BuildableName = "CoreDataManagementTests"
+               BlueprintName = "CoreDataManagementTests"
+               ReferencedContainer = "container:Modules/Multiplatform/CoreDataManagement">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DependencyResolverTests"
+               BuildableName = "DependencyResolverTests"
+               BlueprintName = "DependencyResolverTests"
+               ReferencedContainer = "container:Modules/Multiplatform/DependencyResolver">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "MovementDetailsPhoneTests"
+               BuildableName = "MovementDetailsPhoneTests"
+               BlueprintName = "MovementDetailsPhoneTests"
+               ReferencedContainer = "container:Modules/iOS/MovementDetailsPhone">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "MovementListTests"
+               BuildableName = "MovementListTests"
+               BlueprintName = "MovementListTests"
+               ReferencedContainer = "container:Modules/Multiplatform/MovementList">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "MovementListPhoneTests"
+               BuildableName = "MovementListPhoneTests"
+               BlueprintName = "MovementListPhoneTests"
+               ReferencedContainer = "container:Modules/iOS/MovementListPhone">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "NewMovementTests"
+               BuildableName = "NewMovementTests"
+               BlueprintName = "NewMovementTests"
+               ReferencedContainer = "container:Modules/Multiplatform/NewMovement">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "NewMovementCommonPhoneTests"
+               BuildableName = "NewMovementCommonPhoneTests"
+               BlueprintName = "NewMovementCommonPhoneTests"
+               ReferencedContainer = "container:Modules/iOS/NewMovementPhone">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "NewMovementPhoneTests"
+               BuildableName = "NewMovementPhoneTests"
+               BlueprintName = "NewMovementPhoneTests"
+               ReferencedContainer = "container:Modules/iOS/NewMovementPhone">
             </BuildableReference>
          </TestableReference>
       </Testables>

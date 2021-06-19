@@ -8,8 +8,8 @@
 import CoreDataManagement
 import AccountsUI
 import Foundation
-import MovementList_iOS
-import NewMovement_iOS
+import MovementListPhone
+import NewMovementPhone
 import SwiftUI
 
 struct AccountTabView: View {
