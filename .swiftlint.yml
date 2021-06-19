@@ -1,0 +1,38 @@
+excluded:
+  - DerivedData
+
+disabled_rules:
+- trailing_comma
+- opening_brace
+
+analyzer_rules:
+  - explicit_self
+
+force_cast: error
+force_try:
+  severity: warning
+
+line_length: 150
+type_body_length:
+  - 300
+  - 400
+
+file_length:
+  warning: 500
+  error: 1200
+
+type_name:
+  min_length: 4
+  max_length:
+    warning: 40
+    error: 50
+  excluded: iPhone
+  allowed_symbols: ["_"]
+identifier_name:
+  min_length: 
+    error: 3 
+  excluded: 
+    - id
+    - URL
+    - GlobalAPIKey
+reporter: "xcode"
