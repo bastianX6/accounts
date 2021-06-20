@@ -96,6 +96,7 @@ platform :mac do
     slather(
       scheme: "Accounts (macOS)",
       proj: "Accounts.xcodeproj",
+      configuration: "Debug",
       output_directory: "sonar-reports/macOS",
       cobertura_xml: "true",
       sonarqube_xml: true,
