@@ -93,6 +93,8 @@
 		03808988254F2E66006B7AD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0380899B254F30AE006B7AD5 /* FirebaseTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseTask.swift; sourceTree = "<group>"; };
 		038089D1254F358C006B7AD5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0383AD2E267FAE9E00D25F78 /* AccountsTestsMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsTestsMac.swift; sourceTree = "<group>"; };
+		0383AD30267FAE9E00D25F78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03A5182D2585252F00EE401D /* macOS-Dev.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "macOS-Dev.entitlements"; sourceTree = "<group>"; };
 		03A5185325854B8E00EE401D /* SectionBuilderMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBuilderMac.swift; sourceTree = "<group>"; };
 		03A5187425854C8D00EE401D /* MainViewMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewMac.swift; sourceTree = "<group>"; };
@@ -330,6 +332,15 @@
 			path = Prod;
 			sourceTree = "<group>";
 		};
+		0383AD2D267FAE9D00D25F78 /* AccountsTestsMac */ = {
+			isa = PBXGroup;
+			children = (
+				0383AD2E267FAE9E00D25F78 /* AccountsTestsMac.swift */,
+				0383AD30267FAE9E00D25F78 /* Info.plist */,
+			);
+			path = AccountsTestsMac;
+			sourceTree = "<group>";
+		};
 		0398C2FA2513F9070022E279 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -413,6 +424,7 @@
 				03CF3D09250D05410096F71C /* Shared */,
 				03CF3D16250D05420096F71C /* iOS */,
 				03CF3D1D250D05420096F71C /* macOS */,
+				0383AD2D267FAE9D00D25F78 /* AccountsTestsMac */,
 				03CF3D15250D05420096F71C /* Products */,
 				0398C2FA2513F9070022E279 /* Frameworks */,
 			);
@@ -533,7 +545,7 @@
 		03CF3D05250D05410096F71C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					03CF3D13250D05420096F71C = {
@@ -719,6 +731,122 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0383AD36267FAF8900D25F78 /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = QA;
+		};
+		0383AD37267FAF8900D25F78 /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APP_BUNDLE_ID = bastianx6.Accounts.dev;
+				APP_DISPLAY_NAME = "Accounts-Dev";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "iOS/Entitlements/Dev/Accounts-DEV.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 48L72N5ZP6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Plist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PATH_TO_GOOGLE_PLISTS = iOS/Firebase;
+				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.Accounts.dev;
+				PRODUCT_NAME = "Accounts-Dev";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development bastianx6.Accounts.dev";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = QA;
+		};
+		0383AD38267FAF8900D25F78 /* QA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS/Entitlements/Dev/macOS-Dev.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 48L72N5ZP6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Plist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.Accounts.dev;
+				PRODUCT_NAME = "Accounts-Dev";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development bastianx6.Accounts.dev macos";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = QA;
+		};
 		03CF3D40250D05430096F71C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -842,7 +970,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "iOS/Entitlements/Dev/Accounts-DEV.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Plist/Info.plist;
@@ -855,6 +984,7 @@
 				PATH_TO_GOOGLE_PLISTS = iOS/Firebase;
 				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.Accounts.dev;
 				PRODUCT_NAME = "Accounts-Dev";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development bastianx6.Accounts.dev";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -869,7 +999,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = iOS/Entitlements/Prod/Accounts.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Plist/Info.plist;
@@ -882,6 +1013,7 @@
 				PATH_TO_GOOGLE_PLISTS = iOS/Firebase;
 				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.Accounts;
 				PRODUCT_NAME = Accounts;
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore bastianx6.Accounts";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -894,11 +1026,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "macOS/Entitlements/Dev/macOS-Dev.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 48L72N5ZP6;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Plist/Info.plist;
@@ -907,8 +1039,9 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.Accounts.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.Accounts.tests;
 				PRODUCT_NAME = "Accounts-Dev";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -920,8 +1053,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/Entitlements/Prod/macOS.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 48L72N5ZP6;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -934,6 +1067,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.Accounts;
 				PRODUCT_NAME = Accounts;
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore bastianx6.Accounts macos";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -946,6 +1080,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				03CF3D40250D05430096F71C /* Debug */,
+				0383AD36267FAF8900D25F78 /* QA */,
 				03CF3D41250D05430096F71C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -955,6 +1090,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				03CF3D43250D05430096F71C /* Debug */,
+				0383AD37267FAF8900D25F78 /* QA */,
 				03CF3D44250D05430096F71C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -964,6 +1100,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				03CF3D46250D05430096F71C /* Debug */,
+				0383AD38267FAF8900D25F78 /* QA */,
 				03CF3D47250D05430096F71C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
