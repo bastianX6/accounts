@@ -19,6 +19,7 @@ platform :ios do
   desc "All iOS lanes"
   lane :all_checks do
     sh("mkdir -p ../sonar-reports/iOS")
+    sync_code_signing(type: "development", readonly: true, platform: "ios")
     lint
     run_all_test_ios
     coverage_ios
@@ -73,6 +74,7 @@ platform :mac do
   desc "All macOS lanes"
   lane :all_checks do
     sh("mkdir -p ../sonar-reports/macOS")
+    sync_code_signing(type: "development", readonly: true, platform: "macos")
     lint
     run_all_test_macos
     coverage_macos

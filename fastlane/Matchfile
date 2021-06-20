@@ -1,0 +1,7 @@
+git_url("git@github.com:bastianX6/accounts-certificates.git")
+storage_mode("git")
+type("appstore")
+app_identifier(["bastianx6.Accounts.dev", "bastianx6.Accounts"])
+username("bastianx6@icloud.com")
+additional_cert_types(["mac_installer_distribution"])
+generate_apple_certs
