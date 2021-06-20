@@ -1,4 +1,5 @@
-git_url("git@github.com:bastianX6/accounts-certificates.git")
+git_url(ENV["ACCOUNTS_CERTS_REPO"])
+git_basic_authorization(Base64.strict_encode64("bastianx6:"+ENV["GITHUB_PAT"]))
 storage_mode("git")
 type("appstore")
 app_identifier(["bastianx6.Accounts.dev", "bastianx6.Accounts"])
