@@ -33,7 +33,9 @@ public class NewMovementSavingState: NewMovementViewBaseState {
                     print("Save movement error: \(String(describing: error))")
                     strongSelf.viewModel?.setState(.error(error: error))
                 }
-            }, receiveValue: {})
+            }, receiveValue: {
+                // nothing to handle
+            })
 
         self.cancellables.append(cancellable)
     }

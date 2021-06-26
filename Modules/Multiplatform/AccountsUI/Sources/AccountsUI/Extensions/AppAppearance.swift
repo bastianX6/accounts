@@ -21,7 +21,9 @@ public class AppAppearance: ObservableObject, Appearance {
     /// Shared appearance
     public static let shared = AppAppearance()
 
-    private init() {}
+    private init() {
+        // Private init implementation
+    }
 
     /// Application background color
     public let backgroundColor: Color = .systemGray6

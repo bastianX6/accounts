@@ -14,22 +14,12 @@ enum MovementDetailsAvailability {
 
 extension MovementDetailsAvailability: DataSourceAvailability {
     public func availability(for type: DataSourceType) -> Bool {
-        switch type {
-        case .read:
-            return true
-        case .modify:
-            return true
-        }
+        return true
     }
 }
 
 extension MovementDetailsAvailability: ResourcesAvailability {
     public func availability(for type: ResourceType) -> Bool {
-        switch type {
-        case .incomesData:
-            return true
-        case .expensesData:
-            return true
-        }
+        return true
     }
 }

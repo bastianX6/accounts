@@ -20,7 +20,7 @@ class PersistenceController {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for _ in 0 ..< 10 {
-            let newItem = AccountMovement(context: viewContext)
+            AccountMovement(context: viewContext)
         }
         do {
             try viewContext.save()
@@ -45,7 +45,8 @@ class PersistenceController {
 
         self.container = NSPersistentCloudKitContainer(name: "Account", managedObjectModel: managedObjectModel)
         if inMemory {
-            self.container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
+            let path = "/dev/null"
+            self.container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: path)
         }
         self.container.loadPersistentStores(completionHandler: { _, error in
             if let error = error as NSError? {

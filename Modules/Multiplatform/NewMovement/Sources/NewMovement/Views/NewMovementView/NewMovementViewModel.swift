@@ -66,10 +66,10 @@ public class NewMovementViewModel: ObservableObject {
                             movementDate: Date = Date(),
                             onEnd: @escaping () -> Void)
     {
-        let model = NewMovementViewInternalDataModel(date: movementDate,
-                                                     currentStore: UUID(),
-                                                     currentCategory: UUID())
-        self.init(model: model,
+        let internalModel = NewMovementViewInternalDataModel(date: movementDate,
+                                                             currentStore: UUID(),
+                                                             currentCategory: UUID())
+        self.init(model: internalModel,
                   dataSource: dataSource,
                   incomeData: incomeData,
                   expenditureData: expenditureData,

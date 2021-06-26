@@ -70,13 +70,13 @@ struct SummaryListView: View {
             return Text("")
                 .eraseToAnyView()
         }
-        let dataModel = MovementDetailsDataModel(categoryStoreData: currentCategoryStore,
-                                                 isIncome: self.viewModel.isIncome,
-                                                 dataSourceRead: self.viewModel.dataSourceRead,
-                                                 fromDate: fromDate,
-                                                 toDate: toDate)
+        let detailsDataModel = MovementDetailsDataModel(categoryStoreData: currentCategoryStore,
+                                                        isIncome: self.viewModel.isIncome,
+                                                        dataSourceRead: self.viewModel.dataSourceRead,
+                                                        fromDate: fromDate,
+                                                        toDate: toDate)
 
-        return MovementDetailsMac.ContainerView(dataModel: dataModel)
+        return MovementDetailsMac.ContainerView(dataModel: detailsDataModel)
             .eraseToAnyView()
     }
 }

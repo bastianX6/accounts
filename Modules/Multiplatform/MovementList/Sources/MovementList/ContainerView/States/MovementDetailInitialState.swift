@@ -15,5 +15,7 @@ public class MovementDetailInitialState: MovementDetailViewState {
     public var error: Error?
     public var selectedMovement: Movement?
 
-    public func loadData() {}
+    public func loadData() {
+        // Nothing to dox
+    }
 }

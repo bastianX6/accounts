@@ -102,6 +102,4 @@ class MovementListViewModel: ObservableObject {
         self.filterDate = date
         self.setState(.loading)
     }
-
-    private func updateSelectedElementsFromDate() {}
 }

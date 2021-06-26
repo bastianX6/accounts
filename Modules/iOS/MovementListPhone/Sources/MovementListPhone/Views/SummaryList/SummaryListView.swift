@@ -56,13 +56,13 @@ struct SummaryListView: View {
         else {
             return Text("").eraseToAnyView()
         }
-        let dataModel = MovementDetailsDataModel(categoryStoreData: currentCategoryStore,
+        let detailsDataModel = MovementDetailsDataModel(categoryStoreData: currentCategoryStore,
                                                  isIncome: self.viewModel.isIncome,
                                                  dataSourceRead: self.viewModel.dataSourceRead,
                                                  fromDate: fromDate,
                                                  toDate: toDate)
 
-        let detailsContainerView = MovementDetailsPhone.ContainerView(dataModel: dataModel)
+        let detailsContainerView = MovementDetailsPhone.ContainerView(dataModel: detailsDataModel)
 
         return NavigationLink(destination: detailsContainerView) {
             MovementSimpleCardView(model: model)

@@ -28,10 +28,10 @@ class MovementDetailsViewModel: ObservableObject, MovementDetailsViewModelProtoc
         self.model = MovementDetailsMapper.getModel(from: [],
                                                     icon: "",
                                                     tintColor: .clear)
-        let loadingState = MovementDetailLoadingState(viewModel: nil)
-        self.loadingState = loadingState
-        self.state = loadingState
-        loadingState.viewModel = self
+        let initialLoadingState = MovementDetailLoadingState(viewModel: nil)
+        self.loadingState = initialLoadingState
+        self.state = initialLoadingState
+        initialLoadingState.viewModel = self
     }
 
     func setState(_ state: MovementDetailViewStateEnum) {

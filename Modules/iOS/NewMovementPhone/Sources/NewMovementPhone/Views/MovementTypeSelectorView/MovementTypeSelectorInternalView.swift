@@ -21,7 +21,9 @@ struct MovementTypeSelectorInternalView: View {
         self.viewModel = NewMovementViewModel(dataSource: dataModel.dataSource,
                                               incomeData: dataModel.incomeData,
                                               expenditureData: dataModel.expenditureData,
-                                              onEnd: {})
+                                              onEnd: {
+                                                  // nothing to run
+                                              })
     }
 
     var body: some View {

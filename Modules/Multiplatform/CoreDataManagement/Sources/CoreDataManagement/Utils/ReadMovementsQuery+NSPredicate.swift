@@ -11,20 +11,21 @@ import Foundation
 extension ReadMovementsQuery {
     var predicate: NSPredicate {
         var predicates: [NSPredicate] = []
+        let idFormat = "%K == %@"
 
         if let storeId = self.storeId {
-            let predicate = NSPredicate(format: "%K == %@", "storeId", storeId as CVarArg)
-            predicates.append(predicate)
+            let storePredicate = NSPredicate(format: idFormat, "storeId", storeId as CVarArg)
+            predicates.append(storePredicate)
         }
 
         if let categoryId = self.categoryId {
-            let predicate = NSPredicate(format: "%K == %@", "categoryId", categoryId as CVarArg)
-            predicates.append(predicate)
+            let categoryPredicate = NSPredicate(format: idFormat, "categoryId", categoryId as CVarArg)
+            predicates.append(categoryPredicate)
         }
 
         if let paymentId = self.paymentId {
-            let predicate = NSPredicate(format: "%K == %@", "paymentId", paymentId as CVarArg)
-            predicates.append(predicate)
+            let paymentPredicate = NSPredicate(format: idFormat, "paymentId", paymentId as CVarArg)
+            predicates.append(paymentPredicate)
         }
 
         let startDatePredicate = NSPredicate(format: "date >= %@", self.fromDate as NSDate)

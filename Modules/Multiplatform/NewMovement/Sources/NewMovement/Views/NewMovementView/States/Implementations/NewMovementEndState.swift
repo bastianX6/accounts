@@ -10,7 +10,9 @@ import Foundation
 public class NewMovementEndState: NewMovementViewBaseState {
     public var onEnd: (() -> Void)?
 
-    override public init() {}
+    override public init() {
+        // override init
+    }
 
     override public func endAction() {
         self.onEnd?()

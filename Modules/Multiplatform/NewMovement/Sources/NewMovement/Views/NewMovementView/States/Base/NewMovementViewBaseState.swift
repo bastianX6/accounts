@@ -8,7 +8,6 @@
 import Foundation
 
 public class NewMovementViewBaseState: NewMovementViewState {
-
     public var isIncome: Bool = false
     public var showLoading: Bool = false
     public var isEdition: Bool = false
@@ -26,11 +25,19 @@ public class NewMovementViewBaseState: NewMovementViewState {
         return self.isIncome ? L10n.incomeDetails : L10n.expenditureDetails
     }
 
-    public func saveAction() {}
+    public func saveAction() {
+        // Nothing to do
+    }
 
-    public func cancelAction() {}
+    public func cancelAction() {
+        // Nothing to do
+    }
 
-    public func deleteAction() {}
+    public func deleteAction() {
+        // Nothing to do
+    }
 
-    public func endAction() {}
+    public func endAction() {
+        // Nothing to do
+    }
 }
