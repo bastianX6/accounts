@@ -15,7 +15,9 @@ class NewMovementResourcesReader {
 
     static let shared = NewMovementResourcesReader()
 
-    private init() {}
+    private init() {
+        // private init
+    }
 
     func readIncomeData() throws -> MovementResources {
         return try self.readData(fileName: self.incomeDataFileName)
@@ -27,7 +29,8 @@ class NewMovementResourcesReader {
 
     private func readData(fileName: String) throws -> MovementResources {
         guard let url = Bundle(for: NewMovementResourcesReader.self)
-            .url(forResource: fileName, withExtension: self.fileExtension) else {
+            .url(forResource: fileName, withExtension: self.fileExtension)
+        else {
             fatalError("Can't data url for file: \(fileName)")
         }
         let data = try Data(contentsOf: url)

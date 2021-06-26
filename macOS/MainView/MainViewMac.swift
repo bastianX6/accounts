@@ -5,22 +5,22 @@
 //  Created by Bastián Véliz Vega on 12-12-20.
 //
 
-import Foundation
 import AccountsUI
+import Foundation
 import SwiftUI
 
 struct MainViewMac: View {
-    @State var selectedMenu: MenuSections = MenuSections.expenses
+    @State var selectedMenu = MenuSections.expenses
 
     var body: some View {
         NavigationView {
-            self.iPadListView
+            self.listView
             self.selectedView
         }
         .accentColor(AppAppearance.shared.accentColor)
     }
 
-    private var iPadListView: some View {
+    private var listView: some View {
         let elements = MenuSections.allMenus
 
         return List(elements) { element in

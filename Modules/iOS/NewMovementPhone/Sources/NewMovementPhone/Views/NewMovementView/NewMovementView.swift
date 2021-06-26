@@ -36,14 +36,14 @@ public struct NewMovementView: View {
         self.isIncome = isIncome
         let model = NewMovementViewInternalDataModel(movement: movement)
 
-        let viewModel = NewMovementViewModel(model: model,
+        let initialViewModel = NewMovementViewModel(model: model,
                                              dataSource: dataModel.dataSource,
                                              incomeData: dataModel.incomeData,
                                              expenditureData: dataModel.expenditureData,
                                              onEnd: onEnd)
-        viewModel.isIncome = isIncome
-        viewModel.isEdition = true
-        self.viewModel = viewModel
+        initialViewModel.isIncome = isIncome
+        initialViewModel.isEdition = true
+        self.viewModel = initialViewModel
     }
 
     public var body: some View {
@@ -128,12 +128,12 @@ public struct NewMovementView: View {
             self.viewModel.setState(.deleting)
         }
 
-        let cancelButton = Alert.Button.cancel()
+        let alertCancelButton = Alert.Button.cancel()
 
         return Alert(title: Text(title),
                      message: Text(message),
                      primaryButton: deleteButton,
-                     secondaryButton: cancelButton)
+                     secondaryButton: alertCancelButton)
     }
 
     // MARK: - Error view
