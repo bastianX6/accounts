@@ -12,6 +12,9 @@ let package = Package(
     ],
     products: [
         .library(
+            name: "TestUtils",
+            targets: ["TestUtils"]),
+        .library(
             name: "PhoneTestUtils",
             targets: ["PhoneTestUtils"]),
         .library(
@@ -30,14 +33,11 @@ let package = Package(
                  path: "../DependencyResolver"),
         .package(name: "MovementList",
                  path: "../MovementList"),
-        .package(name: "NewMovement",
-                 path: "../NewMovement"),
         .package(name: "SnapshotTesting",
-                  url: "https://github.com/pointfreeco/swift-snapshot-testing.git",
-                  from: "1.8.1"),
+                 url: "https://github.com/pointfreeco/swift-snapshot-testing.git",
+                 from: "1.8.1"),
     ],
     targets: [
-        
         .target(
             name: "Previews",
             dependencies: [
@@ -45,7 +45,15 @@ let package = Package(
                 "DataManagement",
                 "DependencyResolver",
                 "MovementList",
-                "NewMovement",
+            ]),
+        .target(
+            name: "TestUtils",
+            dependencies: [
+                "AccountsUI",
+                "DataManagement",
+                "DependencyResolver",
+                "MovementList",
+                "Previews",
             ]),
         .target(
             name: "PhoneTestUtils",

@@ -9,7 +9,9 @@ import AccountsUI
 import Combine
 import Foundation
 import Nimble
+import Previews
 import Quick
+import TestUtils
 
 @testable import NewMovement
 
@@ -17,15 +19,15 @@ class NewMovementViewModelTests: QuickSpec {
     // swiftlint:disable function_body_length
     override func spec() {
         var sut: NewMovementViewModel!
-        var mockDataSource: MovementPreview!
+        var mockDataSource: MovementPreviewSpy!
         var incomeData: MovementResources!
         var expenditureData: MovementResources!
 
         describe("NewMovementViewModel") {
             beforeEach {
-                mockDataSource = MovementPreview()
-                incomeData = DataPreview.incomeData
-                expenditureData = DataPreview.expenditureData
+                mockDataSource = MovementPreviewSpy()
+                incomeData = DataFake.incomeData
+                expenditureData = DataFake.expenditureData
                 sut = NewMovementViewModel(dataSource: mockDataSource,
                                            incomeData: incomeData,
                                            expenditureData:

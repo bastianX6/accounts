@@ -46,7 +46,8 @@ let package = Package(
                 "AccountsUI",
                 "DependencyResolver",
                 "NewMovement",
-                .product(name: "Previews", package: "TestUtils")
+                .product(name: "Previews", package: "TestUtils"),
+                .product(name: "NewMovementPreview", package: "NewMovement"),
             ],
             resources: [.process("Resources")]
         ),
@@ -58,7 +59,10 @@ let package = Package(
                 "Nimble",
                 "SnapshotTesting",
                 "SnapshotTesting-Nimble",
-                .product(name: "PhoneTestUtils", package: "TestUtils")
+                .product(name: "PhoneTestUtils", package: "TestUtils"),
+                .product(name: "Previews", package: "TestUtils"),
+                .product(name: "TestUtils", package: "TestUtils"),
+                .product(name: "NewMovementPreview", package: "NewMovement"),
             ]
         ),
         .testTarget(
@@ -69,6 +73,8 @@ let package = Package(
                 "Nimble",
                 "SnapshotTesting",
                 "SnapshotTesting-Nimble",
+                .product(name: "PhoneTestUtils", package: "TestUtils"),
+                .product(name: "NewMovementPreview", package: "NewMovement"),
             ]
         ),
     ]

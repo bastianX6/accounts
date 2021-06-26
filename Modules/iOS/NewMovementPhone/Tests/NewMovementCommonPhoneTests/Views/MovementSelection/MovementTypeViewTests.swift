@@ -7,6 +7,7 @@
 
 import Foundation
 import Nimble
+import PhoneTestUtils
 import Quick
 import SnapshotTesting
 import SnapshotTesting_Nimble

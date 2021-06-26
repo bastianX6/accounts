@@ -145,6 +145,7 @@ public struct NewMovementView: View {
 }
 
 #if DEBUG
+import NewMovementPreview
 import Previews
 struct NewMovementView_Previews: PreviewProvider {
     static var previews: some View {

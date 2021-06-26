@@ -112,6 +112,7 @@ struct MovementTypeSelectorInternalView: View {
 }
 
 #if DEBUG
+import NewMovementPreview
 import Previews
 struct MovementTypeSelectorInternalView_Previews: PreviewProvider {
     static var previews: some View {

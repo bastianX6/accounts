@@ -7,7 +7,9 @@
 
 import Foundation
 import Nimble
+import Previews
 import Quick
+import TestUtils
 
 @testable import NewMovement
 
@@ -69,10 +71,10 @@ class NewMovementSavingStateTests: QuickSpec {
             }
             context("when saveAction is called") {
                 it("should set end state in view model if storage was successful") {
-                    let dataSource = MovementPreview()
+                    let dataSource = MovementPreviewSpy()
                     let mockViewModel = MockNewMovementViewModel(dataSource: dataSource,
-                                                                 incomeData: DataPreview.incomeData,
-                                                                 expenditureData: DataPreview.expenditureData,
+                                                                 incomeData: DataFake.incomeData,
+                                                                 expenditureData: DataFake.expenditureData,
                                                                  onEnd: {})
 
                     sut = NewMovementSavingState(viewModel: mockViewModel)
@@ -83,11 +85,11 @@ class NewMovementSavingStateTests: QuickSpec {
                 }
 
                 it("should set error state in view model if storage fails") {
-                    let dataSource = MovementPreview()
+                    let dataSource = MovementPreviewSpy()
                     dataSource.saveSuccess = false
                     let mockViewModel = MockNewMovementViewModel(dataSource: dataSource,
-                                                                 incomeData: DataPreview.incomeData,
-                                                                 expenditureData: DataPreview.expenditureData,
+                                                                 incomeData: DataFake.incomeData,
+                                                                 expenditureData: DataFake.expenditureData,
                                                                  onEnd: {})
 
                     sut = NewMovementSavingState(viewModel: mockViewModel)

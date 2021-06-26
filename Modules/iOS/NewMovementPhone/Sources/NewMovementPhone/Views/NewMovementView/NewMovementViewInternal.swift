@@ -95,6 +95,7 @@ struct NewMovementViewInternal: View {
 }
 
 #if DEBUG
+import NewMovementPreview
 import Previews
 struct NewMovementViewInternal_Previews: PreviewProvider {
     @ObservedObject static var manager: NewMovementViewModel = NewMovementDataFake.viewModel

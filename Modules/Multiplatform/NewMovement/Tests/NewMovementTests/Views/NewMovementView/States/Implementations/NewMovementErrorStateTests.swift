@@ -6,10 +6,11 @@
 //
 
 import Foundation
-import Nimble
-import Quick
-
 @testable import NewMovement
+import Nimble
+import Previews
+import Quick
+import TestUtils
 
 class NewMovementErrorStateTests: QuickSpec {
     // swiftlint:disable function_body_length
@@ -72,8 +73,8 @@ class NewMovementErrorStateTests: QuickSpec {
                 it("should change state in view model") {
                     let dataSource = MovementPreview()
                     let mockViewModel = MockNewMovementViewModel(dataSource: dataSource,
-                                                                 incomeData: DataPreview.incomeData,
-                                                                 expenditureData: DataPreview.expenditureData,
+                                                                 incomeData: DataFake.incomeData,
+                                                                 expenditureData: DataFake.expenditureData,
                                                                  onEnd: {})
 
                     sut = NewMovementErrorState(viewModel: mockViewModel)

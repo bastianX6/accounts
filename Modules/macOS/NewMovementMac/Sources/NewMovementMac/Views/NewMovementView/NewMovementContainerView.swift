@@ -112,6 +112,7 @@ struct NewMovementContainerView: View {
 }
 
 #if DEBUG
+import NewMovementPreview
 import Previews
 struct MovementTypeNewMovementView_Previews: PreviewProvider {
     @ObservedObject static var viewModel: NewMovementViewModel = NewMovementDataFake.viewModel

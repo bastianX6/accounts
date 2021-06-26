@@ -10,10 +10,12 @@ import DependencyResolver
 import Foundation
 import NewMovement
 import Nimble
+import Previews
 import Quick
 import SnapshotTesting
 import SnapshotTesting_Nimble
 import SwiftUI
+import TestUtils
 
 @testable import NewMovementPhone
 
@@ -33,11 +35,11 @@ class NewMovementViewTests: QuickSpec {
             context("when view is created") {
                 context("and isIncome is true") {
                     beforeEach {
-                        let dataSource = MovementPreview()
-                        let movement = DataPreview.movement
+                        let dataSource = MovementPreviewSpy()
+                        let movement = DataFake.movement
                         let dataModel = NewMovementViewDataModel(dataSource: dataSource,
-                                                                 incomeData: DataPreview.incomeData,
-                                                                 expenditureData: DataPreview.expenditureData)
+                                                                 incomeData: DataFake.incomeData,
+                                                                 expenditureData: DataFake.expenditureData)
                         sut = NewMovementView(dataModel: dataModel,
                                               movement: movement,
                                               isIncome: true,
@@ -64,11 +66,11 @@ class NewMovementViewTests: QuickSpec {
 
                 context("and isIncome is false") {
                     beforeEach {
-                        let dataSource = MovementPreview()
-                        let movement = DataPreview.movement
+                        let dataSource = MovementPreviewSpy()
+                        let movement = DataFake.movement
                         let dataModel = NewMovementViewDataModel(dataSource: dataSource,
-                                                                 incomeData: DataPreview.incomeData,
-                                                                 expenditureData: DataPreview.expenditureData)
+                                                                 incomeData: DataFake.incomeData,
+                                                                 expenditureData: DataFake.expenditureData)
                         sut = NewMovementView(dataModel: dataModel,
                                               movement: movement,
                                               isIncome: false,

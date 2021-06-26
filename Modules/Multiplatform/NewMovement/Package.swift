@@ -17,12 +17,18 @@ let package = Package(
             name: "NewMovement",
             targets: ["NewMovement"]
         ),
+        .library(
+            name: "NewMovementPreview",
+            targets: ["NewMovementPreview"]
+        ),
     ],
     dependencies: [
         .package(name: "AccountsUI",
                  path: "../AccountsUI"),
         .package(name: "DependencyResolver",
                  path: "../DependencyResolver"),
+        .package(name: "TestUtils",
+                 path: "../TestUtils"),
         .package(url: "https://github.com/Quick/Nimble.git",
                  .upToNextMajor(from: "9.0.0")),
         .package(url: "https://github.com/Quick/Quick.git",
@@ -38,13 +44,21 @@ let package = Package(
             ],
             resources: [.process("Resources")]
         ),
+        .target(
+            name: "NewMovementPreview",
+            dependencies: [
+                "NewMovement",
+            ]
+        ),
         .testTarget(
             name: "NewMovementTests",
             dependencies: [
                 "NewMovement",
                 "Quick",
                 "Nimble",
+                .product(name: "TestUtils", package: "TestUtils"),
+                .product(name: "Previews", package: "TestUtils"),
             ]
-        )
+        ),
     ]
 )

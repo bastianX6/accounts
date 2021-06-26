@@ -9,7 +9,9 @@ import AccountsUI
 import DependencyResolver
 import Foundation
 import NewMovement
+import NewMovementPreview
 import Nimble
+import Previews
 import Quick
 import SnapshotTesting
 import SnapshotTesting_Nimble
@@ -19,7 +21,7 @@ import SwiftUI
 
 class NewMovementViewInternalTests: QuickSpec {
     private let referenceSize = ViewImageConfig.iPhoneX.size!
-    @ObservedObject var viewModel: NewMovementViewModel = DataPreview.viewModel
+    @ObservedObject var viewModel: NewMovementViewModel = NewMovementDataFake.viewModel
 
     // swiftlint:disable function_body_length
     override func spec() {
@@ -34,10 +36,10 @@ class NewMovementViewInternalTests: QuickSpec {
             context("when view is created") {
                 context("and isIncome is true") {
                     beforeEach {
-                        self.viewModel = DataPreview.viewModelEmpty
+                        self.viewModel = NewMovementDataFake.viewModelEmpty
                         let dataResources = NewMovementViewInternalDataResources(
-                            categories: DataPreview.categories,
-                            stores: DataPreview.stores,
+                            categories: DataFake.categories,
+                            stores: DataFake.stores,
                             customDataSectionTitle: "Custom title",
                             isIncome: true
                         )
@@ -66,10 +68,10 @@ class NewMovementViewInternalTests: QuickSpec {
 
                 context("and isIncome is false") {
                     beforeEach {
-                        self.viewModel = DataPreview.viewModelEmpty
+                        self.viewModel = NewMovementDataFake.viewModelEmpty
                         let dataResources = NewMovementViewInternalDataResources(
-                            categories: DataPreview.categories,
-                            stores: DataPreview.stores,
+                            categories: DataFake.categories,
+                            stores: DataFake.stores,
                             customDataSectionTitle: "Custom title",
                             isIncome: false
                         )
@@ -100,11 +102,11 @@ class NewMovementViewInternalTests: QuickSpec {
             context("when view is created in edition mode") {
                 context("and isIncome is true") {
                     beforeEach {
-                        self.viewModel = DataPreview.viewModel
+                        self.viewModel = NewMovementDataFake.viewModel
 
                         let dataResources = NewMovementViewInternalDataResources(
-                            categories: DataPreview.categories,
-                            stores: DataPreview.stores,
+                            categories: DataFake.categories,
+                            stores: DataFake.stores,
                             customDataSectionTitle: "Custom title",
                             isIncome: true
                         )
@@ -133,11 +135,11 @@ class NewMovementViewInternalTests: QuickSpec {
 
                 context("and isIncome is false") {
                     beforeEach {
-                        self.viewModel = DataPreview.viewModel
+                        self.viewModel = NewMovementDataFake.viewModel
 
                         let dataResources = NewMovementViewInternalDataResources(
-                            categories: DataPreview.categories,
-                            stores: DataPreview.stores,
+                            categories: DataFake.categories,
+                            stores: DataFake.stores,
                             customDataSectionTitle: "Custom title",
                             isIncome: false
                         )
@@ -166,5 +168,6 @@ class NewMovementViewInternalTests: QuickSpec {
             }
         }
     }
+
     // swiftlint:enable function_body_length
 }

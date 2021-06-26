@@ -47,6 +47,7 @@ let package = Package(
                 "DependencyResolver",
                 "NewMovement",
                 .product(name: "Previews", package: "TestUtils"),
+                .product(name: "NewMovementPreview", package: "NewMovement"),
             ],
             resources: [.process("Resources")]
         ),

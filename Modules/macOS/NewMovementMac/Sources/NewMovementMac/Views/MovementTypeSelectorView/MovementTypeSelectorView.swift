@@ -28,6 +28,7 @@ public struct MovementTypeSelectorView: View {
 
 #if DEBUG
 import Previews
+import NewMovementPreview
 
 struct MovementTypeSelectorView_Previews: PreviewProvider {
     static var previews: some View {

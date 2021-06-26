@@ -12,7 +12,8 @@ import MovementList
 import SwiftUI
 
 public enum DataFake {
-    // MARK: - Simple card model previews
+    public static let categoryId = UUID()
+    public static let storeId = UUID()
 
     static let creditCardFill = "creditcard.fill"
 
@@ -54,7 +55,7 @@ public enum DataFake {
                                name: "movement 1",
                                description: "This is a movement",
                                amount: 100,
-                               date: Date(),
+                               date: self.defaultDate,
                                isPermanent: true)
     }
 
@@ -152,15 +153,15 @@ public enum DataFake {
 
     public static var stores: [CategoryStoreModel] = {
         var array = [CategoryStoreModel]()
-        array.append(CategoryStoreModel(name: "Store 1", id: UUID(), color: .indigo, icon: DataFake.creditCardFill))
+        array.append(CategoryStoreModel(name: "Store 1", id: DataFake.storeId, color: .indigo, icon: DataFake.creditCardFill))
         array.append(CategoryStoreModel(name: "Store 2", id: UUID(), color: .indigo, icon: DataFake.creditCardFill))
         array.append(CategoryStoreModel(name: "Store 3", id: UUID(), color: .indigo, icon: DataFake.creditCardFill))
         return array
     }()
 
-    static var categories: [CategoryStoreModel] {
+    public static var categories: [CategoryStoreModel] {
         var array = [CategoryStoreModel]()
-        array.append(CategoryStoreModel(name: "Category 1", id: UUID(), color: .indigo, icon: DataFake.creditCardFill))
+        array.append(CategoryStoreModel(name: "Category 1", id: DataFake.categoryId, color: .indigo, icon: DataFake.creditCardFill))
         array.append(CategoryStoreModel(name: "Category 2", id: UUID(), color: .indigo, icon: DataFake.creditCardFill))
         array.append(CategoryStoreModel(name: "Category 3", id: UUID(), color: .indigo, icon: DataFake.creditCardFill))
         return array
@@ -192,5 +193,15 @@ public enum DataFake {
 
     public static var expenditureData: MovementResources {
         return MovementResources(categories: self.categories, stores: self.stores)
+    }
+
+    public static var defaultDate: Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_GB")
+        dateFormatter.dateFormat = "YYYY-MM-dd"
+        guard let date = dateFormatter.date(from: "2021-08-01") else {
+            fatalError("Couldn't get date")
+        }
+        return date
     }
 }

@@ -8,6 +8,7 @@
 import Foundation
 import Nimble
 import Quick
+import Previews
 
 @testable import NewMovement
 
@@ -20,8 +21,8 @@ class NewMovementViewInternalDataResourcesTests: QuickSpec {
         describe("NewMovementViewInternalDataResources") {
             context("when init a new instance") {
                 it("should have the right values") {
-                    let categories = DataPreview.categories
-                    let stores = DataPreview.stores
+                    let categories = DataFake.categories
+                    let stores = DataFake.stores
                     let title = "title"
                     let isIncome = false
                     let numberFormatter = NumberFormatter()
@@ -41,8 +42,8 @@ class NewMovementViewInternalDataResourcesTests: QuickSpec {
                 }
 
                 it("should have the right values if default values are not replaced") {
-                    let categories = DataPreview.categories
-                    let stores = DataPreview.stores
+                    let categories = DataFake.categories
+                    let stores = DataFake.stores
                     let title = "title"
 
                     sut = NewMovementViewInternalDataResources(categories: categories,

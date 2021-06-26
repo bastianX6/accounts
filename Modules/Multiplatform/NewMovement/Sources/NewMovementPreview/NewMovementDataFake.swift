@@ -8,11 +8,9 @@
 import DataManagement
 import Foundation
 import NewMovement
+import Previews
 
 public enum NewMovementDataFake {
-    static let categoryId = UUID()
-    static let storeId = UUID()
-
     public static var dataModel: NewMovementViewDataModel {
         return NewMovementViewDataModel(dataSource: MovementPreview(),
                                         incomeData: DataFake.movementResources,
@@ -20,7 +18,7 @@ public enum NewMovementDataFake {
     }
 
     public static var viewModel: NewMovementViewModel {
-        return NewMovementViewModel(model: self.model,
+        return NewMovementViewModel(model: self.modelWithData,
                                     dataSource: self.dataSource,
                                     incomeData: DataFake.incomeData,
                                     expenditureData: DataFake.expenditureData,
@@ -28,23 +26,27 @@ public enum NewMovementDataFake {
     }
 
     public static var model: NewMovementViewInternalDataModel {
-        return NewMovementViewInternalDataModel(date: Date(),
-                                                currentStore: self.storeId,
-                                                currentCategory: self.categoryId)
+        return NewMovementViewInternalDataModel(date: DataFake.defaultDate,
+                                                currentStore: DataFake.storeId,
+                                                currentCategory: DataFake.categoryId)
     }
 
     public static var modelWithData: NewMovementViewInternalDataModel {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "YYYY-MM-dd"
-        let date = dateFormatter.date(from: "2018-02-02") ?? Date()
-
         let model = NewMovementViewInternalDataModel(title: "A title",
-                                                     date: date,
+                                                     date: DataFake.defaultDate,
                                                      amount: 150_000,
                                                      comments: "Comments :)",
-                                                     currentStore: self.storeId,
-                                                     currentCategory: self.categoryId)
+                                                     currentStore: DataFake.storeId,
+                                                     currentCategory: DataFake.categoryId)
         return model
+    }
+
+    public static var viewModelEmpty: NewMovementViewModel {
+        return NewMovementViewModel(dataSource: self.dataSource,
+                                    incomeData: DataFake.incomeData,
+                                    expenditureData: DataFake.expenditureData,
+                                    movementDate: DataFake.defaultDate,
+                                    onEnd: {})
     }
 
     static var dataSource: DataSourceModify {

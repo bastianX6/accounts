@@ -10,10 +10,12 @@ import Foundation
 import NewMovement
 import Nimble
 import PhoneTestUtils
+import Previews
 import Quick
 import SnapshotTesting
 import SnapshotTesting_Nimble
 import SwiftUI
+import TestUtils
 
 @testable import NewMovementPhone
 
@@ -25,10 +27,10 @@ class MovementTypeSelectorViewTests: QuickSpec {
 
         describe("MovementTypeSelectorView") {
             beforeEach {
-                let dataSource = MovementPreview()
+                let dataSource = MovementPreviewSpy()
                 let dataModel = NewMovementViewDataModel(dataSource: dataSource,
-                                                         incomeData: DataPreview.incomeData,
-                                                         expenditureData: DataPreview.expenditureData)
+                                                         incomeData: DataFake.incomeData,
+                                                         expenditureData: DataFake.expenditureData)
                 sut = MovementTypeSelectorView(dataModel: dataModel)
                     .frameFromSize(self.referenceSize)
                     .eraseToAnyView()
