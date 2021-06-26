@@ -91,23 +91,26 @@ struct NewMovementViewInternal: View {
     }
 }
 
+#if DEBUG
+import Previews
 struct NewMovementViewInternal_Previews: PreviewProvider {
-    @ObservedObject static var manager: NewMovementViewModel = DataPreview.viewModel
+    @ObservedObject static var manager: NewMovementViewModel = NewMovementDataFake.viewModel
 
     static var previews: some View {
         Group {
             NewMovementViewInternal(model: self.$manager.model,
-                                    dataResources: DataPreview.baseViewDataModel(isIncome: true))
+                                    dataResources: NewMovementDataFake.baseViewDataModel(isIncome: true))
                 .environment(\.colorScheme, .light)
 
             NewMovementViewInternal(model: self.$manager.model,
-                                    dataResources: DataPreview.baseViewDataModel(isIncome: false))
+                                    dataResources: NewMovementDataFake.baseViewDataModel(isIncome: false))
                 .environment(\.colorScheme, .dark)
 
             NewMovementViewInternal(model: self.$manager.model,
-                                    dataResources: DataPreview.baseViewDataModel(isIncome: true))
+                                    dataResources: NewMovementDataFake.baseViewDataModel(isIncome: true))
                 .environment(\.colorScheme, .light)
                 .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
         }
     }
 }
+#endif

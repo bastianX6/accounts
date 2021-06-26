@@ -26,6 +26,8 @@ let package = Package(
                  path: "../MovementDetailsMac"),
         .package(name: "MovementList",
                  path: "../../Multiplatform/MovementList"),
+        .package(name: "TestUtils",
+                 path: "../../Multiplatform/TestUtils"),
     ],
     targets: [
         .target(
@@ -36,6 +38,7 @@ let package = Package(
                 "MovementList",
                 "MovementDetailsMac",
                 "DependencyResolver",
+                .product(name: "Previews", package: "TestUtils"),
             ],
             resources: [.process("Resources")]
         ),

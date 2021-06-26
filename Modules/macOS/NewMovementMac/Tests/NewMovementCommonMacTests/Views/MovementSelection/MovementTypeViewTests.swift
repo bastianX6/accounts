@@ -14,6 +14,7 @@ import SnapshotTesting
 import SnapshotTesting_Nimble
 import SwiftUI
 import XCTest
+import MacTestUtils
 
 final class MovementTypeViewTests: QuickSpec {
     private let referenceSize = CGSize(width: 400, height: 500)

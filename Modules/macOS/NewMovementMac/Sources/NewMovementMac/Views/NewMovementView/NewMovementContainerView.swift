@@ -111,8 +111,10 @@ struct NewMovementContainerView: View {
     }
 }
 
+#if DEBUG
+import Previews
 struct MovementTypeNewMovementView_Previews: PreviewProvider {
-    @ObservedObject static var viewModel: NewMovementViewModel = DataPreview.viewModel
+    @ObservedObject static var viewModel: NewMovementViewModel = NewMovementDataFake.viewModel
 
     static var previews: some View {
         NewMovementContainerView(viewModel: self._viewModel)
@@ -121,3 +123,4 @@ struct MovementTypeNewMovementView_Previews: PreviewProvider {
                    alignment: .center)
     }
 }
+#endif

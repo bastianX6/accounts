@@ -60,8 +60,11 @@ struct MovementTypeSelectorInternalView: View {
     }
 }
 
+#if DEBUG
+import Previews
 struct MovementTypeSelectorInternalView_Previews: PreviewProvider {
     static var previews: some View {
-        MovementTypeSelectorInternalView(dataModel: DataPreview.dataModel)
+        MovementTypeSelectorInternalView(dataModel: NewMovementDataFake.dataModel)
     }
 }
+#endif

@@ -1,8 +1,8 @@
 //
-//  SnapshotTesting+SwiftUI+macOS.swift
+//  SnapshotTesting+SwiftUI.swift
+//  
 //
-//
-//  Created by Bastián Véliz Vega on 19-12-20.
+//  Created by Bastián Véliz Vega on 26-06-21.
 //
 
 #if canImport(AppKit)
@@ -11,7 +11,7 @@ import Foundation
 import SnapshotTesting
 import SwiftUI
 
-extension Snapshotting where Value: SwiftUI.View, Format == NSImage {
+public extension Snapshotting where Value: SwiftUI.View, Format == NSImage {
     static func image(precision: Float = 1,
                       size: CGSize) -> Snapshotting
     {

@@ -24,6 +24,8 @@ let package = Package(
                  path: "../../Multiplatform/DataManagement"),
         .package(name: "NewMovement",
                  path: "../../Multiplatform/NewMovement"),
+        .package(name: "TestUtils",
+                 path: "../../Multiplatform/TestUtils"),
         .package(name: "SnapshotTesting",
                  url: "https://github.com/pointfreeco/swift-snapshot-testing.git",
                  from: "1.8.1"),
@@ -44,6 +46,7 @@ let package = Package(
                 "AccountsUI",
                 "DependencyResolver",
                 "NewMovement",
+                .product(name: "Previews", package: "TestUtils"),
             ],
             resources: [.process("Resources")]
         ),
@@ -62,6 +65,7 @@ let package = Package(
                 "Nimble",
                 "SnapshotTesting",
                 "SnapshotTesting-Nimble",
+                .product(name: "MacTestUtils", package: "TestUtils")
             ]
         ),
     ]

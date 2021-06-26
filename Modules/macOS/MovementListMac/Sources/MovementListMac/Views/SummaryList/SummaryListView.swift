@@ -81,12 +81,14 @@ struct SummaryListView: View {
     }
 }
 
+#if DEBUG
+import Previews
 struct SummaryListView_Previews: PreviewProvider {
-    @State static var dataModel: SummaryListView.DataModel = DataPreview.summaryListDataModel
+    @State static var dataModel: SummaryListView.DataModel = MovementListDataFake.summaryListDataModel
     @State static var selectedStoreCategory = UUID()
 
     static var viewModel = MovementListViewModel(dataSourceRead: MovementPreview(),
-                                                 categoryStoreElements: DataPreview.stores,
+                                                 categoryStoreElements: DataFake.stores,
                                                  isIncome: false)
     static var previews: some View {
         SummaryListView(viewModel: self.viewModel,
@@ -94,3 +96,4 @@ struct SummaryListView_Previews: PreviewProvider {
                         selectedStoreCategory: self.$selectedStoreCategory)
     }
 }
+#endif

@@ -12,6 +12,7 @@ import SnapshotTesting
 import SnapshotTesting_Nimble
 import SwiftUI
 import XCTest
+import MacTestUtils
 
 @testable import NewMovement
 

@@ -139,11 +139,14 @@ public struct NewMovementView: View {
     }
 }
 
+#if DEBUG
+import Previews
 struct NewMovementView_Previews: PreviewProvider {
     static var previews: some View {
-        NewMovementView(dataModel: DataPreview.dataModel,
-                        movement: DataPreview.movement,
+        NewMovementView(dataModel: NewMovementDataFake.dataModel,
+                        movement: DataFake.movement,
                         isIncome: true,
                         onEnd: {})
     }
 }
+#endif

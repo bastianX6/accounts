@@ -15,6 +15,9 @@ let package = Package(
             name: "PhoneTestUtils",
             targets: ["PhoneTestUtils"]),
         .library(
+            name: "MacTestUtils",
+            targets: ["MacTestUtils"]),
+        .library(
             name: "Previews",
             targets: ["Previews"]),
     ],
@@ -46,6 +49,11 @@ let package = Package(
             ]),
         .target(
             name: "PhoneTestUtils",
+            dependencies: [
+                "SnapshotTesting",
+            ]),
+        .target(
+            name: "MacTestUtils",
             dependencies: [
                 "SnapshotTesting",
             ]),
