@@ -5,10 +5,9 @@
 //  Created by Bastián Véliz Vega on 17-10-20.
 //
 
-import Foundation
-
 import AccountsUI
 import DependencyResolver
+import Foundation
 import NewMovement
 import SwiftUI
 
@@ -112,8 +111,11 @@ struct MovementTypeSelectorInternalView: View {
     }
 }
 
+#if DEBUG
+import Previews
 struct MovementTypeSelectorInternalView_Previews: PreviewProvider {
     static var previews: some View {
-        MovementTypeSelectorInternalView(dataModel: DataPreview.dataModel)
+        MovementTypeSelectorInternalView(dataModel: NewMovementDataFake.dataModel)
     }
 }
+#endif

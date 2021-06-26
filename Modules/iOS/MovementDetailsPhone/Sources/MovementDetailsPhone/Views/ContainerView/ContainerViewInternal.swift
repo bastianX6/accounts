@@ -105,21 +105,24 @@ struct ContainerViewInternal: View {
     }
 }
 
+#if DEBUG
+import Previews
+
 struct ContainerViewiOS_Previews: PreviewProvider {
     enum FakeError: Error {
         case fake
     }
 
-    @State static var viewModel = MovementDetailsViewModel(dataModel: DataPreview.dataModel)
+    @State static var viewModel = MovementDetailsViewModel(dataModel: DataFake.dataModel)
 
     @State static var viewModelWithErrorState: MovementDetailsViewModel = {
-        let viewModel = MovementDetailsViewModel(dataModel: DataPreview.dataModel)
+        let viewModel = MovementDetailsViewModel(dataModel: DataFake.dataModel)
         viewModel.setState(.error(error: FakeError.fake))
         return viewModel
     }()
 
     @State static var viewModelWithLoadingState: MovementDetailsViewModel = {
-        let viewModel = MovementDetailsViewModel(dataModel: DataPreview.dataModel)
+        let viewModel = MovementDetailsViewModel(dataModel: DataFake.dataModel)
         viewModel.setState(.loading)
         return viewModel
     }()
@@ -132,3 +135,5 @@ struct ContainerViewiOS_Previews: PreviewProvider {
         }
     }
 }
+
+#endif

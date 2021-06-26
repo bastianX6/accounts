@@ -9,6 +9,7 @@ import AccountsUI
 import Foundation
 import NewMovement
 import Nimble
+import PhoneTestUtils
 import Quick
 import SnapshotTesting
 import SnapshotTesting_Nimble

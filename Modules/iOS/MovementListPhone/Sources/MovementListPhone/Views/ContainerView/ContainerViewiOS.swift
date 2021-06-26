@@ -42,7 +42,7 @@ struct ContainerViewiOS: View {
                            self.filterView
                        }
                        .accentColor(self.resolver.appearance.accentColor)
-            })
+                   })
     }
 
     private var currentView: some View {
@@ -113,18 +113,20 @@ struct ContainerViewiOS: View {
     }
 }
 
+#if DEBUG
+import Previews
 struct ContainerViewiOS_Previews: PreviewProvider {
     enum FakeError: Error {
         case fake
     }
 
     @State static var viewModel = MovementListViewModel(dataSourceRead: MovementPreview(),
-                                                        categoryStoreElements: DataPreview.stores,
+                                                        categoryStoreElements: DataFake.stores,
                                                         isIncome: false)
 
     @State static var viewModelWithErrorState: MovementListViewModel = {
         let viewModel = MovementListViewModel(dataSourceRead: MovementPreview(),
-                                              categoryStoreElements: DataPreview.stores,
+                                              categoryStoreElements: DataFake.stores,
                                               isIncome: false)
         viewModel.setState(.error(error: FakeError.fake))
         return viewModel
@@ -137,3 +139,4 @@ struct ContainerViewiOS_Previews: PreviewProvider {
         }
     }
 }
+#endif

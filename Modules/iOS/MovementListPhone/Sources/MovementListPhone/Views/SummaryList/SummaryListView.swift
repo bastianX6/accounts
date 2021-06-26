@@ -57,10 +57,10 @@ struct SummaryListView: View {
             return Text("").eraseToAnyView()
         }
         let detailsDataModel = MovementDetailsDataModel(categoryStoreData: currentCategoryStore,
-                                                 isIncome: self.viewModel.isIncome,
-                                                 dataSourceRead: self.viewModel.dataSourceRead,
-                                                 fromDate: fromDate,
-                                                 toDate: toDate)
+                                                        isIncome: self.viewModel.isIncome,
+                                                        dataSourceRead: self.viewModel.dataSourceRead,
+                                                        fromDate: fromDate,
+                                                        toDate: toDate)
 
         let detailsContainerView = MovementDetailsPhone.ContainerView(dataModel: detailsDataModel)
 
@@ -72,13 +72,16 @@ struct SummaryListView: View {
     }
 }
 
+#if DEBUG
+import Previews
 struct SummaryListView_Previews: PreviewProvider {
-    @State static var dataModel: SummaryListView.DataModel = DataPreview.summaryListDataModel
+    @State static var dataModel: SummaryListView.DataModel = MovementListDataFake.summaryListDataModel
 
     static var viewModel = MovementListViewModel(dataSourceRead: MovementPreview(),
-                                                 categoryStoreElements: DataPreview.stores,
+                                                 categoryStoreElements: DataFake.stores,
                                                  isIncome: false)
     static var previews: some View {
         SummaryListView(viewModel: self.viewModel, dataModel: self.$dataModel)
     }
 }
+#endif

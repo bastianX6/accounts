@@ -26,8 +26,11 @@ public struct MovementTypeSelectorView: View {
     }
 }
 
+#if DEBUG
+import Previews
 struct MovementTypeSelectorView_Previews: PreviewProvider {
     static var previews: some View {
-        MovementTypeSelectorView(dataModel: DataPreview.dataModel)
+        MovementTypeSelectorView(dataModel: NewMovementDataFake.dataModel)
     }
 }
+#endif

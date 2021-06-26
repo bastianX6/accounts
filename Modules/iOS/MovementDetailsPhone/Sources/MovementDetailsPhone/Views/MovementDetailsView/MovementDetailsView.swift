@@ -145,19 +145,22 @@ struct MovementDetailsView: View {
     }
 }
 
+#if DEBUG
+import Previews
 struct MovementDetailsView_Previews: PreviewProvider {
-    @State static var model: MovementDetailsModel = DataPreview.movementDetailsModel
+    @State static var model: MovementDetailsModel = DataFake.movementDetailsModel
 
     static var previews: some View {
         Group {
             MovementDetailsView(model: self.$model,
-                                viewModel: DataPreview.movementDetailsViewModel,
+                                viewModel: MovementsDetailsDataFake.movementDetailsViewModel,
                                 tintColor: .indigo,
                                 isIncome: false)
             MovementDetailsView(model: self.$model,
-                                viewModel: DataPreview.movementDetailsViewModel,
+                                viewModel: MovementsDetailsDataFake.movementDetailsViewModel,
                                 tintColor: .indigo,
                                 isIncome: true)
         }
     }
 }
+#endif

@@ -33,12 +33,15 @@ public struct ContainerView: View {
     }
 }
 
+#if DEBUG
+import Previews
 struct ContainerView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContainerView(dataModel: MovementListDataModel(dataSourceRead: MovementPreview(),
-                                                           resources: DataPreview.movementResources,
+                                                           resources: DataFake.movementResources,
                                                            isIncome: false))
         }
     }
 }
+#endif

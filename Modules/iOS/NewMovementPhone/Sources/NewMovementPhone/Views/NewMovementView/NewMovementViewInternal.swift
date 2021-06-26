@@ -6,8 +6,8 @@
 //
 
 import AccountsUI
-import SwiftUI
 import NewMovement
+import SwiftUI
 
 @available(macOS, unavailable)
 @available(watchOS, unavailable)
@@ -19,7 +19,8 @@ struct NewMovementViewInternal: View {
 
     init(model: Binding<NewMovementViewInternalDataModel>,
          dataResources: NewMovementViewInternalDataResources,
-         deleteAction: (() -> Void)? = nil) {
+         deleteAction: (() -> Void)? = nil)
+    {
         self._model = model
         self.dataResources = dataResources
         self.deleteAction = deleteAction
@@ -44,7 +45,7 @@ struct NewMovementViewInternal: View {
             VStack(alignment: .leading) {
                 Text(L10n.basicInformation.uppercased())
                     .font(.caption)
-        }) {
+            }) {
             TextField(L10n.description,
                       text: self.$model.title)
             DateSelector(title: L10n.date, date: self.$model.date)
@@ -61,7 +62,7 @@ struct NewMovementViewInternal: View {
             VStack(alignment: .leading) {
                 Text(self.dataResources.customDataSectionTitle.uppercased())
                     .font(.caption)
-        }) {
+            }) {
             Picker(selection: self.$model.currentCategory,
                    label: Text(L10n.category)) {
                 ForEach(self.dataResources.categories, id: \.id) { item in
@@ -93,23 +94,26 @@ struct NewMovementViewInternal: View {
     }
 }
 
+#if DEBUG
+import Previews
 struct NewMovementViewInternal_Previews: PreviewProvider {
-    @ObservedObject static var manager: NewMovementViewModel = DataPreview.viewModel
+    @ObservedObject static var manager: NewMovementViewModel = NewMovementDataFake.viewModel
 
     static var previews: some View {
         Group {
             NewMovementViewInternal(model: self.$manager.model,
-                                    dataResources: DataPreview.baseViewDataModel(isIncome: true))
+                                    dataResources: NewMovementDataFake.baseViewDataModel(isIncome: true))
                 .environment(\.colorScheme, .light)
 
             NewMovementViewInternal(model: self.$manager.model,
-                                    dataResources: DataPreview.baseViewDataModel(isIncome: false))
+                                    dataResources: NewMovementDataFake.baseViewDataModel(isIncome: false))
                 .environment(\.colorScheme, .dark)
 
             NewMovementViewInternal(model: self.$manager.model,
-                                    dataResources: DataPreview.baseViewDataModel(isIncome: true))
+                                    dataResources: NewMovementDataFake.baseViewDataModel(isIncome: true))
                 .environment(\.colorScheme, .light)
                 .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
         }
     }
 }
+#endif

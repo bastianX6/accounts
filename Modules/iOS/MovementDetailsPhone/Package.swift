@@ -22,6 +22,8 @@ let package = Package(
                  path: "../../Multiplatform/AccountsUI"),
         .package(name: "DependencyResolver",
                  path: "../../Multiplatform/DependencyResolver"),
+        .package(name: "TestUtils",
+                 path: "../../Multiplatform/TestUtils"),
         .package(name: "MovementList",
                  path: "../../Multiplatform/MovementList"),
         .package(name: "NewMovementPhone",
@@ -36,6 +38,7 @@ let package = Package(
                 "MovementList",
                 "DependencyResolver",
                 "NewMovementPhone",
+                .product(name: "Previews", package: "TestUtils"),
             ],
             resources: [.process("Resources")]
         ),

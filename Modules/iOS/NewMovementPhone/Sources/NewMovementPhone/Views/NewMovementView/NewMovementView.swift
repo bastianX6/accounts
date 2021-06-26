@@ -8,8 +8,8 @@
 import AccountsUI
 import DataManagement
 import DependencyResolver
-import SwiftUI
 import NewMovement
+import SwiftUI
 
 /// New movement view
 public struct NewMovementView: View {
@@ -29,7 +29,8 @@ public struct NewMovementView: View {
     public init(dataModel: NewMovementViewDataModel,
                 movement: Movement,
                 isIncome: Bool,
-                onEnd: @escaping () -> Void) {
+                onEnd: @escaping () -> Void)
+    {
         self.dataModel = dataModel
         self.movement = movement
         self.isIncome = isIncome
@@ -58,7 +59,7 @@ public struct NewMovementView: View {
         }.alert(isPresented: self.$viewModel.state.showDeleteAlert,
                 content: {
                     self.deleteAlert
-        })
+                })
             .accentColor(self.resolver.appearance.accentColor)
     }
 
@@ -72,7 +73,7 @@ public struct NewMovementView: View {
                                        dataResources: dataResources,
                                        deleteAction: {
                                            self.viewModel.setState(.askingForDelete)
-        })
+                                       })
             .navigationBarTitle(self.viewModel.state.navigationBarTitle)
             .navigationBarItems(leading: self.cancelButton,
                                 trailing: self.saveButton)
@@ -143,11 +144,14 @@ public struct NewMovementView: View {
     }
 }
 
+#if DEBUG
+import Previews
 struct NewMovementView_Previews: PreviewProvider {
     static var previews: some View {
-        NewMovementView(dataModel: DataPreview.dataModel,
-                        movement: DataPreview.movement,
+        NewMovementView(dataModel: NewMovementDataFake.dataModel,
+                        movement: DataFake.movement,
                         isIncome: true,
                         onEnd: {})
     }
 }
+#endif

@@ -7,8 +7,8 @@
 
 import AccountsUI
 import DependencyResolver
-import SwiftUI
 import MovementList
+import SwiftUI
 
 public struct ContainerView: View {
     private let dataModel: MovementDetailsDataModel
@@ -23,17 +23,20 @@ public struct ContainerView: View {
         self.resolver.setDataSourceAvailability(MovementDetailsAvailability.movementDetails,
                                                 forType: MovementDetailsAvailability.self)
         self.resolver.setResourcesAvailability(MovementDetailsAvailability.movementDetails,
-                                                forType: MovementDetailsAvailability.self)
+                                               forType: MovementDetailsAvailability.self)
         let viewModel = MovementDetailsViewModel(dataModel: self.dataModel)
 
         return ContainerViewInternal(viewModel: viewModel)
     }
 }
 
+#if DEBUG
+import Previews
 struct ContainerView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContainerView(dataModel: DataPreview.dataModel)
+            ContainerView(dataModel: DataFake.dataModel)
         }
     }
 }
+#endif
