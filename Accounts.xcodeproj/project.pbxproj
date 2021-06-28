@@ -812,6 +812,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PATH_TO_GOOGLE_PLISTS = iOS/Firebase;
 				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.Accounts.dev;
@@ -841,6 +842,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.Accounts.dev;
 				PRODUCT_NAME = "Accounts-Dev";
 				PROVISIONING_PROFILE_SPECIFIER = "match Development bastianx6.Accounts.dev macos";
@@ -982,6 +984,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PATH_TO_GOOGLE_PLISTS = iOS/Firebase;
 				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.Accounts.dev;
@@ -1011,6 +1014,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PATH_TO_GOOGLE_PLISTS = iOS/Firebase;
 				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.Accounts;
@@ -1041,6 +1045,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.Accounts.tests;
 				PRODUCT_NAME = "Accounts-Dev";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1067,6 +1072,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = bastianx6.Accounts;
 				PRODUCT_NAME = Accounts;
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore bastianx6.Accounts macos";
