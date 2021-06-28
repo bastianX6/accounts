@@ -67,7 +67,7 @@ public extension Color {
     }()
 
     /**
-     Indigo color
+     Teal color
 
      Indigo color for each OS
      */

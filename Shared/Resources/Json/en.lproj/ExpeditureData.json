@@ -38,9 +38,27 @@
     },
     {
       "id": "f0b21e17-ea43-4ce2-8f6e-dc6b492733a7",
-      "name": "Wardrobe and footwear",
+      "name": "Stores",
       "color": "indigo",
       "icon": "bag.circle.fill"
+    },
+    {
+      "id": "da3af7ad-5ffc-4dcf-80f8-a2c257fae0df",
+      "name": "Medicines",
+      "color": "blue",
+      "icon": "bag.circle.fill"
+    },
+    {
+      "id": "327f3efd-1063-41d4-8ebb-8bec9d3f0b87",
+      "name": "Savings",
+      "color": "green",
+      "icon": "creditcard.fill"
+    },
+    {
+      "id": "1cd69b5b-cb9d-4dcd-bb59-38f7b47768ab",
+      "name": "Mortgage",
+      "color": "orange",
+      "icon": "creditcard.fill"
     },
     {
       "id": "ff7d31e2-a5e7-11e9-a2a3-2a2ae2dbcce4",
@@ -85,6 +103,18 @@
       "name": "Itau",
       "color": "orange",
       "icon": "creditcard.fill"
+    },
+    {
+      "id": "fd230fdb-a6e9-469a-be68-e343799bfe76",
+      "name": "BCI",
+      "color": "yellow",
+      "icon": "creditcard.fill"
+    },
+    {
+      "id": "d67e7f09-f787-44f6-abc4-69ba40a97488",
+      "name": "Cash",
+      "color": "purple",
+      "icon": "banknote.fill"
     },
     {
       "id": "ff7d3c64-a5e7-11e9-a2a3-2a2ae2dbcce4",

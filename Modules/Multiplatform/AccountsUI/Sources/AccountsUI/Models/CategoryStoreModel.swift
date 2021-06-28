@@ -31,7 +31,8 @@ public struct CategoryStoreModel: Identifiable {
     public init(name: String,
                 id: UUID,
                 color: Color,
-                icon: String) {
+                icon: String)
+    {
         self.name = name
         self.id = id
         self.color = color
