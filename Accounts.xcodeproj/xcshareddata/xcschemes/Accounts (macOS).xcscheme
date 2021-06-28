@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1220"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "03CF3D1B250D05420096F71C"
+               BuildableName = "Accounts.app"
+               BlueprintName = "Accounts (macOS)"
+               ReferencedContainer = "container:Accounts.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CoreDataManagementTests"
+               BuildableName = "CoreDataManagementTests"
+               BlueprintName = "CoreDataManagementTests"
+               ReferencedContainer = "container:Modules/Multiplatform/CoreDataManagement">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DependencyResolverTests"
+               BuildableName = "DependencyResolverTests"
+               BlueprintName = "DependencyResolverTests"
+               ReferencedContainer = "container:Modules/Multiplatform/DependencyResolver">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "MovementDetailsMacTests"
+               BuildableName = "MovementDetailsMacTests"
+               BlueprintName = "MovementDetailsMacTests"
+               ReferencedContainer = "container:Modules/macOS/MovementDetailsMac">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "MovementListTests"
+               BuildableName = "MovementListTests"
+               BlueprintName = "MovementListTests"
+               ReferencedContainer = "container:Modules/Multiplatform/MovementList">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "MovementListMacTests"
+               BuildableName = "MovementListMacTests"
+               BlueprintName = "MovementListMacTests"
+               ReferencedContainer = "container:Modules/macOS/MovementListMac">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "NewMovementTests"
+               BuildableName = "NewMovementTests"
+               BlueprintName = "NewMovementTests"
+               ReferencedContainer = "container:Modules/Multiplatform/NewMovement">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "NewMovementCommonMacTests"
+               BuildableName = "NewMovementCommonMacTests"
+               BlueprintName = "NewMovementCommonMacTests"
+               ReferencedContainer = "container:Modules/macOS/NewMovementMac">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "NewMovementMacTests"
+               BuildableName = "NewMovementMacTests"
+               BlueprintName = "NewMovementMacTests"
+               ReferencedContainer = "container:Modules/macOS/NewMovementMac">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "03CF3D1B250D05420096F71C"
+            BuildableName = "Accounts.app"
+            BlueprintName = "Accounts (macOS)"
+            ReferencedContainer = "container:Accounts.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "03CF3D1B250D05420096F71C"
+            BuildableName = "Accounts.app"
+            BlueprintName = "Accounts (macOS)"
+            ReferencedContainer = "container:Accounts.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

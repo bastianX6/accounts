@@ -1,6 +1,45 @@
 strings:
-  inputs: 
-    - Accounts/Shared/Resources/es.lproj
-  outputs:
+# project strings
+  - inputs: 
+    - Shared/Resources/es.lproj
+    outputs:
     - templateName: structured-swift5
-      output: Accounts/Shared/Localization/Strings.swift
+      output: Shared/Localization/Strings.swift
+# multi-platform strings
+  - inputs: Modules/Multiplatform/NewMovement/Sources/NewMovement/Resources/es.lproj
+    outputs:
+      templateName: structured-swift5
+      output: Modules/Multiplatform/NewMovement/Sources/NewMovement/Localization/Strings.swift
+
+# iOS strings
+  - inputs: Modules/iOS/MovementListPhone/Sources/MovementListPhone/Resources/es.lproj
+    outputs:
+    - templateName: structured-swift5
+      output: Modules/iOS/MovementListPhone/Sources/MovementListPhone/Localization/Strings.swift
+
+  - inputs: Modules/iOS/MovementDetailsPhone/Sources/MovementDetailsPhone/Resources/es.lproj
+    outputs:
+    - templateName: structured-swift5
+      output: Modules/iOS/MovementDetailsPhone/Sources/MovementDetailsPhone/Localization/Strings.swift
+
+  - inputs: Modules/iOS/NewMovementPhone/Sources/NewMovementPhone/Resources/es.lproj
+    outputs:
+      templateName: structured-swift5
+      output: Modules/iOS/NewMovementPhone/Sources/NewMovementPhone/Localization/Strings.swift
+# macOS strings
+  - inputs: Modules/macOS/MovementListMac/Sources/MovementListMac/Resources/es.lproj
+    outputs:
+    - templateName: structured-swift5
+      output: Modules/macOS/MovementListMac/Sources/MovementListMac/Localization/Strings.swift
+
+  - inputs: Modules/macOS/MovementDetailsMac/Sources/MovementDetailsMac/Resources/es.lproj
+    outputs:
+    - templateName: structured-swift5
+      output: Modules/macOS/MovementDetailsMac/Sources/MovementDetailsMac/Localization/Strings.swift
+
+  - inputs: Modules/macOS/NewMovementMac/Sources/NewMovementMac/Resources/es.lproj
+    outputs:
+      templateName: structured-swift5
+      output: Modules/macOS/NewMovementMac/Sources/NewMovementMac/Localization/Strings.swift
+  
+  
