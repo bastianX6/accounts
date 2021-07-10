@@ -8,7 +8,7 @@
 import AccountsUI
 import Foundation
 
-class MovementResourcesReeader {
+class MovementResourcesReader {
     private let incomeDataFileName = "IncomeData"
     private let expenditureDataFileName = "ExpeditureData"
     private let fileExtension = "json"

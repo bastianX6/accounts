@@ -17,12 +17,12 @@ public class DependencyResolver: DependencyResolverProtocol {
 
     private let dataSourceRead: DataSourceRead = CoreDataSourceRead()
     private let dataSourceModify: DataSourceModify = CoreDataSourceModify()
-    private let resourcesReader: MovementResourcesReeader
+    private let resourcesReader: MovementResourcesReader
 
     /// Default initializer
     /// - Parameter bundle: bundle where resources are located
     public init(bundle: Bundle) {
-        self.resourcesReader = MovementResourcesReeader(bundle: bundle)
+        self.resourcesReader = MovementResourcesReader(bundle: bundle)
     }
 
     public let appearance: Appearance = AppAppearance.shared

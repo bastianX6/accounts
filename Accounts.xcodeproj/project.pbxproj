@@ -21,16 +21,15 @@
 		0322B0BB251578D4001EB2BC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0B9251578D4001EB2BC /* Strings.swift */; };
 		0322B0D025158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
 		0322B0D125158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
-		0350EEBD267E6DB900416092 /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0350EEBC267E6DB900416092 /* AccountsUI */; };
+		032632FB268BEC3400CFCC0A /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 032632FA268BEC3400CFCC0A /* FirebaseCrashlytics */; };
+		032632FF268BEDEF00CFCC0A /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 032632FE268BEDEF00CFCC0A /* AccountsUI */; };
+		03263301268BEDEF00CFCC0A /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03263300268BEDEF00CFCC0A /* DataManagement */; };
 		0350EEBF267E6DB900416092 /* CoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 0350EEBE267E6DB900416092 /* CoreDataManagement */; };
-		0350EEC1267E6DB900416092 /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 0350EEC0267E6DB900416092 /* DataManagement */; };
 		0350EEC3267E6DB900416092 /* DependencyResolver in Frameworks */ = {isa = PBXBuildFile; productRef = 0350EEC2267E6DB900416092 /* DependencyResolver */; };
 		0350EEC5267E6DB900416092 /* MovementList in Frameworks */ = {isa = PBXBuildFile; productRef = 0350EEC4267E6DB900416092 /* MovementList */; };
 		0350EEC7267E6DB900416092 /* MovementListPhone in Frameworks */ = {isa = PBXBuildFile; productRef = 0350EEC6267E6DB900416092 /* MovementListPhone */; };
 		0350EEC9267E6DB900416092 /* NewMovement in Frameworks */ = {isa = PBXBuildFile; productRef = 0350EEC8267E6DB900416092 /* NewMovement */; };
 		0350EECB267E6DB900416092 /* NewMovementPhone in Frameworks */ = {isa = PBXBuildFile; productRef = 0350EECA267E6DB900416092 /* NewMovementPhone */; };
-		0350EECE267E6F2C00416092 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0350EECD267E6F2C00416092 /* FirebaseAnalytics */; };
-		0350EED0267E6F2C00416092 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0350EECF267E6F2C00416092 /* FirebaseCrashlytics */; };
 		0350EED6267E7C2600416092 /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0350EED5267E7C2600416092 /* AccountsUI */; };
 		0350EED8267E7C2600416092 /* CoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 0350EED7267E7C2600416092 /* CoreDataManagement */; };
 		0350EEDA267E7C2600416092 /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 0350EED9267E7C2600416092 /* DataManagement */; };
@@ -74,13 +73,13 @@
 		0322B0B325157706001EB2BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0322B0B9251578D4001EB2BC /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMovementResources.swift; sourceTree = "<group>"; };
+		032632FC268BEDA800CFCC0A /* DataManagement */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DataManagement; sourceTree = "<group>"; };
+		032632FD268BEDA800CFCC0A /* AccountsUI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AccountsUI; sourceTree = "<group>"; };
 		0350EED1267E7BD300416092 /* MovementDetailsPhone */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MovementDetailsPhone; sourceTree = "<group>"; };
 		0350EED2267E7BDE00416092 /* MovementListMac */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MovementListMac; sourceTree = "<group>"; };
 		0350EED3267E7BDE00416092 /* MovementDetailsMac */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MovementDetailsMac; sourceTree = "<group>"; };
 		0350EED4267E7BDE00416092 /* NewMovementMac */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NewMovementMac; sourceTree = "<group>"; };
 		0352C23F267E51DB0064F49E /* CoreDataManagement */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoreDataManagement; sourceTree = "<group>"; };
-		0352C240267E51DB0064F49E /* AccountsUI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AccountsUI; sourceTree = "<group>"; };
-		0352C241267E51DB0064F49E /* DataManagement */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DataManagement; sourceTree = "<group>"; };
 		0352C242267E51DC0064F49E /* DependencyResolver */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DependencyResolver; sourceTree = "<group>"; };
 		0352C247267E52520064F49E /* NewMovement */ = {isa = PBXFileReference; lastKnownFileType = folder; path = NewMovement; sourceTree = "<group>"; };
 		0352C248267E52520064F49E /* MovementList */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MovementList; sourceTree = "<group>"; };
@@ -118,17 +117,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032632FF268BEDEF00CFCC0A /* AccountsUI in Frameworks */,
 				0350EEC9267E6DB900416092 /* NewMovement in Frameworks */,
 				0350EEBF267E6DB900416092 /* CoreDataManagement in Frameworks */,
+				03263301268BEDEF00CFCC0A /* DataManagement in Frameworks */,
 				0350EEC5267E6DB900416092 /* MovementList in Frameworks */,
-				0350EEC1267E6DB900416092 /* DataManagement in Frameworks */,
-				0350EEBD267E6DB900416092 /* AccountsUI in Frameworks */,
-				0350EED0267E6F2C00416092 /* FirebaseCrashlytics in Frameworks */,
+				032632FB268BEC3400CFCC0A /* FirebaseCrashlytics in Frameworks */,
 				0350EEC7267E6DB900416092 /* MovementListPhone in Frameworks */,
 				0350EEE8267E7C8000416092 /* MovementDetailsPhone in Frameworks */,
 				0350EECB267E6DB900416092 /* NewMovementPhone in Frameworks */,
 				03DB5141252D217F008A2F1E /* CloudKit.framework in Frameworks */,
-				0350EECE267E6F2C00416092 /* FirebaseAnalytics in Frameworks */,
 				0350EEC3267E6DB900416092 /* DependencyResolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,9 +211,9 @@
 		0352C075267E51BE0064F49E /* Multiplatform */ = {
 			isa = PBXGroup;
 			children = (
-				0352C240267E51DB0064F49E /* AccountsUI */,
+				032632FD268BEDA800CFCC0A /* AccountsUI */,
 				0352C23F267E51DB0064F49E /* CoreDataManagement */,
-				0352C241267E51DB0064F49E /* DataManagement */,
+				032632FC268BEDA800CFCC0A /* DataManagement */,
 				0352C242267E51DC0064F49E /* DependencyResolver */,
 				0352C248267E52520064F49E /* MovementList */,
 				0352C247267E52520064F49E /* NewMovement */,
@@ -497,17 +495,16 @@
 			);
 			name = "Accounts (iOS)";
 			packageProductDependencies = (
-				0350EEBC267E6DB900416092 /* AccountsUI */,
 				0350EEBE267E6DB900416092 /* CoreDataManagement */,
-				0350EEC0267E6DB900416092 /* DataManagement */,
 				0350EEC2267E6DB900416092 /* DependencyResolver */,
 				0350EEC4267E6DB900416092 /* MovementList */,
 				0350EEC6267E6DB900416092 /* MovementListPhone */,
 				0350EEC8267E6DB900416092 /* NewMovement */,
 				0350EECA267E6DB900416092 /* NewMovementPhone */,
-				0350EECD267E6F2C00416092 /* FirebaseAnalytics */,
-				0350EECF267E6F2C00416092 /* FirebaseCrashlytics */,
 				0350EEE7267E7C8000416092 /* MovementDetailsPhone */,
+				032632FA268BEC3400CFCC0A /* FirebaseCrashlytics */,
+				032632FE268BEDEF00CFCC0A /* AccountsUI */,
+				03263300268BEDEF00CFCC0A /* DataManagement */,
 			);
 			productName = "Accounts (iOS)";
 			productReference = 03CF3D14250D05420096F71C /* Accounts-Dev.app */;
@@ -569,7 +566,7 @@
 			);
 			mainGroup = 03CF3D04250D05410096F71C;
 			packageReferences = (
-				0350EECC267E6F2C00416092 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				032632F9268BEC3400CFCC0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 03CF3D15250D05420096F71C /* Products */;
 			projectDirPath = "";
@@ -1117,7 +1114,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0350EECC267E6F2C00416092 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		032632F9268BEC3400CFCC0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -1128,17 +1125,22 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0350EEBC267E6DB900416092 /* AccountsUI */ = {
+		032632FA268BEC3400CFCC0A /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 032632F9268BEC3400CFCC0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		032632FE268BEDEF00CFCC0A /* AccountsUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AccountsUI;
+		};
+		03263300268BEDEF00CFCC0A /* DataManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DataManagement;
 		};
 		0350EEBE267E6DB900416092 /* CoreDataManagement */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CoreDataManagement;
-		};
-		0350EEC0267E6DB900416092 /* DataManagement */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = DataManagement;
 		};
 		0350EEC2267E6DB900416092 /* DependencyResolver */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1159,16 +1161,6 @@
 		0350EECA267E6DB900416092 /* NewMovementPhone */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = NewMovementPhone;
-		};
-		0350EECD267E6F2C00416092 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0350EECC267E6F2C00416092 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		0350EECF267E6F2C00416092 /* FirebaseCrashlytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0350EECC267E6F2C00416092 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCrashlytics;
 		};
 		0350EED5267E7C2600416092 /* AccountsUI */ = {
 			isa = XCSwiftPackageProductDependency;
