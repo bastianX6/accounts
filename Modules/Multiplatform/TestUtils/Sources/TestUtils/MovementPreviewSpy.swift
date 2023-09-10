@@ -8,6 +8,7 @@
 import Combine
 import DataManagement
 import Previews
+import XCTest
 
 public class MovementPreviewSpy: MovementPreview {
     public var saveCalled = false
@@ -15,17 +16,17 @@ public class MovementPreviewSpy: MovementPreview {
     public var updateCalled = false
 
     override public func save(movement: Movement) -> AnyPublisher<Void, Error> {
-        self.saveCalled = true
+        saveCalled = true
         return super.save(movement: movement)
     }
 
     override public func delete(movement: Movement) -> AnyPublisher<Void, Error> {
-        self.deleteCalled = true
+        deleteCalled = true
         return super.delete(movement: movement)
     }
 
     override public func update(movement: Movement) -> AnyPublisher<Void, Error> {
-        self.updateCalled = true
+        updateCalled = true
         return super.update(movement: movement)
     }
 }

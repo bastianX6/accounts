@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CombineCoreData",
+        "repositoryURL": "https://github.com/Alexander-Ignition/CombineCoreData",
+        "state": {
+          "branch": null,
+          "revision": "167f59af89c24ac925a0f5161e6e704ad4f2774a",
+          "version": "0.0.3"
+        }
+      },
+      {
+        "package": "swift-log",
+        "repositoryURL": "https://github.com/apple/swift-log.git",
+        "state": {
+          "branch": null,
+          "revision": "532d8b529501fb73a2455b179e0bbb6d49b652ed",
+          "version": "1.5.3"
+        }
+      },
+      {
+        "package": "swift-snapshot-testing",
+        "repositoryURL": "https://github.com/pointfreeco/swift-snapshot-testing.git",
+        "state": {
+          "branch": null,
+          "revision": "26ed3a2b4a2df47917ca9b790a57f91285b923fb",
+          "version": "1.12.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

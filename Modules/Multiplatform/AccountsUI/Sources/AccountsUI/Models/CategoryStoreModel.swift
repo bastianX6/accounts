@@ -81,9 +81,9 @@ extension CategoryStoreModel: Decodable {
         case "yellow":
             self.color = .yellow
         case "indigo":
-            self.color = .indigo
+            self.color = .indigoLegacy
         case "teal":
-            self.color = .teal
+            self.color = .tealLegacy
         default:
             self.color = .clear
         }

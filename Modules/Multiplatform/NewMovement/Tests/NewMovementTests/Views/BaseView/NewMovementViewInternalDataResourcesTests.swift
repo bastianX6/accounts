@@ -6,59 +6,53 @@
 //
 
 import Foundation
-import Nimble
-import Quick
 import Previews
+import XCTest
 
 @testable import NewMovement
 
 // swiftlint:disable type_name
-class NewMovementViewInternalDataResourcesTests: QuickSpec {
-// swiftlint:enable type_name
-    override func spec() {
-        var sut: NewMovementViewInternalDataResources!
+class NewMovementViewInternalDataResourcesTests: XCTestCase {
+    // swiftlint:enable type_name
 
-        describe("NewMovementViewInternalDataResources") {
-            context("when init a new instance") {
-                it("should have the right values") {
-                    let categories = DataFake.categories
-                    let stores = DataFake.stores
-                    let title = "title"
-                    let isIncome = false
-                    let numberFormatter = NumberFormatter()
+    var sut: NewMovementViewInternalDataResources!
 
-                    sut = NewMovementViewInternalDataResources(categories: categories,
-                                                               stores: stores,
-                                                               customDataSectionTitle:
-                                                               title,
-                                                               isIncome: isIncome,
-                                                               numberFormatter: numberFormatter)
+    func testNewInstance() {
+        let categories = DataFake.categories
+        let stores = DataFake.stores
+        let title = "title"
+        let isIncome = false
+        let numberFormatter = NumberFormatter()
 
-                    expect(sut.categories) == categories
-                    expect(sut.stores) == stores
-                    expect(sut.customDataSectionTitle) == title
-                    expect(sut.isIncome) == isIncome
-                    expect(sut.numberFormatter) == numberFormatter
-                }
+        sut = NewMovementViewInternalDataResources(categories: categories,
+                                                   stores: stores,
+                                                   customDataSectionTitle:
+                                                   title,
+                                                   isIncome: isIncome,
+                                                   numberFormatter: numberFormatter)
 
-                it("should have the right values if default values are not replaced") {
-                    let categories = DataFake.categories
-                    let stores = DataFake.stores
-                    let title = "title"
+        XCTAssertEqual(sut.categories, categories)
+        XCTAssertEqual(sut.stores, stores)
+        XCTAssertEqual(sut.customDataSectionTitle, title)
+        XCTAssertEqual(sut.isIncome, isIncome)
+        XCTAssertEqual(sut.numberFormatter, numberFormatter)
+    }
 
-                    sut = NewMovementViewInternalDataResources(categories: categories,
-                                                               stores: stores,
-                                                               customDataSectionTitle:
-                                                               title)
+    func testNewInstanceWithDefaultValues() {
+        let categories = DataFake.categories
+        let stores = DataFake.stores
+        let title = "title"
 
-                    expect(sut.categories) == categories
-                    expect(sut.stores) == stores
-                    expect(sut.customDataSectionTitle) == title
-                    expect(sut.isIncome).to(beTrue())
-                    expect(sut.numberFormatter.numberStyle) == NumberFormatter.Style.none
-                    expect(sut.numberFormatter.locale.identifier) == "es_CL"
-                }
-            }
-        }
+        sut = NewMovementViewInternalDataResources(categories: categories,
+                                                   stores: stores,
+                                                   customDataSectionTitle:
+                                                   title)
+
+        XCTAssertEqual(sut.categories, categories)
+        XCTAssertEqual(sut.stores, stores)
+        XCTAssertEqual(sut.customDataSectionTitle, title)
+        XCTAssertTrue(sut.isIncome)
+        XCTAssertEqual(sut.numberFormatter.numberStyle, NumberFormatter.Style.none)
+        XCTAssertEqual(sut.numberFormatter.locale.identifier, "es_CL")
     }
 }

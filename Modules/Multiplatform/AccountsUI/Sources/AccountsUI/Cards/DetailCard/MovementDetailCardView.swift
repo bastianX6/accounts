@@ -168,7 +168,7 @@ struct MovementDetailCardView_Previews: PreviewProvider {
     static let model: MovementDetailCardModel = {
         let model = MovementDetailCardModel(id: UUID(),
                                               systemImageName: "creditcard.fill",
-                                              imageTintColor: .indigo,
+                                              imageTintColor: .indigoLegacy,
                                               title: "Esto es un texto de dos líneas blah blah blah blah",
                                               description: "Esta es una breve descripción del movimiento",
                                               amount: "$9.999.999")
@@ -179,7 +179,7 @@ struct MovementDetailCardView_Previews: PreviewProvider {
         let payment = MovementDetailCardModel.Payments(current: 99, total: 99, title: "Cuota")
         let model = MovementDetailCardModel(id: UUID(),
                                               systemImageName: "creditcard.fill",
-                                              imageTintColor: .indigo,
+                                              imageTintColor: .indigoLegacy,
                                               title: "Esto es un texto de dos líneas",
                                               description: "Esta es una breve descripción del movimiento",
                                               amount: "$9.999.999",

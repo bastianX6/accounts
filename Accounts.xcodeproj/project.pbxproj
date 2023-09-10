@@ -21,7 +21,6 @@
 		0322B0BB251578D4001EB2BC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0B9251578D4001EB2BC /* Strings.swift */; };
 		0322B0D025158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
 		0322B0D125158C7B001EB2BC /* NewMovementResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322B0CF25158C7B001EB2BC /* NewMovementResources.swift */; };
-		032632FB268BEC3400CFCC0A /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 032632FA268BEC3400CFCC0A /* FirebaseCrashlytics */; };
 		032632FF268BEDEF00CFCC0A /* AccountsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 032632FE268BEDEF00CFCC0A /* AccountsUI */; };
 		03263301268BEDEF00CFCC0A /* DataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 03263300268BEDEF00CFCC0A /* DataManagement */; };
 		0350EEBF267E6DB900416092 /* CoreDataManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 0350EEBE267E6DB900416092 /* CoreDataManagement */; };
@@ -46,6 +45,7 @@
 		03808989254F2E66006B7AD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03808988254F2E66006B7AD5 /* AppDelegate.swift */; };
 		0380899C254F30AE006B7AD5 /* FirebaseTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0380899B254F30AE006B7AD5 /* FirebaseTask.swift */; };
 		038089D2254F358C006B7AD5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 038089D1254F358C006B7AD5 /* GoogleService-Info.plist */; };
+		038376C62AAB0EB200CCBDB7 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 038376C52AAB0EB200CCBDB7 /* FirebaseCrashlytics */; };
 		03A5185425854B8E00EE401D /* SectionBuilderMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5185325854B8E00EE401D /* SectionBuilderMac.swift */; };
 		03A5185E25854C4100EE401D /* MainViewMenuElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03753A1D252D0F300011A116 /* MainViewMenuElement.swift */; };
 		03A5186C25854C4600EE401D /* MenuSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03753A2A252D0F690011A116 /* MenuSections.swift */; };
@@ -122,7 +122,7 @@
 				0350EEBF267E6DB900416092 /* CoreDataManagement in Frameworks */,
 				03263301268BEDEF00CFCC0A /* DataManagement in Frameworks */,
 				0350EEC5267E6DB900416092 /* MovementList in Frameworks */,
-				032632FB268BEC3400CFCC0A /* FirebaseCrashlytics in Frameworks */,
+				038376C62AAB0EB200CCBDB7 /* FirebaseCrashlytics in Frameworks */,
 				0350EEC7267E6DB900416092 /* MovementListPhone in Frameworks */,
 				0350EEE8267E7C8000416092 /* MovementDetailsPhone in Frameworks */,
 				0350EECB267E6DB900416092 /* NewMovementPhone in Frameworks */,
@@ -502,9 +502,9 @@
 				0350EEC8267E6DB900416092 /* NewMovement */,
 				0350EECA267E6DB900416092 /* NewMovementPhone */,
 				0350EEE7267E7C8000416092 /* MovementDetailsPhone */,
-				032632FA268BEC3400CFCC0A /* FirebaseCrashlytics */,
 				032632FE268BEDEF00CFCC0A /* AccountsUI */,
 				03263300268BEDEF00CFCC0A /* DataManagement */,
+				038376C52AAB0EB200CCBDB7 /* FirebaseCrashlytics */,
 			);
 			productName = "Accounts (iOS)";
 			productReference = 03CF3D14250D05420096F71C /* Accounts-Dev.app */;
@@ -566,7 +566,7 @@
 			);
 			mainGroup = 03CF3D04250D05410096F71C;
 			packageReferences = (
-				032632F9268BEC3400CFCC0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				038376C42AAB0EB200CCBDB7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk-xcframeworks" */,
 			);
 			productRefGroup = 03CF3D15250D05420096F71C /* Products */;
 			projectDirPath = "";
@@ -1114,22 +1114,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		032632F9268BEC3400CFCC0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		038376C42AAB0EB200CCBDB7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk-xcframeworks" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			repositoryURL = "https://github.com/akaffenberger/firebase-ios-sdk-xcframeworks.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 8.1.1;
+				minimumVersion = 10.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		032632FA268BEC3400CFCC0A /* FirebaseCrashlytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 032632F9268BEC3400CFCC0A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCrashlytics;
-		};
 		032632FE268BEDEF00CFCC0A /* AccountsUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = AccountsUI;
@@ -1201,6 +1196,11 @@
 		0350EEE7267E7C8000416092 /* MovementDetailsPhone */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MovementDetailsPhone;
+		};
+		038376C52AAB0EB200CCBDB7 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 038376C42AAB0EB200CCBDB7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk-xcframeworks" */;
+			productName = FirebaseCrashlytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,48 +6,38 @@
 //
 
 import Foundation
+import MacTestUtils
+import SwiftUI
+import TestUtils
+import XCTest
 
 @testable import NewMovement
-import Nimble
-import Quick
-import SnapshotTesting
-import SnapshotTesting_Nimble
-import SwiftUI
-import XCTest
-import MacTestUtils
 
-final class MovementTypeViewTests: QuickSpec {
+final class MovementTypeViewTests: XCTestCase {
     private let referenceSize = CGSize(width: 400, height: 500)
+    var sut: AnyView!
 
-    override func spec() {
-        var view: AnyView!
-
-        describe("MovementTypeView") {
-            beforeEach {
-                view = MovementTypeView(expenditureAction: {}, incomeAction: {})
-                    .frameFromSize(self.referenceSize)
-                    .eraseToAnyView()
-            }
-
-            context("when view is created") {
-                it("should have the correct layout") {
-                    expect(view).to(haveValidSnapshot(as: .image(size: self.referenceSize)))
-                }
-
-                it("should have the correct layout on dark mode") {
-                    view = view
-                        .background(Color.systemGray6)
-                        .environment(\.colorScheme, .dark)
-                        .eraseToAnyView()
-                    expect(view).to(haveValidSnapshot(as: .image(size: self.referenceSize)))
-                }
-            }
-        }
+    override func setUp() async throws {
+        try await super.setUp()
+        sut = MovementTypeView(expenditureAction: {}, incomeAction: {})
+            .frame(width: referenceSize.width, height: referenceSize.height)
+            .eraseToAnyView()
     }
-}
 
-private extension SwiftUI.View {
-    func frameFromSize(_ size: CGSize) -> some View {
-        frame(width: size.width, height: size.height)
+    func testDefaultLayout() {
+        sut = sut
+            .background(Color.systemGray6)
+            .environment(\.colorScheme, .dark)
+            .eraseToAnyView()
+
+        assertSnapshot(
+            matching: sut,
+            as: .image(
+                precision: defaultPixelPrecision,
+                perceptualPrecision: defaultPerceptualPrecision,
+                size: referenceSize
+            ),
+            testName: "MovementTypeViewTests_testDefaultLayout"
+        )
     }
 }

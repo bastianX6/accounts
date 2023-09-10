@@ -18,7 +18,7 @@ enum MovementsDetailsDataFake {
     static var movementDetailsModel: MovementDetailsModel {
         return MovementDetailsMapper.getModel(from: DataFake.movements,
                                               icon: "creditcard.fill",
-                                              tintColor: .indigo)
+                                              tintColor: .indigoLegacy)
     }
 }
 #endif

@@ -43,7 +43,7 @@ public struct MovementTypeView: View {
                 .onTapGesture(perform: self.expenditureAction)
                 VStack {
                     MovementTypeCard(systemImageName: "dollarsign.square.fill",
-                                     imageTintColor: .indigo,
+                                     imageTintColor: .indigoLegacy,
                                      title: L10n.income)
                         .frame(minWidth: 0,
                                maxWidth: .infinity,

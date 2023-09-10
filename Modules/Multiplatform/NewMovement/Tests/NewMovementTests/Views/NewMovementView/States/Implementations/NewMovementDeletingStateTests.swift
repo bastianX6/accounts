@@ -6,101 +6,87 @@
 //
 
 import Foundation
-import Nimble
 import Previews
-import Quick
 import TestUtils
+import XCTest
 
 @testable import NewMovement
 
-class NewMovementDeletingStateTests: QuickSpec {
-    // swiftlint:disable function_body_length
-    override func spec() {
-        var sut: NewMovementDeletingState!
+class NewMovementDeletingStateTests: XCTestCase {
+    var sut: NewMovementDeletingState!
 
-        describe("NewMovementDeletingState") {
-            context("when init a new instance") {
-                it("should have the right values") {
-                    sut = NewMovementDeletingState(viewModel: nil)
+    func testDefaultInit() {
+        sut = NewMovementDeletingState(viewModel: nil)
 
-                    expect(sut.isIncome).to(beFalse())
-                    expect(sut.showLoading).to(beTrue())
-                    expect(sut.isEdition).to(beFalse())
-                    expect(sut.showDeleteAlert).to(beFalse())
-                    expect(sut.error).to(beNil())
-                    expect(sut.navigationBarTitle) == L10n.newExpenditure
-                    expect(sut.movementDetailTitle) == L10n.expenditureDetails
-                }
+        XCTAssertFalse(sut.isIncome)
+        XCTAssertTrue(sut.showLoading)
+        XCTAssertFalse(sut.isEdition)
+        XCTAssertFalse(sut.showDeleteAlert)
+        XCTAssertNil(sut.error)
+        XCTAssertEqual(sut.navigationBarTitle, L10n.newExpenditure)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.expenditureDetails)
+    }
 
-                context("and is income is true") {
-                    beforeEach {
-                        sut = NewMovementDeletingState(viewModel: nil)
-                        sut.isIncome = true
-                    }
-                    it("should have the right navigation bar title if is edition is false") {
-                        expect(sut.navigationBarTitle) == L10n.newIncome
-                    }
+    func testDefaultInitIncome() {
+        sut = NewMovementDeletingState(viewModel: nil)
+        sut.isIncome = true
+        XCTAssertEqual(sut.navigationBarTitle, L10n.newIncome)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.incomeDetails)
+    }
 
-                    it("should have the right navigation bar title if is edition is true") {
-                        sut.isEdition = true
-                        expect(sut.navigationBarTitle) == L10n.editIncome
-                    }
+    func testDefaultInitOnEditIncome() {
+        sut = NewMovementDeletingState(viewModel: nil)
+        sut.isIncome = true
+        sut.isEdition = true
+        XCTAssertEqual(sut.navigationBarTitle, L10n.editIncome)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.incomeDetails)
+    }
 
-                    it("should have the right movement detail title") {
-                        expect(sut.movementDetailTitle) == L10n.incomeDetails
-                    }
-                }
+    func testDefaultInitExpenditure() {
+        sut = NewMovementDeletingState(viewModel: nil)
+        sut.isIncome = false
+        XCTAssertEqual(sut.navigationBarTitle, L10n.newExpenditure)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.expenditureDetails)
+    }
 
-                context("and is income is false") {
-                    beforeEach {
-                        sut = NewMovementDeletingState(viewModel: nil)
-                    }
-                    it("should have the right navigation bar title if is edition is false") {
-                        expect(sut.navigationBarTitle) == L10n.newExpenditure
-                    }
+    func testDefaultInitOnEditExpenditure() {
+        sut = NewMovementDeletingState(viewModel: nil)
+        sut.isIncome = false
+        sut.isEdition = true
+        XCTAssertEqual(sut.navigationBarTitle, L10n.editExpenditure)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.expenditureDetails)
+    }
 
-                    it("should have the right navigation bar title if is edition is true") {
-                        sut.isEdition = true
-                        expect(sut.navigationBarTitle) == L10n.editExpenditure
-                    }
+    func testDeleteActionSuccess() {
+        let expect = expectation(description: "wait for successfull delete action")
+        let dataSource = MovementPreview()
+        let mockViewModel = MockNewMovementViewModel(dataSource: dataSource,
+                                                     incomeData: DataFake.incomeData,
+                                                     expenditureData: DataFake.expenditureData,
+                                                     onEnd: {})
+        mockViewModel.expect = expect
 
-                    it("should have the right movement detail title") {
-                        expect(sut.movementDetailTitle) == L10n.expenditureDetails
-                    }
-                }
-            }
-            context("when deleteAction is called") {
-                it("should set end state in view model if deletion was successful") {
-                    let dataSource = MovementPreview()
-                    let mockViewModel = MockNewMovementViewModel(dataSource: dataSource,
-                                                                 incomeData: DataFake.incomeData,
-                                                                 expenditureData: DataFake.expenditureData,
-                                                                 onEnd: {})
+        sut = NewMovementDeletingState(viewModel: mockViewModel)
+        sut.deleteAction()
 
-                    sut = NewMovementDeletingState(viewModel: mockViewModel)
+        wait(for: [expect], timeout: 1.0)
+        XCTAssertEqual(mockViewModel.currentStateEnum.representation, NewMovementViewStateEnum.end.representation)
+    }
 
-                    sut.deleteAction()
+    func testDeleteActionFailure() {
+        let expect = expectation(description: "wait for failed delete action")
+        let dataSource = MovementPreviewSpy()
+        dataSource.deleteSuccess = false
+        let mockViewModel = MockNewMovementViewModel(dataSource: dataSource,
+                                                     incomeData: DataFake.incomeData,
+                                                     expenditureData: DataFake.expenditureData,
+                                                     onEnd: {})
+        mockViewModel.expect = expect
 
-                    expect(mockViewModel.currentStateEnum.representation)
-                        .toEventually(be(NewMovementViewStateEnum.end.representation))
-                }
+        sut = NewMovementDeletingState(viewModel: mockViewModel)
+        sut.deleteAction()
 
-                it("should set error state in view model if deletion fails") {
-                    let dataSource = MovementPreviewSpy()
-                    dataSource.deleteSuccess = false
-                    let mockViewModel = MockNewMovementViewModel(dataSource: dataSource,
-                                                                 incomeData: DataFake.incomeData,
-                                                                 expenditureData: DataFake.expenditureData,
-                                                                 onEnd: {})
-
-                    sut = NewMovementDeletingState(viewModel: mockViewModel)
-
-                    sut.deleteAction()
-
-                    expect(mockViewModel.currentStateEnum.representation)
-                        .toEventually(be(NewMovementViewStateEnum.error(error: nil).representation))
-                }
-            }
-        }
+        wait(for: [expect], timeout: 1.0)
+        XCTAssertEqual(mockViewModel.currentStateEnum.representation, NewMovementViewStateEnum.error(error: nil).representation)
     }
 }

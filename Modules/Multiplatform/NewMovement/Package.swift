@@ -29,10 +29,6 @@ let package = Package(
                  path: "../DependencyResolver"),
         .package(name: "TestUtils",
                  path: "../TestUtils"),
-        .package(url: "https://github.com/Quick/Nimble.git",
-                 .upToNextMajor(from: "9.0.0")),
-        .package(url: "https://github.com/Quick/Quick.git",
-                 .upToNextMajor(from: "3.0.0")),
 
     ],
     targets: [
@@ -54,8 +50,6 @@ let package = Package(
             name: "NewMovementTests",
             dependencies: [
                 "NewMovement",
-                "Quick",
-                "Nimble",
                 .product(name: "TestUtils", package: "TestUtils"),
                 .product(name: "Previews", package: "TestUtils"),
             ]

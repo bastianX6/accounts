@@ -154,11 +154,11 @@ struct MovementDetailsView_Previews: PreviewProvider {
         Group {
             MovementDetailsView(model: self.$model,
                                 viewModel: MovementsDetailsDataFake.movementDetailsViewModel,
-                                tintColor: .indigo,
+                                tintColor: .indigoLegacy,
                                 isIncome: false)
             MovementDetailsView(model: self.$model,
                                 viewModel: MovementsDetailsDataFake.movementDetailsViewModel,
-                                tintColor: .indigo,
+                                tintColor: .indigoLegacy,
                                 isIncome: true)
         }
     }

@@ -6,83 +6,67 @@
 //
 
 import Foundation
-@testable import NewMovement
-import Nimble
 import Previews
-import Quick
 import TestUtils
+import XCTest
 
-class NewMovementErrorStateTests: QuickSpec {
-    // swiftlint:disable function_body_length
-    override func spec() {
-        var sut: NewMovementErrorState!
+@testable import NewMovement
 
-        describe("NewMovementErrorState") {
-            context("when init a new instance") {
-                it("should have the right values") {
-                    sut = NewMovementErrorState(viewModel: nil)
+class NewMovementErrorStateTests: XCTestCase {
+    var sut: NewMovementErrorState!
 
-                    expect(sut.isIncome).to(beFalse())
-                    expect(sut.showLoading).to(beFalse())
-                    expect(sut.isEdition).to(beFalse())
-                    expect(sut.showDeleteAlert).to(beFalse())
-                    expect(sut.error).to(beNil())
-                    expect(sut.navigationBarTitle) == L10n.newExpenditure
-                    expect(sut.movementDetailTitle) == L10n.expenditureDetails
-                }
+    func testDefaultInit() {
+        sut = NewMovementErrorState(viewModel: nil)
 
-                context("and is income is true") {
-                    beforeEach {
-                        sut = NewMovementErrorState(viewModel: nil)
-                        sut.isIncome = true
-                    }
-                    it("should have the right navigation bar title if is edition is false") {
-                        expect(sut.navigationBarTitle) == L10n.newIncome
-                    }
+        XCTAssertFalse(sut.isIncome)
+        XCTAssertFalse(sut.showLoading)
+        XCTAssertFalse(sut.isEdition)
+        XCTAssertFalse(sut.showDeleteAlert)
+        XCTAssertNil(sut.error)
+        XCTAssertEqual(sut.navigationBarTitle, L10n.newExpenditure)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.expenditureDetails)
+    }
 
-                    it("should have the right navigation bar title if is edition is true") {
-                        sut.isEdition = true
-                        expect(sut.navigationBarTitle) == L10n.editIncome
-                    }
+    func testDefaultInitIncome() {
+        sut = NewMovementErrorState(viewModel: nil)
+        sut.isIncome = true
+        XCTAssertEqual(sut.navigationBarTitle, L10n.newIncome)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.incomeDetails)
+    }
 
-                    it("should have the right movement detail title") {
-                        expect(sut.movementDetailTitle) == L10n.incomeDetails
-                    }
-                }
+    func testDefaultInitOnEditIncome() {
+        sut = NewMovementErrorState(viewModel: nil)
+        sut.isIncome = true
+        sut.isEdition = true
+        XCTAssertEqual(sut.navigationBarTitle, L10n.editIncome)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.incomeDetails)
+    }
 
-                context("and is income is false") {
-                    beforeEach {
-                        sut = NewMovementErrorState(viewModel: nil)
-                    }
-                    it("should have the right navigation bar title if is edition is false") {
-                        expect(sut.navigationBarTitle) == L10n.newExpenditure
-                    }
+    func testDefaultInitExpenditure() {
+        sut = NewMovementErrorState(viewModel: nil)
+        sut.isIncome = false
+        XCTAssertEqual(sut.navigationBarTitle, L10n.newExpenditure)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.expenditureDetails)
+    }
 
-                    it("should have the right navigation bar title if is edition is true") {
-                        sut.isEdition = true
-                        expect(sut.navigationBarTitle) == L10n.editExpenditure
-                    }
+    func testDefaultInitOnEditExpenditure() {
+        sut = NewMovementErrorState(viewModel: nil)
+        sut.isIncome = false
+        sut.isEdition = true
+        XCTAssertEqual(sut.navigationBarTitle, L10n.editExpenditure)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.expenditureDetails)
+    }
 
-                    it("should have the right movement detail title") {
-                        expect(sut.movementDetailTitle) == L10n.expenditureDetails
-                    }
-                }
-            }
+    func testCancelActionCall() {
+        let dataSource = MovementPreview()
+        let mockViewModel = MockNewMovementViewModel(dataSource: dataSource,
+                                                     incomeData: DataFake.incomeData,
+                                                     expenditureData: DataFake.expenditureData,
+                                                     onEnd: {})
 
-            context("when cancelAction is called") {
-                it("should change state in view model") {
-                    let dataSource = MovementPreview()
-                    let mockViewModel = MockNewMovementViewModel(dataSource: dataSource,
-                                                                 incomeData: DataFake.incomeData,
-                                                                 expenditureData: DataFake.expenditureData,
-                                                                 onEnd: {})
+        sut = NewMovementErrorState(viewModel: mockViewModel)
 
-                    sut = NewMovementErrorState(viewModel: mockViewModel)
-
-                    sut.cancelAction()
-                    expect(mockViewModel.currentStateEnum.representation) == NewMovementViewStateEnum.end.representation
-                }
-            }
-        }
+        sut.cancelAction()
+        XCTAssertEqual(mockViewModel.currentStateEnum.representation, NewMovementViewStateEnum.end.representation)
     }
 }

@@ -12,11 +12,13 @@ import SnapshotTesting
 import SwiftUI
 
 public extension Snapshotting where Value: SwiftUI.View, Format == NSImage {
-    static func image(precision: Float = 1,
+    static func image(precision: Float,
+                      perceptualPrecision: Float,
                       size: CGSize) -> Snapshotting
     {
         Snapshotting<NSViewController, NSImage>.image(
             precision: precision,
+            perceptualPrecision: perceptualPrecision,
             size: size
         )
         .pullback(NSHostingController.init(rootView:))

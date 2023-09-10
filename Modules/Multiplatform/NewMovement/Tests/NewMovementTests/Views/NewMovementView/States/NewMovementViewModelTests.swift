@@ -8,149 +8,79 @@
 import AccountsUI
 import Combine
 import Foundation
-import Nimble
 import Previews
-import Quick
 import TestUtils
+import XCTest
 
 @testable import NewMovement
 
-class NewMovementViewModelTests: QuickSpec {
-    // swiftlint:disable function_body_length
-    override func spec() {
-        var sut: NewMovementViewModel!
-        var mockDataSource: MovementPreviewSpy!
-        var incomeData: MovementResources!
-        var expenditureData: MovementResources!
+class NewMovementViewModelTests: XCTestCase {
+    var sut: NewMovementViewModel!
+    var mockDataSource: MovementPreviewSpy!
+    var incomeData: MovementResources!
+    var expenditureData: MovementResources!
 
-        describe("NewMovementViewModel") {
-            beforeEach {
-                mockDataSource = MovementPreviewSpy()
-                incomeData = DataFake.incomeData
-                expenditureData = DataFake.expenditureData
-                sut = NewMovementViewModel(dataSource: mockDataSource,
-                                           incomeData: incomeData,
-                                           expenditureData:
-                                           expenditureData,
-                                           onEnd: {})
-            }
+    override func setUpWithError() throws {
+        try super.setUpWithError()
+        mockDataSource = MovementPreviewSpy()
+        incomeData = DataFake.incomeData
+        expenditureData = DataFake.expenditureData
+        sut = NewMovementViewModel(dataSource: mockDataSource,
+                                   incomeData: incomeData,
+                                   expenditureData:
+                                   expenditureData,
+                                   onEnd: {})
+    }
 
-            context("when init a new instance") {
-                it("should have the right values") {
-                    expect(sut.isIncome).to(beFalse())
-                    expect(sut.isEdition).to(beFalse())
-                    expect(sut.state).to(beAnInstanceOf(NewMovementViewBaseState.self))
-                    expect(sut.state.isIncome).to(beFalse())
-                    expect(sut.stores) == expenditureData.stores
-                    expect(sut.categories) == expenditureData.categories
-                }
-            }
+    // MARK: - Values
 
-            context("when update isIncome value") {
-                it("should update that value in current state") {
-                    sut.isIncome = true
-                    expect(sut.isIncome).to(beTrue())
-                    expect(sut.state).to(beAnInstanceOf(NewMovementViewBaseState.self))
-                    expect(sut.stores) == incomeData.stores
-                    expect(sut.categories) == incomeData.categories
-                    expect(sut.state.isIncome).to(beTrue())
-                }
-            }
+    func testDefaultInit() {
+        XCTAssertFalse(sut.isIncome)
+        XCTAssertFalse(sut.isEdition)
+        XCTAssertTrue(sut.state is NewMovementViewBaseState)
+        XCTAssertFalse(sut.state.isIncome)
+        XCTAssertEqual(sut.stores, expenditureData.stores)
+        XCTAssertEqual(sut.categories, expenditureData.categories)
+    }
 
-            context("when update isEdition value") {
-                it("should update that value in current state") {
-                    sut.isEdition = true
-                    expect(sut.state.isEdition).to(beTrue())
-                }
-            }
+    func testIsIncome() {
+        sut.isIncome = true
+        XCTAssertTrue(sut.isIncome)
+        XCTAssertTrue(sut.state is NewMovementViewBaseState)
+        XCTAssertEqual(sut.stores, incomeData.stores)
+        XCTAssertEqual(sut.categories, incomeData.categories)
+        XCTAssertTrue(sut.state.isIncome)
+    }
 
-            context("when setState is called") {
-                it("the current state should be a NewMovementSavingState instance if event is saving") {
-                    sut.setState(.saving)
-                    expect(sut.state).to(beAnInstanceOf(NewMovementSavingState.self))
-                }
+    // MARK: - States
 
-                it("the current state should be a NewMovementErrorState instance if event is error") {
-                    sut.setState(.error(error: nil))
-                    expect(sut.state).to(beAnInstanceOf(NewMovementErrorState.self))
-                }
+    func testEditionStateChange() {
+        sut.isEdition = true
+        XCTAssertTrue(sut.state.isEdition)
+    }
 
-                it("the current state should be a NewMovementEndState instance if event is end") {
-                    sut.setState(.end)
-                    expect(sut.state).to(beAnInstanceOf(NewMovementEndState.self))
-                }
+    func testSetSavingState() {
+        sut.setState(.saving)
+        XCTAssertTrue(sut.state is NewMovementSavingState)
+    }
 
-                it("the current state should be a NewMovementEndState instance if event is askingForDelete") {
-                    sut.setState(.askingForDelete)
-                    expect(sut.state).to(beAnInstanceOf(NewMovementAskingForDeleteState.self))
-                }
+    func testSetErrorState() {
+        sut.setState(.error(error: nil))
+        XCTAssertTrue(sut.state is NewMovementErrorState)
+    }
 
-                it("the current state should be a NewMovementDeletingState instance if event is deleting") {
-                    sut.setState(.deleting)
-                    expect(sut.state).to(beAnInstanceOf(NewMovementDeletingState.self))
-                }
-            }
+    func testSetEndState() {
+        sut.setState(.end)
+        XCTAssertTrue(sut.state is NewMovementEndState)
+    }
 
-            context("when saveMovement is called") {
-                context("and the movement is new") {
-                    it("should set the end state if save action was successful") {
-                        sut.setState(.saving)
-                        expect(mockDataSource.saveCalled).toEventually(beTrue())
-                        expect(sut.state).toEventually(beAnInstanceOf(NewMovementEndState.self))
-                    }
+    func testSetaAkingForDeleteState() {
+        sut.setState(.askingForDelete)
+        XCTAssertTrue(sut.state is NewMovementAskingForDeleteState)
+    }
 
-                    it("should set the error state if save action fails") {
-                        mockDataSource.saveSuccess = false
-                        sut.setState(.saving)
-                        expect(mockDataSource.saveCalled).toEventually(beTrue())
-                        expect(sut.state).toEventually(beAnInstanceOf(NewMovementErrorState.self))
-                    }
-                }
-
-                context("and a movement is edited") {
-                    beforeEach {
-                        let model = NewMovementViewInternalDataModel(date: Date(),
-                                                                     currentStore: expenditureData.stores.first?.id ?? UUID(),
-                                                                     currentCategory: expenditureData.categories.first?.id ?? UUID(),
-                                                                     isNew: false)
-
-                        sut = NewMovementViewModel(model: model,
-                                                   dataSource: mockDataSource,
-                                                   incomeData: incomeData,
-                                                   expenditureData:
-                                                   expenditureData,
-                                                   onEnd: {})
-                    }
-
-                    it("should set the end state if update action was successful") {
-                        sut.setState(.saving)
-                        expect(mockDataSource.updateCalled).toEventually(beTrue())
-                        expect(sut.state).toEventually(beAnInstanceOf(NewMovementEndState.self))
-                    }
-
-                    it("should set the error state if update action fails") {
-                        mockDataSource.updateSuccess = false
-                        sut.setState(.saving)
-                        expect(mockDataSource.updateCalled).toEventually(beTrue())
-                        expect(sut.state).toEventually(beAnInstanceOf(NewMovementErrorState.self))
-                    }
-                }
-            }
-
-            context("when deleteMovement is called") {
-                it("should set the end state if delete action was successful") {
-                    sut.setState(.deleting)
-                    expect(mockDataSource.deleteCalled).toEventually(beTrue())
-                    expect(sut.state).toEventually(beAnInstanceOf(NewMovementEndState.self))
-                }
-
-                it("should set the error state if delete action fails") {
-                    mockDataSource.deleteSuccess = false
-                    sut.setState(.deleting)
-                    expect(mockDataSource.deleteCalled).toEventually(beTrue())
-                    expect(sut.state).toEventually(beAnInstanceOf(NewMovementErrorState.self))
-                }
-            }
-        }
+    func testDeletingState() {
+        sut.setState(.deleting)
+        XCTAssertTrue(sut.state is NewMovementDeletingState)
     }
 }

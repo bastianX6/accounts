@@ -6,45 +6,54 @@
 //
 
 import Foundation
-import Nimble
-import Quick
-import SnapshotTesting
-import SnapshotTesting_Nimble
-import SwiftUI
-import XCTest
 import MacTestUtils
+import SwiftUI
+import TestUtils
+import XCTest
 
 @testable import NewMovement
 
-final class MovementTypeCardTests: QuickSpec {
+final class MovementTypeCardTests: XCTestCase {
     private let referenceSize = CGSize(width: 300, height: 100)
+    var sut: AnyView!
 
-    override func spec() {
-        var view: AnyView!
+    override func setUp() async throws {
+        try await super.setUp()
+        sut = MovementTypeCard(systemImageName: "paperplane.fill",
+                               imageTintColor: .indigo,
+                               title: "A title")
+            .eraseToAnyView()
+    }
 
-        describe("MovementTypeCard") {
-            beforeEach {
-                view = MovementTypeCard(systemImageName: "paperplane.fill",
-                                        imageTintColor: .indigo,
-                                        title: "A title")
-                    .eraseToAnyView()
-            }
+    func testDefaultLayout() {
+        sut = sut
+            .environment(\.colorScheme, .light)
+            .eraseToAnyView()
 
-            context("when view is created") {
-                it("should have the correct layout") {
-                    view = view
-                        .environment(\.colorScheme, .light)
-                        .eraseToAnyView()
-                    expect(view).to(haveValidSnapshot(as: .image(size: self.referenceSize)))
-                }
+        assertSnapshot(
+            matching: sut,
+            as: .image(
+                precision: defaultPixelPrecision,
+                perceptualPrecision: defaultPerceptualPrecision,
+                size: referenceSize
+            ),
+            testName: "MovementTypeCardTests_testDefaultLayout"
+        )
+    }
 
-                it("should have the correct layout on dark mode") {
-                    view = view
-                        .environment(\.colorScheme, .dark)
-                        .eraseToAnyView()
-                    expect(view).to(haveValidSnapshot(as: .image(size: self.referenceSize)))
-                }
-            }
-        }
+    func testDarkLayout() {
+        sut = sut
+            .environment(\.colorScheme, .dark)
+            .eraseToAnyView()
+
+        assertSnapshot(
+            matching: sut,
+            as: .image(
+                precision: defaultPixelPrecision,
+                perceptualPrecision: defaultPerceptualPrecision,
+                size: referenceSize
+            ),
+            testName: "MovementTypeCardTests_testDarkLayout"
+        )
     }
 }

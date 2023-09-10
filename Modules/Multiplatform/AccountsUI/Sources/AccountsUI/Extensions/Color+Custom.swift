@@ -56,13 +56,21 @@ public extension Color {
 
      Indigo color for each OS
      */
-    static let indigo: Color = {
+    static let indigoLegacy: Color = {
         #if os(iOS) || os(tvOS)
-            return Color(UIColor.systemIndigo)
+            if #available(iOS 15, *) {
+                return .indigo
+            } else {
+                return Color(UIColor.systemIndigo)
+            }
         #elseif os(watchOS)
             return Color(UIColor.tintsSystemIndigoDark)
         #else
-            return Color(NSColor.systemIndigo)
+            if #available(macOS 12, *) {
+                return .indigo
+            } else {
+                return Color(NSColor.systemIndigo)
+            }
         #endif
     }()
 
@@ -71,13 +79,21 @@ public extension Color {
 
      Indigo color for each OS
      */
-    static let teal: Color = {
+    static let tealLegacy: Color = {
         #if os(iOS) || os(tvOS)
-            return Color(UIColor.systemTeal)
+            if #available(iOS 15, *) {
+                return .teal
+            } else {
+                return Color(UIColor.systemTeal)
+            }
         #elseif os(watchOS)
             return Color(UIColor.tintsSystemTealDark)
         #else
-            return Color(NSColor.systemTeal)
+            if #available(macOS 12, *) {
+                return .teal
+            } else {
+                return Color(NSColor.systemTeal)
+            }
         #endif
     }()
 

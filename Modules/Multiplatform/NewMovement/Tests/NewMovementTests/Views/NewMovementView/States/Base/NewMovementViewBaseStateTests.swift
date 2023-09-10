@@ -6,66 +6,52 @@
 //
 
 import Foundation
-import Nimble
-import Quick
+import XCTest
 
 @testable import NewMovement
 
-class NewMovementViewBaseStateTests: QuickSpec {
-    override func spec() {
-        var sut: NewMovementViewBaseState!
+class NewMovementViewBaseStateTests: XCTestCase {
+    var sut: NewMovementViewBaseState!
 
-        describe("NewMovementViewBaseState") {
-            context("when init a new instance") {
-                it("should have the right values") {
-                    sut = NewMovementViewBaseState()
+    func testDefaultInit() {
+        sut = NewMovementViewBaseState()
 
-                    expect(sut.isIncome).to(beFalse())
-                    expect(sut.showLoading).to(beFalse())
-                    expect(sut.isEdition).to(beFalse())
-                    expect(sut.showDeleteAlert).to(beFalse())
-                    expect(sut.error).to(beNil())
-                    expect(sut.navigationBarTitle) == L10n.newExpenditure
-                    expect(sut.movementDetailTitle) == L10n.expenditureDetails
-                }
+        XCTAssertFalse(sut.isIncome)
+        XCTAssertFalse(sut.showLoading)
+        XCTAssertFalse(sut.isEdition)
+        XCTAssertFalse(sut.showDeleteAlert)
+        XCTAssertNil(sut.error)
+        XCTAssertEqual(sut.navigationBarTitle, L10n.newExpenditure)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.expenditureDetails)
+    }
 
-                context("and is income is true") {
-                    beforeEach {
-                        sut = NewMovementViewBaseState()
-                        sut.isIncome = true
-                    }
-                    it("should have the right navigation bar title if is edition is false") {
-                        expect(sut.navigationBarTitle) == L10n.newIncome
-                    }
+    func testInitIncome() {
+        sut = NewMovementViewBaseState()
+        sut.isIncome = true
+        XCTAssertEqual(sut.navigationBarTitle, L10n.newIncome)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.incomeDetails)
+    }
 
-                    it("should have the right navigation bar title if is edition is true") {
-                        sut.isEdition = true
-                        expect(sut.navigationBarTitle) == L10n.editIncome
-                    }
+    func testInitIncomeIsEdition() {
+        sut = NewMovementViewBaseState()
+        sut.isIncome = true
+        sut.isEdition = true
+        XCTAssertEqual(sut.movementDetailTitle, L10n.incomeDetails)
+        XCTAssertEqual(sut.navigationBarTitle, L10n.editIncome)
+    }
 
-                    it("should have the right movement detail title") {
-                        expect(sut.movementDetailTitle) == L10n.incomeDetails
-                    }
-                }
+    func testInitExpenditure() {
+        sut = NewMovementViewBaseState()
+        sut.isIncome = false
+        XCTAssertEqual(sut.navigationBarTitle, L10n.newExpenditure)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.expenditureDetails)
+    }
 
-                context("and is income is false") {
-                    beforeEach {
-                        sut = NewMovementViewBaseState()
-                    }
-                    it("should have the right navigation bar title if is edition is false") {
-                        expect(sut.navigationBarTitle) == L10n.newExpenditure
-                    }
-
-                    it("should have the right navigation bar title if is edition is true") {
-                        sut.isEdition = true
-                        expect(sut.navigationBarTitle) == L10n.editExpenditure
-                    }
-
-                    it("should have the right movement detail title") {
-                        expect(sut.movementDetailTitle) == L10n.expenditureDetails
-                    }
-                }
-            }
-        }
+    func testInitExpenditureIsEdition() {
+        sut = NewMovementViewBaseState()
+        sut.isIncome = false
+        sut.isEdition = true
+        XCTAssertEqual(sut.movementDetailTitle, L10n.expenditureDetails)
+        XCTAssertEqual(sut.navigationBarTitle, L10n.editExpenditure)
     }
 }

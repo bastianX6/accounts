@@ -46,7 +46,7 @@ struct MovementTypeCard_Previews: PreviewProvider {
         Group {
             VStack {
                 MovementTypeCard(systemImageName: "bag.fill.badge.minus",
-                                 imageTintColor: .indigo,
+                                 imageTintColor: .indigoLegacy,
                                  title: "Gasto con texto glfoñkfm")
             }
             .environment(\.sizeCategory, .large)
@@ -54,7 +54,7 @@ struct MovementTypeCard_Previews: PreviewProvider {
 
             VStack {
                 MovementTypeCard(systemImageName: "bag.fill.badge.minus",
-                                 imageTintColor: .indigo,
+                                 imageTintColor: .indigoLegacy,
                                  title: "Gasto con texto glfoñkfm")
             }
             .background(Color.systemGray6)

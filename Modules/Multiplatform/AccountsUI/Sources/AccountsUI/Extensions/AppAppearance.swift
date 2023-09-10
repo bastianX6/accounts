@@ -29,5 +29,5 @@ public class AppAppearance: ObservableObject, Appearance {
     public let backgroundColor: Color = .systemGray6
 
     /// Application accent color
-    public let accentColor: Color = .indigo
+    public let accentColor: Color = .indigoLegacy
 }

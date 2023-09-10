@@ -6,83 +6,66 @@
 //
 
 import Foundation
-import Nimble
-import Quick
+import XCTest
 
 @testable import NewMovement
 
-class NewMovementEndStateTests: QuickSpec {
-    // swiftlint:disable function_body_length
-    override func spec() {
-        var sut: NewMovementEndState!
+class NewMovementEndStateTests: XCTestCase {
+    var sut: NewMovementEndState!
 
-        describe("NewMovementEndState") {
-            context("when init a new instance") {
-                it("should have the right values") {
-                    sut = NewMovementEndState()
+    func testDefaultInit() {
+        sut = NewMovementEndState()
 
-                    expect(sut.isIncome).to(beFalse())
-                    expect(sut.showLoading).to(beFalse())
-                    expect(sut.isEdition).to(beFalse())
-                    expect(sut.showDeleteAlert).to(beFalse())
-                    expect(sut.error).to(beNil())
-                    expect(sut.navigationBarTitle) == L10n.newExpenditure
-                    expect(sut.movementDetailTitle) == L10n.expenditureDetails
-                }
+        XCTAssertFalse(sut.isIncome)
+        XCTAssertFalse(sut.showLoading)
+        XCTAssertFalse(sut.isEdition)
+        XCTAssertFalse(sut.showDeleteAlert)
+        XCTAssertNil(sut.error)
+        XCTAssertEqual(sut.navigationBarTitle, L10n.newExpenditure)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.expenditureDetails)
+    }
 
-                context("and is income is true") {
-                    beforeEach {
-                        sut = NewMovementEndState()
-                        sut.isIncome = true
-                    }
-                    it("should have the right navigation bar title if is edition is false") {
-                        expect(sut.navigationBarTitle) == L10n.newIncome
-                    }
+    func testDefaultInitIncome() {
+        sut = NewMovementEndState()
+        sut.isIncome = true
+        XCTAssertEqual(sut.navigationBarTitle, L10n.newIncome)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.incomeDetails)
+    }
 
-                    it("should have the right navigation bar title if is edition is true") {
-                        sut.isEdition = true
-                        expect(sut.navigationBarTitle) == L10n.editIncome
-                    }
+    func testDefaultInitOnEditIncome() {
+        sut = NewMovementEndState()
+        sut.isIncome = true
+        sut.isEdition = true
+        XCTAssertEqual(sut.navigationBarTitle, L10n.editIncome)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.incomeDetails)
+    }
 
-                    it("should have the right movement detail title") {
-                        expect(sut.movementDetailTitle) == L10n.incomeDetails
-                    }
-                }
+    func testDefaultInitExpenditure() {
+        sut = NewMovementEndState()
+        sut.isIncome = false
+        XCTAssertEqual(sut.navigationBarTitle, L10n.newExpenditure)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.expenditureDetails)
+    }
 
-                context("and is income is false") {
-                    beforeEach {
-                        sut = NewMovementEndState()
-                    }
-                    it("should have the right navigation bar title if is edition is false") {
-                        expect(sut.navigationBarTitle) == L10n.newExpenditure
-                    }
+    func testDefaultInitOnEditExpenditure() {
+        sut = NewMovementEndState()
+        sut.isIncome = false
+        sut.isEdition = true
+        XCTAssertEqual(sut.navigationBarTitle, L10n.editExpenditure)
+        XCTAssertEqual(sut.movementDetailTitle, L10n.expenditureDetails)
+    }
 
-                    it("should have the right navigation bar title if is edition is true") {
-                        sut.isEdition = true
-                        expect(sut.navigationBarTitle) == L10n.editExpenditure
-                    }
-
-                    it("should have the right movement detail title") {
-                        expect(sut.movementDetailTitle) == L10n.expenditureDetails
-                    }
-                }
-            }
-
-            context("when endAction is called") {
-                it("should call onEnd callback") {
-                    var onEndCalled = false
-                    sut = NewMovementEndState()
-                    sut.onEnd = {
-                        waitUntil { done in
-                            onEndCalled = true
-                            done()
-                        }
-                    }
-
-                    sut.endAction()
-                    expect(onEndCalled).to(beTrue())
-                }
-            }
+    func testOnEndCall() {
+        var onEndCalled = false
+        let expect = expectation(description: "wait for onEnd call")
+        sut = NewMovementEndState()
+        sut.onEnd = {
+            onEndCalled = true
+            expect.fulfill()
         }
+
+        sut.endAction()
+        wait(for: [expect], timeout: 1.0)
+        XCTAssertTrue(onEndCalled)
     }
 }

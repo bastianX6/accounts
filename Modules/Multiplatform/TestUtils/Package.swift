@@ -54,6 +54,7 @@ let package = Package(
                 "DependencyResolver",
                 "MovementList",
                 "Previews",
+                "SnapshotTesting",
             ]),
         .target(
             name: "PhoneTestUtils",

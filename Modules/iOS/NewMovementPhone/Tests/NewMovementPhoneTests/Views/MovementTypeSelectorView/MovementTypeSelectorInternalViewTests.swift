@@ -9,56 +9,66 @@ import AccountsUI
 import DependencyResolver
 import Foundation
 import NewMovement
-import Nimble
+import PhoneTestUtils
 import Previews
-import Quick
 import SnapshotTesting
-import SnapshotTesting_Nimble
 import SwiftUI
 import TestUtils
+import XCTest
 
 @testable import NewMovementPhone
 
-class MovementTypeSelectorInternalViewTests: QuickSpec {
+class MovementTypeSelectorInternalViewTests: XCTestCase {
     private let referenceSize = ViewImageConfig.iPhoneX.size!
 
-    override func spec() {
-        var sut: AnyView!
-        var view: MovementTypeSelectorInternalView!
-        var resolver: DependencyResolver!
+    var sut: AnyView!
+    var view: MovementTypeSelectorInternalView!
+    var resolver: DependencyResolver!
 
-        describe("MovementTypeSelectorInternalView") {
-            beforeEach {
-                resolver = DependencyResolver(bundle: Bundle.main)
-            }
+    override func setUpWithError() throws {
+        try super.setUpWithError()
+        let dataSource = MovementPreviewSpy()
+        let dataModel = NewMovementViewDataModel(dataSource: dataSource,
+                                                 incomeData: DataFake.incomeData,
+                                                 expenditureData: DataFake.expenditureData)
+        view = MovementTypeSelectorInternalView(dataModel: dataModel)
+        sut = view
+            .frameFromSize(referenceSize)
+            .eraseToAnyView()
+        resolver = DependencyResolver(bundle: Bundle.main)
+    }
 
-            context("when view is created") {
-                beforeEach {
-                    let dataSource = MovementPreviewSpy()
-                    let dataModel = NewMovementViewDataModel(dataSource: dataSource,
-                                                             incomeData: DataFake.incomeData,
-                                                             expenditureData: DataFake.expenditureData)
-                    view = MovementTypeSelectorInternalView(dataModel: dataModel)
-                    sut = view
-                        .frameFromSize(self.referenceSize)
-                        .eraseToAnyView()
-                }
+    func testDefaultLayout() {
+        sut = sut
+            .environment(\.colorScheme, .light)
+            .eraseToAnyView()
 
-                it("should have the correct layout") {
-                    sut = sut
-                        .environment(\.colorScheme, .light)
-                        .eraseToAnyView()
-                    expect(sut).to(haveValidSnapshot(as: .image))
-                }
+        phoneSnapshotConfigurations.forEach { configuration in
+            assertSnapshot(
+                matching: sut,
+                as: .image(
+                    precision: defaultPixelPrecision,
+                    perceptualPrecision: defaultPerceptualPrecision
+                ),
+                testName: "MovementTypeSelectorInternalViewTests_testDefaultLayout_\(configuration.name)"
+            )
+        }
+    }
 
-                it("should have the correct layout on dark mode") {
-                    sut = sut
-                        .background(Color.systemGray6)
-                        .environment(\.colorScheme, .dark)
-                        .eraseToAnyView()
-                    expect(sut).to(haveValidSnapshot(as: .image))
-                }
-            }
+    func testDarkLayout() {
+        sut = sut
+            .environment(\.colorScheme, .dark)
+            .eraseToAnyView()
+
+        phoneSnapshotConfigurations.forEach { configuration in
+            assertSnapshot(
+                matching: sut,
+                as: .image(
+                    precision: defaultPixelPrecision,
+                    perceptualPrecision: defaultPerceptualPrecision
+                ),
+                testName: "MovementTypeSelectorInternalViewTests_testDarkLayout_\(configuration.name)"
+            )
         }
     }
 }

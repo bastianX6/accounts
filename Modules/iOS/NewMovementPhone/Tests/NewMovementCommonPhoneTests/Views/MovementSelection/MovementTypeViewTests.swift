@@ -4,44 +4,57 @@
 //
 //  Created by Bastián Véliz Vega on 19-12-20.
 //
-
 import Foundation
-import Nimble
 import PhoneTestUtils
-import Quick
 import SnapshotTesting
-import SnapshotTesting_Nimble
 import SwiftUI
+import TestUtils
 import XCTest
 
 @testable import NewMovement
 
-final class MovementTypeViewTests: QuickSpec {
-    private let referenceSize = ViewImageConfig.iPhoneX.size!
+final class MovementTypeViewTests: XCTestCase {
+    var sut: AnyView!
 
-    override func spec() {
-        var view: AnyView!
+    override func setUp() async throws {
+        try await super.setUp()
+        sut = MovementTypeView(expenditureAction: {}, incomeAction: {})
+            .eraseToAnyView()
+    }
 
-        describe("MovementTypeView") {
-            beforeEach {
-                view = MovementTypeView(expenditureAction: {}, incomeAction: {})
-                    .frameFromSize(self.referenceSize)
-                    .eraseToAnyView()
-            }
+    func testDefaultLayout() {
+        sut = sut
+            .environment(\.colorScheme, .light)
+            .eraseToAnyView()
 
-            context("when view is created") {
-                it("should have the correct layout") {
-                    expect(view).to(haveValidSnapshot(as: .image))
-                }
+        phoneSnapshotConfigurations.forEach { configuration in
+            assertSnapshot(
+                matching: sut,
+                as: .image(
+                    precision: defaultPixelPrecision,
+                    perceptualPrecision: defaultPerceptualPrecision,
+                    layout: .device(config: configuration.device)
+                ),
+                testName: "MovementTypeViewTests_testDefaultLayout_\(configuration.name)"
+            )
+        }
+    }
 
-                it("should have the correct layout on dark mode") {
-                    view = view
-                        .background(Color.systemGray6)
-                        .environment(\.colorScheme, .dark)
-                        .eraseToAnyView()
-                    expect(view).to(haveValidSnapshot(as: .image))
-                }
-            }
+    func testDarkLayout() {
+        sut = sut
+            .environment(\.colorScheme, .dark)
+            .eraseToAnyView()
+
+        phoneSnapshotConfigurations.forEach { configuration in
+            assertSnapshot(
+                matching: sut,
+                as: .image(
+                    precision: defaultPixelPrecision,
+                    perceptualPrecision: defaultPerceptualPrecision,
+                    layout: .device(config: configuration.device)
+                ),
+                testName: "MovementTypeViewTests_testDarkLayout_\(configuration.name)"
+            )
         }
     }
 }

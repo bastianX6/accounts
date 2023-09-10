@@ -34,7 +34,7 @@ public enum DataFake {
                                              amount: amount))
 
         array.append(self.getSimpleCardModel(name: "Otros",
-                                             color: .indigo,
+                                             color: .indigoLegacy,
                                              amount: amount))
 
         return array
@@ -112,7 +112,7 @@ public enum DataFake {
     public static var movementDetailsModel: MovementDetailsModel {
         return MovementDetailsMapper.getModel(from: self.movements,
                                               icon: self.creditCardFill,
-                                              tintColor: .indigo)
+                                              tintColor: .indigoLegacy)
     }
 
     public struct PreviewMovement: Movement {
@@ -148,22 +148,22 @@ public enum DataFake {
     // MARK: - Stores
 
     public static var storeCategory: CategoryStoreModel = {
-        CategoryStoreModel(name: "Store 1", id: UUID(), color: .indigo, icon: DataFake.creditCardFill)
+        CategoryStoreModel(name: "Store 1", id: UUID(), color: .indigoLegacy, icon: DataFake.creditCardFill)
     }()
 
     public static var stores: [CategoryStoreModel] = {
         var array = [CategoryStoreModel]()
-        array.append(CategoryStoreModel(name: "Store 1", id: DataFake.storeId, color: .indigo, icon: DataFake.creditCardFill))
-        array.append(CategoryStoreModel(name: "Store 2", id: UUID(), color: .indigo, icon: DataFake.creditCardFill))
-        array.append(CategoryStoreModel(name: "Store 3", id: UUID(), color: .indigo, icon: DataFake.creditCardFill))
+        array.append(CategoryStoreModel(name: "Store 1", id: DataFake.storeId, color: .indigoLegacy, icon: DataFake.creditCardFill))
+        array.append(CategoryStoreModel(name: "Store 2", id: UUID(), color: .indigoLegacy, icon: DataFake.creditCardFill))
+        array.append(CategoryStoreModel(name: "Store 3", id: UUID(), color: .indigoLegacy, icon: DataFake.creditCardFill))
         return array
     }()
 
     public static var categories: [CategoryStoreModel] {
         var array = [CategoryStoreModel]()
-        array.append(CategoryStoreModel(name: "Category 1", id: DataFake.categoryId, color: .indigo, icon: DataFake.creditCardFill))
-        array.append(CategoryStoreModel(name: "Category 2", id: UUID(), color: .indigo, icon: DataFake.creditCardFill))
-        array.append(CategoryStoreModel(name: "Category 3", id: UUID(), color: .indigo, icon: DataFake.creditCardFill))
+        array.append(CategoryStoreModel(name: "Category 1", id: DataFake.categoryId, color: .indigoLegacy, icon: DataFake.creditCardFill))
+        array.append(CategoryStoreModel(name: "Category 2", id: UUID(), color: .indigoLegacy, icon: DataFake.creditCardFill))
+        array.append(CategoryStoreModel(name: "Category 3", id: UUID(), color: .indigoLegacy, icon: DataFake.creditCardFill))
         return array
     }
 

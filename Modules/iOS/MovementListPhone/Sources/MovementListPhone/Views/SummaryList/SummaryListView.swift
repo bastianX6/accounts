@@ -37,7 +37,7 @@ struct SummaryListView: View {
     var body: some View {
         ScrollView {
             ListHeaderView(systemImageName: self.imageName,
-                           imageColor: .indigo,
+                           imageColor: .indigoLegacy,
                            title: self.headerTitle)
                 .padding()
             ForEach(self.dataModel.elements) { element in
