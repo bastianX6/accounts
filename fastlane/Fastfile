@@ -15,14 +15,15 @@
 
 default_platform(:ios)
 
+report_folder_ios = "sonar-reports/iOS"
+
 platform :ios do
   desc "All iOS lanes"
   lane :all_checks do
-    sh("mkdir -p ../sonar-reports/iOS")
-    sync_code_signing(type: "development", readonly: true, platform: "ios")
+    sh("mkdir -p ../#{report_folder_ios}")
     lint
     run_all_test_ios
-    coverage_ios
+    create_sonar_reports(scheme: "Accounts (iOS)")
   end
 
   desc "Run all test for iOS modules"
@@ -30,29 +31,61 @@ platform :ios do
     run_tests(
       project: "Accounts.xcodeproj",
       scheme: "Accounts (iOS)",
-      sdk: "iphonesimulator14.5",
-      device: "iPhone 8 (14.5)",
-      output_directory: "sonar-reports/iOS",
+      sdk: "iphonesimulator16.4",
+      device: "iPhone 14 (16.4)",
+      output_directory: report_folder_ios,
+      result_bundle: true,
       clean: true,
     )
   end
 
-  desc "Calculate the code coverage for iOS packages"
-  lane :coverage_ios do
+  # SonarQube
+  desc "Create SonarQube test and coverage reports"
+  lane :create_sonar_reports do |options|
+    folders = [
+      "*/Package.swift",
+      "DerivedData/*",
+      "*/Tests/*",
+      "**/*Test.swift",
+      "**/*Tests.swift",
+      "**/*Strings.swift",
+      "**/*AccountsTestsMac.swift"
+    ]
+
     slather(
-      scheme: "Accounts (iOS)",
-      proj: "Accounts.xcodeproj",
-      output_directory: "sonar-reports/iOS",
-      cobertura_xml: "true",
       sonarqube_xml: true,
       cobertura_xml: false,
-      ignore: [
-        "*/Package.swift",
-        "DerivedData/*",
-        "*/Tests/*"
-      ],
+      use_bundle_exec: true,
+      ignore: folders,
+      output_directory: report_folder_ios,
+      scheme: options[:scheme],
+      proj: "Accounts.xcodeproj"
+    )
+
+    create_sonar_test_execution_reports(scheme: options[:scheme])
+  end
+
+  desc "Create test execution reports (SonarQube)"
+  lane :create_sonar_test_execution_reports do |options|
+    export_junit_report(scheme: options[:scheme])
+    output_directory = report_folder_ios
+    forsis(
+       junit_report_file: "#{output_directory}/#{options[:scheme]}.xml",
+       sonar_report_directory: "#{output_directory}"
+   )
+  end
+
+  private_lane :export_junit_report do |options|
+    output_directory = report_folder_ios
+    xcresult_path = "#{output_directory}/#{options[:scheme]}.xcresult"
+    trainer(
+      path: xcresult_path,
+      output_directory: output_directory,
+      fail_build: false
     )
   end
+
+  # Lint
 
   desc "Lint all files"
   lane :lint do
@@ -74,7 +107,6 @@ platform :mac do
   desc "All macOS lanes"
   lane :all_checks do
     sh("mkdir -p ../sonar-reports/macOS")
-    sync_code_signing(type: "development", readonly: true, platform: "macos")
     lint
     run_all_test_macos
     coverage_macos

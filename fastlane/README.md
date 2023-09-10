@@ -1,73 +1,109 @@
 fastlane documentation
-================
+----
+
 # Installation
 
 Make sure you have the latest version of the Xcode command line tools installed:
 
-```
+```sh
 xcode-select --install
 ```
 
-Install _fastlane_ using
-```
-[sudo] gem install fastlane -NV
-```
-or alternatively using `brew install fastlane`
+For _fastlane_ installation instructions, see [Installing _fastlane_](https://docs.fastlane.tools/#installing-fastlane)
 
 # Available Actions
+
 ## iOS
+
 ### ios all_checks
+
+```sh
+[bundle exec] fastlane ios all_checks
 ```
-fastlane ios all_checks
-```
+
 All iOS lanes
+
 ### ios run_all_test_ios
+
+```sh
+[bundle exec] fastlane ios run_all_test_ios
 ```
-fastlane ios run_all_test_ios
-```
+
 Run all test for iOS modules
-### ios coverage_ios
+
+### ios create_sonar_reports
+
+```sh
+[bundle exec] fastlane ios create_sonar_reports
 ```
-fastlane ios coverage_ios
+
+Create SonarQube test and coverage reports
+
+### ios create_sonar_test_execution_reports
+
+```sh
+[bundle exec] fastlane ios create_sonar_test_execution_reports
 ```
-Calculate the code coverage for iOS packages
+
+Create test execution reports (SonarQube)
+
 ### ios lint
+
+```sh
+[bundle exec] fastlane ios lint
 ```
-fastlane ios lint
-```
+
 Lint all files
+
 ### ios beta
+
+```sh
+[bundle exec] fastlane ios beta
 ```
-fastlane ios beta
-```
+
 Push a new beta build to TestFlight
 
 ----
 
+
 ## Mac
+
 ### mac all_checks
+
+```sh
+[bundle exec] fastlane mac all_checks
 ```
-fastlane mac all_checks
-```
+
 All macOS lanes
+
 ### mac run_all_test_macos
+
+```sh
+[bundle exec] fastlane mac run_all_test_macos
 ```
-fastlane mac run_all_test_macos
-```
+
 Run all test for macOS modules
+
 ### mac coverage_macos
+
+```sh
+[bundle exec] fastlane mac coverage_macos
 ```
-fastlane mac coverage_macos
-```
+
 Calculate the code coverage for macOS packages
+
 ### mac lint
+
+```sh
+[bundle exec] fastlane mac lint
 ```
-fastlane mac lint
-```
+
 Lint all files
 
 ----
 
-This README.md is auto-generated and will be re-generated every time [fastlane](https://fastlane.tools) is run.
-More information about fastlane can be found on [fastlane.tools](https://fastlane.tools).
-The documentation of fastlane can be found on [docs.fastlane.tools](https://docs.fastlane.tools).
+This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.
+
+More information about _fastlane_ can be found on [fastlane.tools](https://fastlane.tools).
+
+The documentation of _fastlane_ can be found on [docs.fastlane.tools](https://docs.fastlane.tools).

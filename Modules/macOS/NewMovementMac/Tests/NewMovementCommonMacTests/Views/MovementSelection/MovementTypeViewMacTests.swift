@@ -13,7 +13,7 @@ import XCTest
 
 @testable import NewMovement
 
-final class MovementTypeViewTests: XCTestCase {
+final class MovementTypeViewMacTests: XCTestCase {
     private let referenceSize = CGSize(width: 400, height: 500)
     var sut: AnyView!
 
